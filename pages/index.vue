@@ -1,7 +1,16 @@
 <template>
   <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
+    <v-col>
       <v-card>
+        <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+          <v-row align="center" justify="center">
+            <v-col class="text-center" cols="12">
+              <h1 class="display-1 font-weight-thin mb-4">Farmbase</h1>
+              <h4 class="subheading">Order your fresh foodstuff today!</h4>
+            </v-col>
+          </v-row>
+        </v-parallax>
+
         <v-card-title class="headline">Welcome to Farmbase</v-card-title>
         <v-card-text>
           <p>Farmbase is being developed and maintained by Tomisinteazer and is currently under construction</p>
@@ -19,17 +28,17 @@
           >Tomisinteazer.io</a>
           <br />
           <a
-            href="https://github.com/nuxt/tomisinteazer"
+            href="https://github.com/tomisinteazer"
             target="_blank"
             rel="noopener noreferrer"
           >Tomisinteazer GitHub</a>
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">Continue</v-btn>
+          <v-btn color="primary" nuxt to="/products">Products</v-btn>
         </v-card-actions>
       </v-card>
-    </v-flex>
+    </v-col>
   </v-layout>
 </template>
 

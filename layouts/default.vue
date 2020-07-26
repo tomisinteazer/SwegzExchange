@@ -45,7 +45,7 @@
       </v-list>
     </v-navigation-drawer>-->
     <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <span>Tomisinteazer &copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
   </v-app>
 </template>
@@ -70,6 +70,11 @@ export default {
           to: "/products"
         },
         {
+          icon: "mdi-cart",
+          title: "cart",
+          to: "/cart"
+        },
+        {
           icon: "mdi-information-variant",
           title: "About",
           to: "/about"
@@ -84,7 +89,6 @@ export default {
   methods: {
     lightSwitch() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      console.log("connected");
     }
   }
 };
