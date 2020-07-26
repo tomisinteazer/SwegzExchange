@@ -1,25 +1,22 @@
 <template>
   <v-container class="my-5">
     <v-layout row wrap>
-      <v-flex xs12 sm6 md4 lg3 v-for="card in cards" :key="card.title" :cols="card.flex">
+      <v-flex xs12 sm6 md4 lg3 v-for="product in products" :key="product.title">
         <v-hover>
           <template v-slot="{ hover }">
             <v-card class="text-xs-center ma-3 cardds transition-swing" :elevation="hover ? 24 : 1">
-              <v-img class="white--text align-end" height="200px" :src="card.src">
-                <v-card-title v-text="card.title"></v-card-title>
+              <v-img class="white--text align-end" height="200px" :src="product.src">
+                <v-card-title v-text="product.title"></v-card-title>
               </v-img>
 
-              <v-card-subtitle class="pb-0">xyz</v-card-subtitle>
+              <v-card-subtitle class="pb-0"></v-card-subtitle>
 
               <v-card-text class="text--primary">
-                <div class="carddsTitle">Product Name</div>
-
-                <div>a good description of the enlisted product</div>
+                <div class="carddsTitle">{{product.description}}</div>
               </v-card-text>
 
               <v-card-actions>
-                <v-btn color="green" text>Share</v-btn>
-
+                <v-btn color="green" text>{{product.price}}</v-btn>
                 <v-btn text>Explore</v-btn>
               </v-card-actions>
             </v-card>
@@ -34,10 +31,11 @@
 <script>
 export default {
   data: () => ({
-    cards: []
+    products: []
   }),
   mounted() {
-    this.cards = this.$store.getters.getProduct;
+    this.products = this.$store.getters.getProduct;
+    console.log(this.products);
   }
 };
 </script>

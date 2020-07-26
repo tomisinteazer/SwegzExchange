@@ -1,35 +1,36 @@
-export const state = () => ({
-    cards: [
-        {
-            title: "Pre-fab homes",
-            src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-            flex: 12
-        },
-        {
-            title: "Favorite road trips",
-            src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-            flex: 6
-        },
-        {
-            title: "Best airlines",
-            src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-            flex: 6
-        }
-    ]
-})
-
-export const mutations = {
-
-}
-export const actions = {
-
-}
-export const modules = {
-
-}
-export const getters = {
-    getProduct(state) {
-        return state.cards;
+export default {
+    state: () => ({
+        products: [
+            {
+                title: "Spagetti",
+                src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
+                description: "Golden penny pasta readily available",
+                price: 200
+            },
+            {
+                title: "Rice - long grained",
+                src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+                description: "Parboiled rice per kg",
+                price: 1000
+            },
+            {
+                title: "Beans - Drum flavor",
+                src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
+                description: "Beans drum style beans per kg",
+                price: 350
+            },
+            {
+                title: "Vegetable Oil",
+                src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
+                description: "pure vegetable oil per litre",
+                price: 400
+            }
+        ]
+    }),
+    mutations: {},
+    actions: {},
+    modules: {},
+    getters: {
+        getProduct: state => state.products
     }
 }
-
