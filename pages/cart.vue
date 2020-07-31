@@ -88,21 +88,34 @@ export default {
       this.getCart();
     },
     getTotal() {
-      let reducer = (accumulator, currentValue) => accumulator + currentValue;
-      let reduceItems = (accumulator, currentValue) =>
-        accumulator + currentValue + ", ";
-      let totalAmount = this.cart.map(el => el.price).reduce(reducer, 0);
-      let productList = this.cart.map(el => el.title).reduce(reduceItems, "");
-      return {
-        price: totalAmount,
-        info: productList
+      let formatter = {
+        zero: 0,
+        comma: ", ",
+        empty: "",
+        plus: "+"
       };
+
+      this.$store.commit("calcTotal", formatter);
+
+      this.total = this.$store.getters.getTotal;
+      return this.total;
+
+      // let reducer = (accumulator, currentValue) => accumulator + currentValue;
+      // let reduceItems = (accumulator, currentValue) =>
+      //   accumulator + currentValue + ", ";
+      // let totalAmount = this.cart.map(el => el.price).reduce(reducer, 0);
+      // let productList = this.cart.map(el => el.title).reduce(reduceItems, "");
+      // return {
+      //   price: totalAmount,
+      //   info: productList
+      // };
     },
     setTotal() {
       if (this.cart.length == 0) {
         this.total = {
           price: 0,
-          info: "The Cart is empty go to products to add item"
+          info: "The Cart is empty go to products to add item",
+          productMessage: null
         };
       } else {
         this.total = this.getTotal();
@@ -111,6 +124,7 @@ export default {
   },
   mounted() {
     this.getCart();
+    this.setTotal();
   }
 };
 </script>

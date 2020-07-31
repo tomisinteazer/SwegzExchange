@@ -25,7 +25,8 @@ export default {
         price: 400
       }
     ],
-    cart: []
+    cart: [],
+    total: {}
   }),
   mutations: {
     addToCart(state, payload) {
@@ -37,12 +38,29 @@ export default {
     },
     clearCart(state, payload) {
       state.cart = payload
+    },
+    calcTotal(state, payload) {
+      let reducer = (accumulator, currentValue) => accumulator + currentValue;
+      let reduceItems = (accumulator, currentValue) =>
+        accumulator + currentValue + payload.comma;
+      let ItemsMessage = (accumulator, currentValue) =>
+        accumulator + currentValue + payload.plus;
+      let totalAmount = state.cart.map(el => el.price).reduce(reducer, payload.zero);
+      let productList = state.cart.map(el => el.title).reduce(reduceItems, payload.empty);
+      let productMessage = state.cart.map(el => el.title).reduce(ItemsMessage, payload.empty);
+      state.total = {
+        price: totalAmount,
+        info: productList,
+        productMessage,
+      };
+
     }
   },
   actions: {},
   modules: {},
   getters: {
     getProduct: state => state.products,
-    getCartItems: state => state.cart
+    getCartItems: state => state.cart,
+    getTotal: state => state.total
   }
 };
