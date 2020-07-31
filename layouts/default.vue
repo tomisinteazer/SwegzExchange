@@ -20,11 +20,15 @@
       <v-btn icon @click.stop="clipped = !clipped">
         <v-icon>mdi-application</v-icon>
       </v-btn>
-      <v-btn icon @click.stop="fixed = !fixed">
+      <!-- <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>mdi-minus</v-icon>
-      </v-btn>
+      </v-btn>-->
       <v-toolbar-title v-text="title" />
       <v-spacer />
+      <v-chip class="ma-2" color="primary" nuxt to="/cart">
+        <v-avatar left class="error">{{getCartLenght}}</v-avatar>
+        <v-icon>mdi-cart</v-icon>
+      </v-chip>
       <v-btn icon @click="lightSwitch()">
         <v-icon>mdi-lightbulb-outline</v-icon>
       </v-btn>
@@ -89,6 +93,11 @@ export default {
   methods: {
     lightSwitch() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+    }
+  },
+  computed: {
+    getCartLenght() {
+      return this.$store.getters.getCartItems.length;
     }
   }
 };
