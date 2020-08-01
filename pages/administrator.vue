@@ -1,11 +1,16 @@
 <template>
   <div>
     <v-form ref="form" v-model="valid" lazy-validation>
-      <v-file-input label="Product image" prepend-icon="mdi-camera"></v-file-input>
+      <v-file-input
+        v-model="image"
+        :rules="[v => !!v || 'image  is required']"
+        label="Product image"
+        prepend-icon="mdi-camera"
+        required
+      ></v-file-input>
 
       <v-text-field
-        v-model="name"
-        :counter="5"
+        v-model="tittle"
         prepend-icon="mdi-chart-bubble"
         :rules="nameRules"
         label="Product Name"
@@ -13,30 +18,45 @@
       ></v-text-field>
 
       <v-text-field
-        v-model="email"
-        :rules="emailRules"
+        v-model="description"
+        :rules="nameRules"
         prepend-icon="mdi-information-outline"
         label="Product Description"
         required
       ></v-text-field>
 
-      <v-text-field prepend-icon="mdi-wallet" label="Product price" required></v-text-field>
+      <v-text-field
+        prepend-icon="mdi-wallet"
+        label="Product price"
+        v-model="price"
+        :rules="[v => !!v || 'image  is required']"
+        required
+        type="number"
+      ></v-text-field>
       <v-text-field
         prepend-icon="mdi-information-variant"
         label="Product full information"
+        v-model="information"
+        :rules="nameRules"
         required
       ></v-text-field>
 
       <v-select
-        v-model="select"
+        v-model="category"
         :items="items"
         :rules="[v => !!v || 'category  is required']"
         label="Category"
         required
         prepend-icon="mdi-format-list-bulleted-type"
       ></v-select>
+      <v-checkbox
+        v-model="checkbox"
+        :rules="[v => !!v || 'You must agree to continue!']"
+        label="are you done?"
+        required
+      ></v-checkbox>
 
-      <v-btn color="success" class="mr-4" @click="validate">Validate</v-btn>
+      <v-btn color="success" class="mr-4" @click="validate" :disabled="!valid">Validate</v-btn>
 
       <v-btn color="error" class="mr-4" @click="reset">Reset Form</v-btn>
 
@@ -51,7 +71,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="item in desserts" :key="item.name">
+          <tr v-for="item in orders" :key="item.name">
             <td>{{ item.name }}</td>
             <td>{{ item.calories }}</td>
           </tr>
@@ -64,73 +84,76 @@
 export default {
   data: () => ({
     valid: true,
-    name: "",
+    tittle: "",
+    image: null,
+    description: "",
+    information: "",
+    category: null,
+    src: null,
+    price: null,
     nameRules: [
-      v => !!v || "Name is required",
-      v => (v && v.length >= 5) || "Name greater than 5 characters"
+      (v) => !!v || "Name is required",
+      (v) => (v && v.length >= 5) || "Name greater than 5 characters",
     ],
-    email: "",
-    emailRules: [
-      v => !!v || "E-mail is required",
-      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
-    ],
-    select: null,
     items: ["Item 1", "Item 2", "Item 3", "Item 4"],
     checkbox: false,
-    desserts: [
-      {
-        name: "Frozen Yogurt",
-        calories: 159
-      },
-      {
-        name: "Ice cream sandwich",
-        calories: 237
-      },
-      {
-        name: "Eclair",
-        calories: 262
-      },
-      {
-        name: "Cupcake",
-        calories: 305
-      },
-      {
-        name: "Gingerbread",
-        calories: 356
-      },
-      {
-        name: "Jelly bean",
-        calories: 375
-      },
-      {
-        name: "Lollipop",
-        calories: 392
-      },
-      {
-        name: "Honeycomb",
-        calories: 408
-      },
-      {
-        name: "Donut",
-        calories: 452
-      },
-      {
-        name: "KitKat",
-        calories: 518
-      }
-    ]
+    orders: [],
+    Product: null,
   }),
 
   methods: {
+    addProduct() {
+      if (this.image) {
+        let file = this.image;
+        var storageRef = this.$fireStorage.ref(
+          "products/" + Math.random() + "_" + file.name
+        );
+        let uploadTask = storageRef.put(file);
+        uploadTask.on(
+          "state_changed",
+          (snapshot) => {},
+          (error) => {
+            alert(error); // Handle unsuccessful uploads
+          },
+          () => {
+            // Handle successful uploads on complete
+            // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+            uploadTask.snapshot.ref
+              .getDownloadURL()
+              .then((downloadURL) => {
+                this.src = downloadURL;
+                this.Product = {
+                  price: this.price * 1,
+                  description: this.description,
+                  information: this.information,
+                  category: this.category,
+                  tittle: this.tittle,
+                  src: this.src,
+                };
+                console.log(this.Product);
+              })
+              .then(() => {
+                this.$fireStore
+                  .collection("products")
+                  .add(this.Product)
+                  .then((e) => alert(" document sent" + e.id))
+                  .catch((e) => console.log(e));
+              })
+              .catch((e) => alert(e));
+          }
+        );
+      }
+    },
     validate() {
       this.$refs.form.validate();
+      this.addProduct();
     },
     reset() {
       this.$refs.form.reset();
     },
     resetValidation() {
       this.$refs.form.resetValidation();
-    }
-  }
+    },
+  },
 };
 </script>

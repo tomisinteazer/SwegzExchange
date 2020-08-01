@@ -96,7 +96,6 @@ export default {
       };
 
       this.$store.commit("calcTotal", formatter);
-
       this.total = this.$store.getters.getTotal;
       return this.total;
 
