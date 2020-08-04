@@ -1,34 +1,25 @@
+import { vuexfireMutations, firestoreAction } from "vuexfire";
+function db() {
+  firestoreAction(async function({ bindFirestoreRef }) {
+    await bindFirestoreRef("products", ref, { wait: true });
+  });
+}
+
 export default {
   state: () => ({
-    products: [{
-        title: "Spagetti",
-        src: "https://cdn.vuetifyjs.com/images/cards/house.jpg",
-        description: "Golden penny pasta available",
-        price: 200
-      },
-      {
-        title: "Rice - long grained",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        description: "Parboiled rice per kg",
-        price: 1000
-      },
-      {
-        title: "Beans - Drum flavor",
-        src: "https://cdn.vuetifyjs.com/images/cards/road.jpg",
-        description: "Beans drum style beans per kg",
-        price: 350
-      },
-      {
-        title: "Vegetable Oil",
-        src: "https://cdn.vuetifyjs.com/images/cards/plane.jpg",
-        description: "pure vegetable oil per litre",
-        price: 400
-      }
-    ],
+    products: [],
     cart: [],
     total: {}
   }),
   mutations: {
+    ...vuexfireMutations,
+    SET_COUNT_DOCUMENT: (state, countDocument) => {
+      // Only needed for SSR/Universal Mode
+      state.products = countDocument;
+    },
+    getProducts(state, payload) {
+      state.products.concat(payload);
+    },
     addToCart(state, payload) {
       state.cart.push(payload);
     },
@@ -37,7 +28,7 @@ export default {
       state.cart.splice(index, 1);
     },
     clearCart(state, payload) {
-      state.cart = payload
+      state.cart = payload;
     },
     calcTotal(state, payload) {
       let reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -45,18 +36,28 @@ export default {
         accumulator + currentValue + payload.comma;
       let ItemsMessage = (accumulator, currentValue) =>
         accumulator + currentValue + payload.plus;
-      let totalAmount = state.cart.map(el => el.price).reduce(reducer, payload.zero);
-      let productList = state.cart.map(el => el.title).reduce(reduceItems, payload.empty);
-      let productMessage = state.cart.map(el => el.title).reduce(ItemsMessage, payload.empty);
+      let totalAmount = state.cart
+        .map(el => el.price)
+        .reduce(reducer, payload.zero);
+      let productList = state.cart
+        .map(el => el.tittle)
+        .reduce(reduceItems, payload.empty);
+      let productMessage = state.cart
+        .map(el => el.tittle)
+        .reduce(ItemsMessage, payload.empty);
       state.total = {
         price: totalAmount,
         info: productList,
-        productMessage,
+        productMessage
       };
-
     }
   },
-  actions: {},
+  actions: {
+    bindProducts: firestoreAction(async function({ bindFirestoreRef }) {
+      const ref = this.$fireStore.collection("products");
+      await bindFirestoreRef("products", ref, { wait: true });
+    })
+  },
   modules: {},
   getters: {
     getProduct: state => state.products,
@@ -64,3 +65,4 @@ export default {
     getTotal: state => state.total
   }
 };
+db();

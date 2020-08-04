@@ -71,8 +71,8 @@ export default {
       sheet: false,
       total: {
         price: 0,
-        info: ""
-      }
+        info: "",
+      },
     };
   },
   methods: {
@@ -92,7 +92,7 @@ export default {
         zero: 0,
         comma: ", ",
         empty: "",
-        plus: "+"
+        plus: "+",
       };
 
       this.$store.commit("calcTotal", formatter);
@@ -114,16 +114,16 @@ export default {
         this.total = {
           price: 0,
           info: "The Cart is empty go to products to add item",
-          productMessage: null
+          productMessage: null,
         };
       } else {
         this.total = this.getTotal();
       }
-    }
+    },
   },
   mounted() {
     this.getCart();
     this.setTotal();
-  }
+  },
 };
 </script>
