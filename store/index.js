@@ -9,7 +9,8 @@ export default {
   state: () => ({
     products: [],
     cart: [],
-    total: {}
+    total: {},
+    orders: []
   }),
   mutations: {
     ...vuexfireMutations,
@@ -56,11 +57,16 @@ export default {
     bindProducts: firestoreAction(async function({ bindFirestoreRef }) {
       const ref = this.$fireStore.collection("products");
       await bindFirestoreRef("products", ref, { wait: true });
+    }),
+    bindOrders: firestoreAction(async function({ bindFirestoreRef }) {
+      const oRef = this.$fireStore.collection("orders");
+      await bindFirestoreRef("orders", oRef, { wait: true });
     })
   },
   modules: {},
   getters: {
     getProduct: state => state.products,
+    getOrders: state => state.orders,
     getCartItems: state => state.cart,
     getTotal: state => state.total
   }

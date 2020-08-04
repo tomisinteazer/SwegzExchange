@@ -96,6 +96,105 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
+    <v-expansion-panels>
+      <v-expansion-panel>
+        <v-expansion-panel-header>Order manager</v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-expansion-panels>
+            <v-expansion-panel>
+              <v-expansion-panel-header>Add Order</v-expansion-panel-header>
+              <v-expansion-panel-content>
+                <v-form ref="form" v-model="valid" lazy-validation>
+                  <v-text-field
+                    v-model="customerName"
+                    prepend-icon="mdi-chart-bubble"
+                    :rules="nameRules"
+                    label="customer Name"
+                    required
+                  ></v-text-field>
+
+                  <v-text-field
+                    v-model="orderDescription"
+                    :rules="nameRules"
+                    prepend-icon="mdi-information-outline"
+                    label="Order Description"
+                    required
+                  ></v-text-field>
+
+                  <v-text-field
+                    prepend-icon="mdi-wallet"
+                    label="order price"
+                    v-model="orderPrice"
+                    :rules="[v => !!v || 'price  is required']"
+                    required
+                    type="number"
+                  ></v-text-field>
+                  <v-text-field
+                    prepend-icon="mdi-wallet"
+                    label="order Date"
+                    v-model="orderDate"
+                    :rules="[v => !!v || 'date  is required']"
+                    required
+                  ></v-text-field>
+
+                  <v-select
+                    v-model="orderState"
+                    :items="OrderStateType"
+                    :rules="[v => !!v || 'category  is required']"
+                    label="Order state"
+                    required
+                    prepend-icon="mdi-format-list-bulleted-type"
+                  ></v-select>
+                  <v-checkbox
+                    v-model="checkbox"
+                    :rules="[v => !!v || 'You must agree to continue!']"
+                    label="are you done?"
+                    required
+                  ></v-checkbox>
+
+                  <v-btn
+                    color="success"
+                    class="mr-4"
+                    @click="validateOrder"
+                    :disabled="!valid"
+                  >Validate</v-btn>
+
+                  <v-btn color="error" class="mr-4" @click="reset">Reset Form</v-btn>
+
+                  <v-btn color="warning" @click="resetValidation">Reset Validation</v-btn>
+                </v-form>
+              </v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+          <v-simple-table>
+            <template v-slot:default>
+              <thead>
+                <tr>
+                  <th class="text-left">customer Name</th>
+                  <th class="text-left">order full Price</th>
+                  <th class="text-left">order full description</th>
+                  <th class="text-left">order state</th>
+                  <th class="text-left">order date</th>
+                  <th class="text-left">delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="order in orders" :key="order.id">
+                  <td>{{ order.customerName }}</td>
+                  <td>{{ order.price}}</td>
+                  <td>{{ order.description}}</td>
+                  <td>{{ order.state}}</td>
+                  <td>{{ order.date}}</td>
+                  <td>
+                    <v-btn color="error" @click="deleteOrder(order)">Delete order</v-btn>
+                  </td>
+                </tr>
+              </tbody>
+            </template>
+          </v-simple-table>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
   </div>
 </template>
 <script>
@@ -118,6 +217,13 @@ export default {
     savedProducts: [],
     Product: null,
     currentProduct: null,
+    orders: [],
+    customerName: "",
+    orderPrice: null,
+    orderDescription: null,
+    orderState: null,
+    orderDate: "",
+    OrderStateType: ["fulfilled", "ongoing", "canceled"],
   }),
 
   methods: {
@@ -163,9 +269,29 @@ export default {
         );
       }
     },
+    addOrder() {
+      let Order = {
+        customerName: this.customerName,
+        price: this.orderPrice * 1,
+        description: this.orderDescription,
+        state: this.orderState,
+        date: this.orderDate,
+      };
+      console.log(Order);
+
+      this.$fireStore
+        .collection("orders")
+        .add(Order)
+        .then((e) => alert(" document sent" + e.id))
+        .catch((e) => console.log(e));
+    },
     validate() {
       this.$refs.form.validate();
       this.addProduct();
+    },
+    validateOrder() {
+      this.$refs.form.validate();
+      this.addOrder();
     },
     reset() {
       this.$refs.form.reset();
@@ -193,6 +319,16 @@ export default {
           console.log("an error occurred");
         });
     },
+    deleteOrder(doc) {
+      this.$fireStore
+        .collection("orders")
+        .doc(doc.id)
+        .delete()
+        .then(() => {
+          console.log("deleted succesfully");
+        })
+        .catch((e) => console.log(e));
+    },
   },
   async beforeMount() {
     try {
@@ -200,7 +336,13 @@ export default {
     } catch (e) {
       console.log(e);
     }
+    try {
+      await this.$store.dispatch("bindOrders");
+    } catch (e) {
+      console.log(e);
+    }
     this.savedProducts = this.$store.getters.getProduct;
+    this.orders = this.$store.getters.getOrders;
   },
 };
 </script>
