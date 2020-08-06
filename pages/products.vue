@@ -5,7 +5,7 @@
         <v-hover>
           <template v-slot="{ hover }">
             <v-card
-              class="text-xs-center ma-3 rounded-lg transition-swing text-center mycard"
+              class="text-xs-center ma-3 rounded-lg transition-swing text-center universal"
               :elevation="hover ? 24 : 1"
             >
               <v-img class="white--text align-end text-center" height="150px" :src="product.src">

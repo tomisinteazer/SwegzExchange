@@ -1,7 +1,7 @@
 <template>
   <v-layout column justify-center align-center>
     <v-col>
-      <v-card>
+      <v-card color="universal">
         <v-carousel cycle height="400" hide-delimiter-background show-arrows-on-hover>
           <v-carousel-item v-for="(slide, i) in slides" :key="i">
             <v-sheet :color="colors[i]" height="100%">

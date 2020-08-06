@@ -4,7 +4,7 @@
       <v-flex v-for="product in cart" :key="product.title">
         <v-hover>
           <template v-slot="{ hover }">
-            <v-banner :elevation="hover ? 24 : 1">
+            <v-banner :elevation="hover ? 24 : 1" class="universal">
               <v-avatar slot="icon" color="deep-purple accent-4" size="40">
                 <v-img :src="product.src"></v-img>
               </v-avatar>

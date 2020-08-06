@@ -88,7 +88,7 @@ export default {
           universal: colors.grey.darken4
         },
         light: {
-          universal: colors.grey.lighten5,
+          universal: colors.grey.lighten3,
           primary: "#673ab7",
           secondary: "#00bcd4",
           accent: "#9c27b0",

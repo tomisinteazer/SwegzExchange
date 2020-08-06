@@ -49,7 +49,7 @@
           required
         ></v-checkbox>
 
-        <v-btn :disabled="!valid" color="primary" @click="validate" :loading="loading">Send</v-btn>
+        <v-btn :disabled="!valid" color="primary" :loading="loading">Send</v-btn>
 
         <v-btn color="error" @click="reset">Reset</v-btn>
 
@@ -74,23 +74,23 @@ export default {
     name: "",
     message: "",
     nameRules: [
-      v => !!v || "Name is required",
-      v => (v && v.length <= 45) || "Name must be less than 45 characters"
+      (v) => !!v || "Name is required",
+      (v) => (v && v.length <= 45) || "Name must be less than 45 characters",
     ],
     email: "",
     emailRules: [
-      v => !!v || "E-mail is required",
-      v => /.+@.+/.test(v) || "E-mail must be valid"
+      (v) => !!v || "E-mail is required",
+      (v) => /.+@.+/.test(v) || "E-mail must be valid",
     ],
     messageType: "",
     inputRules: [
-      v => !!v || "This field is required",
-      v => v.length >= 5 || "Minimum length is 5 characters"
+      (v) => !!v || "This field is required",
+      (v) => v.length >= 5 || "Minimum length is 5 characters",
     ],
     items: ["Personal", "Official", "Other"],
     checkbox: false,
     loading: false,
-    snackbar: false
+    snackbar: false,
   }),
 
   methods: {
@@ -117,7 +117,7 @@ export default {
     },
     resetValidation() {
       this.$refs.form.resetValidation();
-    }
-  }
+    },
+  },
 };
 </script>
