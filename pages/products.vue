@@ -5,7 +5,7 @@
         <v-hover>
           <template v-slot="{ hover }">
             <v-card
-              class="text-xs-center ma-3 rounded-lg transition-swing text-center"
+              class="text-xs-center ma-3 rounded-lg transition-swing text-center mycard"
               :elevation="hover ? 24 : 1"
             >
               <v-img class="white--text align-end text-center" height="150px" :src="product.src">
@@ -16,17 +16,17 @@
                 <div>{{ product.description }}</div>
               </v-card-text>
               <div class="text-center">
-                <span class="primary--text">{{ product.price }}ngn</span>
+                <span class="font-weight-black">&#8358;{{ product.price }}</span>
               </div>
               <div class="text-center">
                 <v-card-actions>
                   <v-btn
-                    outlined
                     color="primary"
                     @click="buy(product)"
                     block
-                    small
                     class="text-none"
+                    elevation="12"
+                    tile
                   >
                     <v-icon>mdi-cart-plus</v-icon>Add to Cart
                   </v-btn>
@@ -73,7 +73,6 @@ export default {
       console.log(e);
     }
     this.products = this.$store.getters.getProduct;
-    this.products.forEach((e) => console.log(e));
   },
 };
 </script>

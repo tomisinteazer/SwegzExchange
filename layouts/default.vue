@@ -1,6 +1,14 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
+    <v-navigation-drawer
+      v-model="drawer"
+      :mini-variant="miniVariant"
+      :clipped="clipped"
+      fixed
+      app
+      color="universal"
+      height="100%"
+    >
       <v-list>
         <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
           <v-list-item-action>
@@ -48,8 +56,33 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>-->
-    <v-footer :absolute="!fixed" app>
-      <span>Tomisinteazer &copy; {{ new Date().getFullYear() }}</span>
+
+    <v-footer :absolute="!fixed" app padless class="universal">
+      <v-col class="text-center">
+        <v-card class="text-center universal" flat width="100%">
+          <v-card-text>
+            <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+              <v-icon size="24px">{{ icon }}</v-icon>
+            </v-btn>
+          </v-card-text>
+          <v-card-text>
+            Phasellus feugiat arcu sapien,
+            et iaculis ipsum elementum sit amet.
+            Mauris cursus commodo interdum.
+            Praesent ut risus eget metus luctus accumsan id ultrices nunc.
+          </v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-text>
+            &copy;
+            {{ new Date().getFullYear() }} —
+            <strong>
+              <span>Tomisinteazer</span>
+            </strong>
+          </v-card-text>
+        </v-card>
+      </v-col>
     </v-footer>
   </v-app>
 </template>
@@ -66,39 +99,42 @@ export default {
         {
           icon: "mdi-apps",
           title: "Farmbase",
-          to: "/"
+          to: "/",
         },
         {
           icon: "mdi-chart-bubble",
           title: "Products",
-          to: "/products"
+          to: "/products",
         },
         {
           icon: "mdi-cart",
           title: "cart",
-          to: "/cart"
+          to: "/cart",
         },
         {
           icon: "mdi-information-variant",
           title: "About",
-          to: "/about"
-        }
+          to: "/about",
+        },
       ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Farmbase"
+      title: "Farmbase",
+      icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
     };
   },
   methods: {
     lightSwitch() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-    }
+    },
   },
   computed: {
     getCartLenght() {
       return this.$store.getters.getCartItems.length;
-    }
-  }
+    },
+  },
 };
 </script>
+<style scoped>
+</style>

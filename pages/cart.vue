@@ -27,7 +27,7 @@
       <v-bottom-sheet v-model="sheet" persistent>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
-            color="green"
+            color="accent"
             outlined
             large
             v-bind="attrs"
@@ -53,7 +53,7 @@
               {{total.info}}
               <template v-slot:actions>
                 <v-btn text color="primary">{{total.price}}</v-btn>
-                <v-btn text color="green">Pay</v-btn>
+                <v-btn text color="accent">Pay</v-btn>
               </template>
             </v-banner>
           </div>

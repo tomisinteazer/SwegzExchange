@@ -195,11 +195,33 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
+    <v-btn color="error" @click="signOut" v-if="loggedIn" block>logout</v-btn>
   </div>
 </template>
 <script>
+import firebase from "firebase";
+import Cookies from "js-cookie";
+import { getUserFromCookie, getUserFromSession } from "@/helpers";
 export default {
+  asyncData({ req, redirect }) {
+    if (process.server) {
+      //console.log("server", req.header);
+      const user = getUserFromCookie(req);
+      //   console.log('b', getUserFromCookie(req))
+      if (!user) {
+        console.log("redirecting server");
+        redirect("/login");
+      }
+    } else {
+      var user = firebase.auth().currentUser;
+      if (!user) {
+        redirect("/login");
+      }
+      //   console.log($nuxt.$router)
+    }
+  },
   data: () => ({
+    loggedIn: true,
     valid: true,
     tittle: "",
     image: null,
@@ -328,6 +350,38 @@ export default {
           console.log("deleted succesfully");
         })
         .catch((e) => console.log(e));
+    },
+    signOut() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.push("/login");
+          // Sign-out successful.
+          console.log(e);
+        })
+        .catch(function (error) {
+          // An error happened.
+          console.log(error);
+        });
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          // User is signed in.
+          console.log("signed in");
+          firebase
+            .auth()
+            .currentUser.getIdToken(true)
+            .then((token) => Cookies.set("access_token", token));
+          this.loggedIn = true;
+        } else {
+          Cookies.remove("access_token");
+          // if (Cookies.set('access_token', 'blah')) {
+          // }
+          // No user is signed in.
+          this.loggedIn = false;
+          console.log("signed out", this.loggedIn);
+        }
+      });
     },
   },
   async beforeMount() {

@@ -2,14 +2,15 @@
   <v-layout column justify-center align-center>
     <v-col>
       <v-card>
-        <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
-          <v-row align="center" justify="center">
-            <v-col class="text-center" cols="12">
-              <h1 class="display-1 font-weight-thin mb-4">Farmbase</h1>
-              <h4 class="subheading">Order your fresh foodstuff today!</h4>
-            </v-col>
-          </v-row>
-        </v-parallax>
+        <v-carousel cycle height="400" hide-delimiter-background show-arrows-on-hover>
+          <v-carousel-item v-for="(slide, i) in slides" :key="i">
+            <v-sheet :color="colors[i]" height="100%">
+              <v-row class="fill-height" align="center" justify="center">
+                <div class="display-3">{{ slide }} Slide</div>
+              </v-row>
+            </v-sheet>
+          </v-carousel-item>
+        </v-carousel>
 
         <v-card-title class="headline">Welcome to Farmbase</v-card-title>
         <v-card-text>
@@ -44,7 +45,17 @@
 
 <script>
 export default {
-  
-
+  data() {
+    return {
+      colors: [
+        "indigo",
+        "warning",
+        "pink darken-2",
+        "red lighten-1",
+        "deep-purple accent-4",
+      ],
+      slides: ["First", "Second", "Third", "Fourth", "Fifth"],
+    };
+  },
 };
 </script>
