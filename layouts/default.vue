@@ -9,10 +9,18 @@
       color="universal"
       height="100%"
     >
+      <v-layout column align-center>
+        <v-flex class="mt-5">
+          <v-avatar size="150">
+            <img class="text-lg-center" src="~/assets/quiccly-io.jpg" />
+          </v-avatar>
+          <p class="font-weight-black text-lg-center mt-3 text-center">Quiccly-io</p>
+        </v-flex>
+      </v-layout>
       <v-list>
         <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-icon color="primary">{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -38,7 +46,7 @@
         <v-icon>mdi-cart</v-icon>
       </v-chip>
       <v-btn icon @click="lightSwitch()">
-        <v-icon>mdi-lightbulb-outline</v-icon>
+        <v-icon>mdi-invert-colors</v-icon>
       </v-btn>
     </v-app-bar>
     <v-main>
@@ -60,17 +68,11 @@
     <v-footer :absolute="!fixed" app padless class="universal">
       <v-col class="text-center">
         <v-card class="text-center universal" flat width="100%">
-          <v-card-text>
-            <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
-              <v-icon size="24px">{{ icon }}</v-icon>
-            </v-btn>
-          </v-card-text>
-          <v-card-text>
-            Phasellus feugiat arcu sapien,
-            et iaculis ipsum elementum sit amet.
-            Mauris cursus commodo interdum.
-            Praesent ut risus eget metus luctus accumsan id ultrices nunc.
-          </v-card-text>
+          <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+            <v-icon size="24px" color="primary">{{ icon }}</v-icon>
+          </v-btn>
+
+          <v-card-text>The Official quiccly-io one stop mart for all your school needs.</v-card-text>
 
           <v-divider></v-divider>
 
@@ -98,7 +100,7 @@ export default {
       items: [
         {
           icon: "mdi-apps",
-          title: "Farmbase",
+          title: "Home",
           to: "/",
         },
         {
@@ -120,7 +122,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Farmbase",
+      title: "Quiccly-io",
       icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
     };
   },

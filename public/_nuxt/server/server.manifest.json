@@ -1,0 +1,21 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/about.js": "pages/about.js",
+    "pages/administrator.js": "pages/administrator.js",
+    "pages/cart.js": "pages/cart.js",
+    "pages/index.js": "pages/index.js",
+    "pages/login.js": "pages/login.js",
+    "pages/products.js": "pages/products.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/about.js": "pages/about.js.map",
+    "pages/administrator.js": "pages/administrator.js.map",
+    "pages/cart.js": "pages/cart.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/login.js": "pages/login.js.map",
+    "pages/products.js": "pages/products.js.map",
+    "server.js": "server.js.map"
+  }
+}

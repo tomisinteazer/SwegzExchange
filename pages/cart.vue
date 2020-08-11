@@ -44,7 +44,7 @@
             <v-icon>mdi-chart-bubble</v-icon>continue shopping
           </v-btn>
         </template>
-        <v-sheet class="text-center" height="200px">
+        <v-sheet class="text-center" height="50vh">
           <v-btn class="mt-6" outlined fab color="warning" @click="sheet = !sheet">
             <v-icon>mdi-close</v-icon>
           </v-btn>
