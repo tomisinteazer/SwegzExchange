@@ -24,7 +24,7 @@
     </v-layout>
 
     <div class="text-center">
-      <v-bottom-sheet v-model="sheet" persistent>
+      <v-bottom-sheet v-model="sheet" persistent scrollable>
         <template v-slot:activator="{ on, attrs }">
           <v-btn
             color="accent"
@@ -44,16 +44,19 @@
             <v-icon>mdi-chart-bubble</v-icon>continue shopping
           </v-btn>
         </template>
-        <v-sheet class="text-center" height="50vh">
-          <v-btn class="mt-6" outlined fab color="warning" @click="sheet = !sheet">
+        <v-sheet class="text-center" height="75vh" scrollable>
+          <v-btn class="mt-6" outlined fab small color="warning" @click="sheet = !sheet">
             <v-icon>mdi-close</v-icon>
           </v-btn>
-          <div class="py-3">
+          <div class="py-3" scrollable>
             <v-banner>
-              {{total.info}}
+              <v-card flat>
+                <v-card-text style="height: 300px;">{{total.info}}</v-card-text>
+              </v-card>
+
               <template v-slot:actions>
                 <v-btn text color="primary">{{total.price}}</v-btn>
-                <v-btn text color="accent">Pay</v-btn>
+                <v-btn text color="accent" :href="contactUrl">Pay</v-btn>
               </template>
             </v-banner>
           </div>
@@ -72,7 +75,9 @@ export default {
       total: {
         price: 0,
         info: "",
+        productMessage: null,
       },
+      contactUrl: "",
     };
   },
   methods: {
@@ -118,6 +123,7 @@ export default {
         };
       } else {
         this.total = this.getTotal();
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2348130617579&text=Hi+I+want+to+buy+${this.total.productMessage}the+total+is+${this.total.price}`;
       }
     },
   },

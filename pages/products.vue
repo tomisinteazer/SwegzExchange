@@ -30,6 +30,14 @@
                   >
                     <v-icon>mdi-cart-plus</v-icon>Add to Cart
                   </v-btn>
+                  <v-snackbar v-model="snackbar" :timeout="timeout">
+                    {{ text }}
+                    <template v-slot:action="{ attrs }">
+                      <v-btn color="error" text v-bind="attrs" @click="snackbar = false">
+                        <v-icon>mdi-close</v-icon>
+                      </v-btn>
+                    </template>
+                  </v-snackbar>
                 </v-card-actions>
               </div>
             </v-card>
@@ -43,10 +51,14 @@
 export default {
   data: () => ({
     products: [],
+    snackbar: false,
+    text: "added to cart",
+    timeout: 1500,
   }),
   methods: {
     buy(product) {
       this.$store.commit("addToCart", product);
+      this.snackbar = true;
     },
     // gtp() {
     //   let docs = [];
