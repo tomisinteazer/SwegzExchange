@@ -4,10 +4,8 @@
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
-      fixed
       app
       color="universal"
-      height="100%"
     >
       <v-layout column align-center>
         <v-flex class="mt-5">
@@ -28,7 +26,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app color="universal">
+    <v-app-bar :clipped-left="clipped" fixed app color="universal" height="75vh">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
@@ -50,9 +48,7 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
     <!-- <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
@@ -115,7 +111,7 @@ export default {
         },
         {
           icon: "mdi-information-variant",
-          title: "About",
+          title: "About & contact",
           to: "/about",
         },
       ],
@@ -130,13 +126,41 @@ export default {
     lightSwitch() {
       this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
     },
+    initDarkMode() {
+      const darkMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+      darkMediaQuery.addEventListener("change", (e) => {
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      });
+
+      if (darkMediaQuery.matches) {
+        console.log("change default light to dark theme");
+        // need to set 0 sec timeout to set the dark more after mounted event, due to some bug in the framework
+        setTimeout(() => (this.$vuetify.theme.dark = true), 0);
+      }
+    },
   },
   computed: {
     getCartLenght() {
       return this.$store.getters.getCartItems.length;
     },
   },
+
+  mounted() {
+    this.initDarkMode();
+  },
 };
 </script>
-<style scoped>
+<style>
+* {
+  font-family: "Quicksand", sans-serif !important;
+}
+
+body {
+  color: #333b4f;
+}
+
+a {
+  text-decoration: none;
+}
 </style>
