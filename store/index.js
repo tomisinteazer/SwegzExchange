@@ -1,9 +1,4 @@
 import { vuexfireMutations, firestoreAction } from "vuexfire";
-function db() {
-  firestoreAction(async function({ bindFirestoreRef }) {
-    await bindFirestoreRef("products", ref, { wait: true });
-  });
-}
 
 export default {
   state: () => ({
@@ -14,22 +9,40 @@ export default {
   }),
   mutations: {
     ...vuexfireMutations,
-    SET_COUNT_DOCUMENT: (state, countDocument) => {
-      // Only needed for SSR/Universal Mode
-      state.products = countDocument;
-    },
     getProducts(state, payload) {
       state.products.concat(payload);
     },
+    persistCart(state, payload) {
+      state.cart = payload;
+    },
     addToCart(state, payload) {
-      state.cart.push(payload);
+      let found = state.cart.find(product => product.id == payload.id);
+
+      if (found) {
+        found.quantity++;
+      } else {
+        state.cart.push(payload);
+      }
+
+      this.commit("saveData");
+    },
+    saveData(state) {
+      window.localStorage.setItem("cart", JSON.stringify(state.cart));
     },
     removeFromCart(state, payload) {
+      let found = state.cart.find(product => product.id == payload.id);
       let index = state.cart.indexOf(payload);
-      state.cart.splice(index, 1);
+      if (found.quantity > 1) {
+        found.quantity--;
+      } else {
+        state.cart.splice(index, 1);
+      }
+
+      this.commit("saveData");
     },
     clearCart(state, payload) {
       state.cart = payload;
+      this.commit("saveData");
     },
     calcTotal(state, payload) {
       let reducer = (accumulator, currentValue) => accumulator + currentValue;
@@ -38,13 +51,13 @@ export default {
       let ItemsMessage = (accumulator, currentValue) =>
         accumulator + currentValue + payload.plus;
       let totalAmount = state.cart
-        .map(el => el.price)
+        .map(el => el.price * el.quantity)
         .reduce(reducer, payload.zero);
       let productList = state.cart
-        .map(el => el.tittle)
+        .map(el => el.tittle + el.quantity)
         .reduce(reduceItems, payload.empty);
       let productMessage = state.cart
-        .map(el => el.tittle)
+        .map(el => el.tittle + el.quantity)
         .reduce(ItemsMessage, payload.empty);
       state.total = {
         price: totalAmount,
@@ -71,4 +84,3 @@ export default {
     getTotal: state => state.total
   }
 };
-db();

@@ -3,53 +3,53 @@
   "all": [
     "../server/index.spa.html",
     "../server/index.ssr.html",
-    "16.fda6f2e.js",
-    "17.74e343b.js",
-    "18.4dc6d27.js",
+    "16.25592af.js",
+    "17.42efd1a.js",
+    "18.2b68d29.js",
     "19.b842644.js",
     "LICENSES",
-    "app.3e6dda2.js",
-    "commons/about~administrator.632529d.js",
-    "commons/administrator~login.dea62c1.js",
-    "commons/app.93a3020.js",
+    "app.64ecb64.js",
+    "commons/about~administrator.9a00900.js",
+    "commons/administrator~login.6d8e49d.js",
+    "commons/app.770443c.js",
     "img/quiccly-io.1885b15.jpg",
     "manifest.56a4c25b.json",
-    "pages/about.270d6b3.js",
-    "pages/administrator.37f8182.js",
-    "pages/cart.6237161.js",
-    "pages/index.67cf499.js",
-    "pages/login.d6270ac.js",
-    "pages/products.ad9c955.js",
-    "runtime.2f144a6.js",
-    "vendors~app.b30fd85.js",
-    "vendors~pages/about.f34361e.js",
-    "vendors~pages/administrator.bcc3abf.js",
-    "vendors~pages/cart.c1aaf7a.js",
-    "vendors~pages/index.637d306.js"
+    "pages/about.fd8ba74.js",
+    "pages/administrator.76d9e70.js",
+    "pages/cart.3bb7453.js",
+    "pages/index.855b1ba.js",
+    "pages/login.7eda787.js",
+    "pages/products.bd3b58a.js",
+    "runtime.3e4d7f1.js",
+    "vendors~app.75512b6.js",
+    "vendors~pages/about.ff3bb6c.js",
+    "vendors~pages/administrator.4b40f7f.js",
+    "vendors~pages/cart.2e463e0.js",
+    "vendors~pages/index.008c766.js"
   ],
   "initial": [
-    "runtime.2f144a6.js",
-    "commons/app.93a3020.js",
-    "vendors~app.b30fd85.js",
-    "app.3e6dda2.js"
+    "runtime.3e4d7f1.js",
+    "commons/app.770443c.js",
+    "vendors~app.75512b6.js",
+    "app.64ecb64.js"
   ],
   "async": [
-    "16.fda6f2e.js",
-    "17.74e343b.js",
-    "18.4dc6d27.js",
+    "16.25592af.js",
+    "17.42efd1a.js",
+    "18.2b68d29.js",
     "19.b842644.js",
-    "commons/about~administrator.632529d.js",
-    "commons/administrator~login.dea62c1.js",
-    "pages/about.270d6b3.js",
-    "pages/administrator.37f8182.js",
-    "pages/cart.6237161.js",
-    "pages/index.67cf499.js",
-    "pages/login.d6270ac.js",
-    "pages/products.ad9c955.js",
-    "vendors~pages/about.f34361e.js",
-    "vendors~pages/administrator.bcc3abf.js",
-    "vendors~pages/cart.c1aaf7a.js",
-    "vendors~pages/index.637d306.js"
+    "commons/about~administrator.9a00900.js",
+    "commons/administrator~login.6d8e49d.js",
+    "pages/about.fd8ba74.js",
+    "pages/administrator.76d9e70.js",
+    "pages/cart.3bb7453.js",
+    "pages/index.855b1ba.js",
+    "pages/login.7eda787.js",
+    "pages/products.bd3b58a.js",
+    "vendors~pages/about.ff3bb6c.js",
+    "vendors~pages/administrator.4b40f7f.js",
+    "vendors~pages/cart.2e463e0.js",
+    "vendors~pages/index.008c766.js"
   ],
   "modules": {
     "14127151": [
@@ -70,6 +70,9 @@
     "45198556": [
       20
     ],
+    "50204652": [
+      23
+    ],
     "62566020": [
       8
     ],
@@ -87,6 +90,10 @@
     ],
     "96923974": [
       20
+    ],
+    "98456270": [
+      15,
+      23
     ],
     "c78da396": [
       20
@@ -331,7 +338,7 @@
       7,
       11
     ],
-    "2380d24e": [
+    "107c4219": [
       7,
       11
     ],
@@ -343,7 +350,7 @@
       7,
       11
     ],
-    "0c889fdb": [
+    "2ec54b1b": [
       7,
       11
     ],
@@ -444,6 +451,9 @@
     "f21579c8": [
       20
     ],
+    "56df1184": [
+      20
+    ],
     "1a7ab1dc": [
       10
     ],
@@ -458,9 +468,6 @@
     ],
     "2235e36c": [
       10
-    ],
-    "56df1184": [
-      20
     ],
     "7432911c": [
       20
@@ -479,6 +486,9 @@
     ],
     "04d346c8": [
       20
+    ],
+    "afa15ee6": [
+      10
     ],
     "a474efb6": [
       10
@@ -518,6 +528,12 @@
     ],
     "bc1c118c": [
       20
+    ],
+    "6fb5554a": [
+      10
+    ],
+    "62c305d5": [
+      10
     ],
     "1b647ac9": [
       10
@@ -591,19 +607,7 @@
     "d129487a": [
       20
     ],
-    "6fb5554a": [
-      10
-    ],
-    "62c305d5": [
-      10
-    ],
     "62cc53b6": [
-      10
-    ],
-    "5cd38b46": [
-      20
-    ],
-    "afa15ee6": [
       10
     ],
     "5c8aaf5e": [
@@ -678,6 +682,9 @@
     "e3e940c2": [
       20
     ],
+    "5cd38b46": [
+      20
+    ],
     "7069ed81": [
       7,
       11
@@ -742,10 +749,10 @@
     "5cd6f8ba": [
       10
     ],
-    "47b2083e": [
+    "742eef17": [
       20
     ],
-    "742eef17": [
+    "47b2083e": [
       20
     ],
     "e9e3de52": [
@@ -1456,6 +1463,12 @@
     "f370fb24": [
       22
     ],
+    "30043d62": [
+      23
+    ],
+    "d09a5974": [
+      23
+    ],
     "886048ae": [
       23
     ],
@@ -1598,21 +1611,6 @@
       16,
       24
     ],
-    "a3ff9404": [
-      18
-    ],
-    "75f5362d": [
-      18
-    ],
-    "15ee3d6a": [
-      18
-    ],
-    "5c73f62a": [
-      18
-    ],
-    "9ec79dc2": [
-      18
-    ],
     "dc87de82": [
       17,
       9
@@ -1637,15 +1635,11 @@
       15,
       23
     ],
-    "59d174f6": [
+    "5c4b710a": [
       15,
       23
     ],
     "5fb7720f": [
-      15,
-      23
-    ],
-    "2aa92343": [
       15,
       23
     ],
@@ -1678,6 +1672,21 @@
       8,
       21
     ],
+    "a3ff9404": [
+      18
+    ],
+    "0f2ef100": [
+      18
+    ],
+    "15ee3d6a": [
+      18
+    ],
+    "5439563e": [
+      18
+    ],
+    "9ec79dc2": [
+      18
+    ],
     "7867c36e": [
       21
     ],
@@ -1704,62 +1713,65 @@
     ],
     "19b4e339": [
       23
+    ],
+    "6b12695c": [
+      23
     ]
   },
   "assetsMapping": {
     "bba68bf6": [
-      "16.fda6f2e.js",
-      "17.74e343b.js",
-      "18.4dc6d27.js",
+      "16.25592af.js",
+      "17.42efd1a.js",
+      "18.2b68d29.js",
       "19.b842644.js"
     ],
     "1a3ae26b": [
-      "app.3e6dda2.js"
+      "app.64ecb64.js"
     ],
     "77cd0502": [
-      "commons/about~administrator.632529d.js"
+      "commons/about~administrator.9a00900.js"
     ],
     "7c114f4a": [
-      "commons/administrator~login.dea62c1.js"
+      "commons/administrator~login.6d8e49d.js"
     ],
     "085a35c4": [
-      "commons/app.93a3020.js"
+      "commons/app.770443c.js"
     ],
     "2aff1868": [
-      "pages/about.270d6b3.js"
+      "pages/about.fd8ba74.js"
     ],
     "72a2640c": [
-      "pages/administrator.37f8182.js"
+      "pages/administrator.76d9e70.js"
     ],
     "b70eb1fe": [
-      "pages/cart.6237161.js"
+      "pages/cart.3bb7453.js"
     ],
     "2a130dde": [
-      "pages/index.67cf499.js"
+      "pages/index.855b1ba.js"
     ],
     "29bd80b0": [
-      "pages/login.d6270ac.js"
+      "pages/login.7eda787.js"
     ],
     "c469b676": [
-      "pages/products.ad9c955.js"
+      "pages/products.bd3b58a.js"
     ],
     "6fca0322": [
-      "runtime.2f144a6.js"
+      "runtime.3e4d7f1.js"
     ],
     "7ec635d8": [
-      "vendors~app.b30fd85.js"
+      "vendors~app.75512b6.js"
     ],
     "35a7eb8e": [
-      "vendors~pages/about.f34361e.js"
+      "vendors~pages/about.ff3bb6c.js"
     ],
     "6709850e": [
-      "vendors~pages/administrator.bcc3abf.js"
+      "vendors~pages/administrator.4b40f7f.js"
     ],
     "59fa0ef4": [
-      "vendors~pages/cart.c1aaf7a.js"
+      "vendors~pages/cart.2e463e0.js"
     ],
     "34bbe104": [
-      "vendors~pages/index.637d306.js"
+      "vendors~pages/index.008c766.js"
     ]
   }
 }

@@ -139,6 +139,16 @@ export default {
         setTimeout(() => (this.$vuetify.theme.dark = true), 0);
       }
     },
+    loadCart() {
+      if (process.client) {
+        let localcart = window.localStorage.getItem("cart");
+        let processedCart = JSON.parse(localcart);
+        if (processedCart) {
+          this.$store.commit("persistCart", processedCart);
+        }
+        console.log(processedCart);
+      }
+    },
   },
   computed: {
     getCartLenght() {
@@ -148,6 +158,9 @@ export default {
 
   mounted() {
     this.initDarkMode();
+  },
+  created() {
+    this.loadCart();
   },
 };
 </script>

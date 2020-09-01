@@ -68,7 +68,7 @@ exports.modules = {
 /* harmony import */ var _src_components_VGrid_grid_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VGrid_grid_sass__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(68);
 /* harmony import */ var _src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_src_components_VGrid_VGrid_sass__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33);
+/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
 /* harmony import */ var _util_mergeData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(14);
 
 
@@ -447,14 +447,14 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 245:
+/***/ 247:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/products.vue?vue&type=template&id=7fa036be&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/products.vue?vue&type=template&id=01f4affc&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',{staticClass:"my-5"},[_c('v-layout',{attrs:{"row":"","wrap":""}},_vm._l((_vm.products),function(product){return _c('v-flex',{key:product.tittle,attrs:{"xs6":"","sm6":"","md4":"","lg3":""}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var hover = ref.hover;
 return [_c('v-card',{staticClass:"text-xs-center ma-3 rounded-lg transition-swing text-center universal",attrs:{"elevation":hover ? 24 : 1}},[_c('v-img',{staticClass:"white--text align-end text-center",attrs:{"height":"150px","src":product.src}},[_c('v-card-title',{domProps:{"textContent":_vm._s(product.tittle)}})],1),_vm._v(" "),_c('v-card-text',{staticClass:"text-center"},[_c('div',[_vm._v(_vm._s(product.description))])]),_vm._v(" "),_c('div',{staticClass:"text-center"},[_c('span',{staticClass:"font-weight-black"},[_vm._v("₦"+_vm._s(product.price))])]),_vm._v(" "),_c('div',{staticClass:"text-center"},[_c('v-card-actions',[_c('v-btn',{staticClass:"text-none",attrs:{"color":"primary","block":"","elevation":"12","tile":""},on:{"click":function($event){return _vm.buy(product)}}},[_c('v-icon',[_vm._v("mdi-cart-plus")]),_vm._v("Add to Cart\n                ")],1),_vm._v(" "),_c('v-snackbar',{attrs:{"timeout":_vm.timeout},scopedSlots:_vm._u([{key:"action",fn:function(ref){
@@ -463,7 +463,7 @@ return [_c('v-btn',_vm._b({attrs:{"color":"error","text":""},on:{"click":functio
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/products.vue?vue&type=template&id=7fa036be&
+// CONCATENATED MODULE: ./pages/products.vue?vue&type=template&id=01f4affc&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/products.vue?vue&type=script&lang=js&
 //
@@ -523,7 +523,11 @@ var staticRenderFns = []
     timeout: 1500
   }),
   methods: {
-    buy(product) {
+    buy(item) {
+      let product = { ...item,
+        quantity: 1,
+        id: item.id
+      };
       this.$store.commit("addToCart", product);
       this.snackbar = true;
     } // gtp() {
@@ -562,7 +566,7 @@ var staticRenderFns = []
 var componentNormalizer = __webpack_require__(20);
 
 // EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
-var installComponents = __webpack_require__(32);
+var installComponents = __webpack_require__(31);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
@@ -584,10 +588,10 @@ var VFlex = __webpack_require__(153);
 var VHover = __webpack_require__(190);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/VIcon.js
-var VIcon = __webpack_require__(48);
+var VIcon = __webpack_require__(47);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VImg/VImg.js
-var VImg = __webpack_require__(39);
+var VImg = __webpack_require__(38);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VLayout.js
 var VLayout = __webpack_require__(154);

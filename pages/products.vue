@@ -56,7 +56,9 @@ export default {
     timeout: 1500,
   }),
   methods: {
-    buy(product) {
+    buy(item) {
+      let product = { ...item, quantity: 1, id: item.id };
+
       this.$store.commit("addToCart", product);
       this.snackbar = true;
     },

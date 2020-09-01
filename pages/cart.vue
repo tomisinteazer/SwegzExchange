@@ -5,13 +5,13 @@
         <v-hover>
           <template v-slot="{ hover }">
             <v-banner :elevation="hover ? 24 : 1" class="universal">
-              <v-avatar slot="icon" color="deep-purple accent-4" size="40">
+              <v-avatar slot="icon" color="deep-purple accent-4" size="60">
                 <v-img :src="product.src"></v-img>
               </v-avatar>
-              {{product.title}}
-              <span>{{product.description}}</span>
+              <v-badge color="green" :content="product.quantity">{{product.tittle}}</v-badge>
+
               <template v-slot:actions>
-                <span text>{{product.price}} ngn</span>
+                <span text green>&#8358;{{product.price * product.quantity}}</span>
                 <v-btn text color="error" @click="removeItem(product)">
                   remove
                   <v-icon>mdi-minus</v-icon>
