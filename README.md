@@ -1,4 +1,4 @@
-# Farm_app
+# quiccly-io
 
 ## Build Setup
 
