@@ -54,14 +54,16 @@ export default {
         .map(el => el.price * el.quantity)
         .reduce(reducer, payload.zero);
       let productList = state.cart
-        .map(el => el.tittle + el.quantity)
+        .map(el => el.tittle + " " + el.quantity)
         .reduce(reduceItems, payload.empty);
       let productMessage = state.cart
-        .map(el => el.tittle + el.quantity)
+        .map(el => el.tittle + " +( " + el.quantity + " )")
         .reduce(ItemsMessage, payload.empty);
+
+      let newProductlist = productList.slice(0, -2);
       state.total = {
         price: totalAmount,
-        info: productList,
+        info: newProductlist,
         productMessage
       };
     }

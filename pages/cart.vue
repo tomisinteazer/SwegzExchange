@@ -97,7 +97,7 @@ export default {
         zero: 0,
         comma: ", ",
         empty: "",
-        plus: "+",
+        plus: "%0A",
       };
 
       this.$store.commit("calcTotal", formatter);
@@ -123,7 +123,8 @@ export default {
         };
       } else {
         this.total = this.getTotal();
-        this.contactUrl = `https://api.whatsapp.com/send?phone=2348130617579&text=Hi+I+want+to+buy+${this.total.productMessage}the+total+is+${this.total.price}`;
+        console.log(this.total.info);
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2348130617579&text=Hi+I+want+to+buy%0A${this.total.productMessage}the+total+is+${this.total.price}`;
       }
     },
   },

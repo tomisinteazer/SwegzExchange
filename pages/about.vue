@@ -74,61 +74,8 @@
         </v-flex>
       </v-layout>
       <h1 class="text-center display-2 font-weight-bold mb-6 my-5">Contact Us</h1>
-      <v-card class="mx-5 px-4 py-5 my-5">
-        <!-- <dialogue /> -->
-        <v-form ref="form" v-model="valid" lazy-validation class="container">
-          <v-text-field
-            v-model="name"
-            :counter="45"
-            :rules="nameRules"
-            label="Full Name"
-            prepend-icon="mdi-account"
-            required
-          ></v-text-field>
-
-          <v-text-field
-            v-model="email"
-            :rules="emailRules"
-            label="E-mail"
-            prepend-icon="mdi-email"
-            required
-          ></v-text-field>
-
-          <v-select
-            v-model="messageType"
-            :items="items"
-            :rules="[v => !!v || 'Type is required']"
-            label="Message Type"
-            prepend-icon="mdi-comment"
-            required
-          ></v-select>
-          <v-textarea
-            v-model="message"
-            label="Message"
-            prepend-icon="mdi-forum"
-            :rules="inputRules"
-          ></v-textarea>
-
-          <v-checkbox
-            v-model="checkbox"
-            :rules="[v => !!v || 'You must agree to continue!']"
-            label="are you human?"
-            required
-          ></v-checkbox>
-
-          <v-btn :disabled="!valid" color="primary" :loading="loading">Send</v-btn>
-
-          <v-btn color="error" @click="reset">Reset</v-btn>
-
-          <v-btn color="secondary" @click="resetValidation">Reset Validation</v-btn>
-        </v-form>
-        <v-snackbar v-model="snackbar" :timeout="4000" top color="grey darken-3 ">
-          <span class="orange--text">Awesome! your message has been sent.</span>
-          <v-btn color="orange" text @click="snackbar = false">
-            <v-icon class="orange--text">close</v-icon>close
-          </v-btn>
-        </v-snackbar>
-      </v-card>
+      <h3 class="text-center font-weight-bold mb-6 my-5">Email: tomisinteazer@gmail.com</h3>
+      <h3 class="text-center font-weight-bold mb-6 my-5">whatsapp: +2348130617579</h3>
     </v-container>
   </v-layout>
 </template>

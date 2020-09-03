@@ -187,9 +187,9 @@ export default {
   },
 };
 </script>
-fix trailing comma
+fix trailing comma --done
 fix whatsapp message done
-create mini cart 
 add naira to Cart --done
 implement localstorage -- done
-fix contact us
+fix contact us --done
+create mini cart 
