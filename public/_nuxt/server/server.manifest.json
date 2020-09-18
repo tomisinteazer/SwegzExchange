@@ -3,19 +3,23 @@
   "files": {
     "pages/about.js": "pages/about.js",
     "pages/administrator.js": "pages/administrator.js",
-    "pages/cart.js": "pages/cart.js",
+    "pages/contact.js": "pages/contact.js",
+    "pages/faq.js": "pages/faq.js",
     "pages/index.js": "pages/index.js",
     "pages/login.js": "pages/login.js",
-    "pages/products.js": "pages/products.js",
+    "pages/policy.js": "pages/policy.js",
+    "pages/terms.js": "pages/terms.js",
     "server.js": "server.js"
   },
   "maps": {
     "pages/about.js": "pages/about.js.map",
     "pages/administrator.js": "pages/administrator.js.map",
-    "pages/cart.js": "pages/cart.js.map",
+    "pages/contact.js": "pages/contact.js.map",
+    "pages/faq.js": "pages/faq.js.map",
     "pages/index.js": "pages/index.js.map",
     "pages/login.js": "pages/login.js.map",
-    "pages/products.js": "pages/products.js.map",
+    "pages/policy.js": "pages/policy.js.map",
+    "pages/terms.js": "pages/terms.js.map",
     "server.js": "server.js.map"
   }
 }

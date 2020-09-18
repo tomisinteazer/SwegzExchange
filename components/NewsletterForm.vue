@@ -5,7 +5,7 @@
       style="max-width: 600px;"
     >
       <v-text-field v-model="email" outlined class="mr-md-2" placeholder="Email"></v-text-field>
-      <v-btn x-large color="primary" nuxt to="/products">Subscribe</v-btn>
+      <v-btn x-large color="primary" nuxt to="/contact">Subscribe</v-btn>
     </div>
   </v-form>
 </template>

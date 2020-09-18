@@ -2,37 +2,86 @@
 <template>
   <div class="force">
     <!-- landing section -->
-    <section class="pb-6 mt-5 px-3 py-3">
+    <section class="pb-6 mt-5">
       <v-container>
         <v-row no-gutters>
           <v-col cols="12" md="6" class="mt-md-8 text-center my-5">
             <h2 class="display-2 mb-6 my-5">Welcome to</h2>
-            <h1 class="display-2 font-weight-bold mb-6 my-5 grow">Quiccly-io</h1>
+            <h1 class="display-3 primary--text font-weight-bold mb-6 my-5 text-uppercase">Acesworld</h1>
             <p
               class="body-1"
-            >Your one stop shop for all your school needs. We Assure you that you cant go wrong with us order today</p>
-            <v-btn class="text-uppercase" color="primary" x-large to="/products" nuxt>Products</v-btn>
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia sunt nostrum cum cumque vero corrupti, magnam labore totam modi. Atque quasi reiciendis quam dolorum quisquam neque cum aliquam modi?</p>
+
+            <v-dialog v-model="dialog" width="500">
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  class="text-uppercase"
+                  color="primary"
+                  x-large
+                  dark
+                  v-bind="attrs"
+                  v-on="on"
+                >Invest</v-btn>
+              </template>
+
+              <v-card>
+                <v-card-title class>Invest with us</v-card-title>
+
+                <v-card-text>Lorem ipsum dolor sit amet,</v-card-text>
+                <v-form v-model="valid">
+                  <v-container>
+                    <v-row>
+                      <v-col cols="12">
+                        <v-text-field
+                          v-model="userFullName"
+                          :rules="nameRules"
+                          label="Full Name"
+                          required
+                        ></v-text-field>
+                      </v-col>
+                    </v-row>
+                    <v-row>
+                      <v-col cols="12">
+                        <v-text-field
+                          v-model="userEmail"
+                          :rules="emailRules"
+                          type="email"
+                          label="Email Address"
+                          required
+                        ></v-text-field>
+                      </v-col>
+                    </v-row>
+                    <v-row>
+                      <v-col cols="12">
+                        <v-text-field
+                          v-model="userNumber"
+                          :rules="nameRules"
+                          type="number"
+                          label="Phonenumber"
+                          required
+                        ></v-text-field>
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                </v-form>
+
+                <v-divider></v-divider>
+
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-btn color="primary" text @click="investNow()">Invest Now</v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-dialog>
             <v-btn class="ml-2 text-uppercase" x-large nuxt to="/about">
               <v-icon left>mdi-magnify</v-icon>About
             </v-btn>
           </v-col>
 
           <v-col cols="12" md="6" class="landing-image">
-            <img src="/feature5.svg" alt height="70%" />
+            <img src="/feature1.svg" alt height="70%" />
           </v-col>
         </v-row>
-      </v-container>
-    </section>
-
-    <!-- partners -->
-    <section class="universal partners pa-3">
-      <v-container>
-        <div class="d-flex justify-center align-center flex-column flex-sm-column flex-md-row">
-          <img src="/instagram.png" alt class="rotate" />
-          <img src="/dither.png" alt class="rotate" />
-
-          <img src="/longquiccly.png" alt class="rotate" />
-        </div>
       </v-container>
     </section>
 
@@ -47,7 +96,7 @@
                   <img class="mb-5" height="200px" contain :src="feature.image" />
 
                   <v-card-title
-                    class="justify-center font-weight-black text-uppercase"
+                    class="justify-center font-weight-black text-uppercase primary--text"
                   >{{ feature.title }}</v-card-title>
 
                   <v-card-text class="subtitle-1" v-text="feature.text"></v-card-text>
@@ -64,10 +113,10 @@
         <v-row>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Days</div>
-            <div class="display-1">332</div>
+            <div class="display-1">1732</div>
           </v-col>
           <v-col cols="6" md="3">
-            <div class="text-uppercase caption">Lines of code</div>
+            <div class="text-uppercase caption">Investors</div>
             <div class="display-1">12k</div>
           </v-col>
           <v-col cols="6" md="3">
@@ -76,7 +125,7 @@
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Active Members</div>
-            <div class="display-1">85</div>
+            <div class="display-1">11k</div>
           </v-col>
         </v-row>
       </v-container>
@@ -97,7 +146,7 @@
               <template v-slot="{ hover }">
                 <v-card class="py-12 px-4" :elevation="hover ? 24 : 1">
                   <div>
-                    <v-avatar color="primary" size="88">
+                    <v-avatar color="white" size="88">
                       <img :src="image" />
                     </v-avatar>
                   </div>
@@ -117,8 +166,8 @@
 
     <section class="text-center pt-2">
       <v-container>
-        <div class="display-1 font-weight-bold">The Quiccly-io news letter</div>
-        <p class="mt-2">Get the latest product updates and information in your inbox.</p>
+        <div class="display-1 font-weight-bold">Acesworld news letter</div>
+        <p class="mt-2">Get the latest updates and information in your inbox.</p>
         <NewsletterForm />
       </v-container>
       <v-divider class="mt-2"></v-divider>
@@ -126,6 +175,8 @@
   </div>
 </template>
 <script>
+//infoacesworld@gmail.com
+//Forexway007
 import NewsletterForm from "../components/NewsletterForm";
 export default {
   components: {
@@ -133,51 +184,70 @@ export default {
   },
   data() {
     return {
+      userNumber: "",
+      valid: true,
+      userEmail: "",
+      nameRules: [
+        (v) => !!v || "Name is required",
+        (v) => (v && v.length >= 3) || "Name greater than 5 characters",
+      ],
+      userFullName: "",
+      emailRules: [
+        (v) => !!v || "E-mail is required",
+        (v) => /.+@.+/.test(v) || "E-mail must be valid",
+      ],
+      dialog: false,
       features: [
         {
           image: "/feature4.svg",
-          title: "Tomisinteazer",
+          title: "Acesworld",
           text:
-            "connect with us on all platforms through any device , all sales are auto directed to whatsapp messanger for easy access, dont worry all payments are made directy to our bank account, all from your mobile or laptop,ease and comfort for you.",
+            "connect with us on all platforms through any device , you are auto directed to whatsapp messanger for easy access, dont worry all payments are made directy to our bank account, all from your mobile or laptop,ease and comfort for you.",
         },
         {
           image: "/feature2.svg",
-          title: "legendary Sage",
+          title: "Trusted Investment",
           text:
-            "trusted delivery service, all our customers are free of hassle and stress just order and pay and expect your goods and products deliverd to your dropzone immediately, no worries no hassle all will be easily be handled by us from that point on.",
+            "A Trusted Investment platform , all our investors are free of hassle and stress just invest and wait for your ROI and expect your payment deliverd to your account , no worries no hassle all will be easily be handled by us from that point on.",
         },
         {
-          image: "/feature3.svg",
-          title: "Quiccly io",
+          image: "/features.svg",
+          title: "Our Social platforms",
           text:
             "connect with us on all social platforms , Whatsapp, Instagram, twitter and follow us for updates and more as new features are coming soon and will be announced on our various platforms, flex with us online and enjoy our premium sevices to suit your needs.",
         },
       ],
       testimonies: [
         {
-          image: "/quiccly-io.jpg",
+          image: "/aces.png",
           name: "Oluwatomisin Babatunde ",
-          company: "FUNAAB",
-          text: `quiccly you are the N° 1 school retailer. I love ur products.
-Henceforth, it's quiccly or no other.`,
+          company: "Doctor",
+          text: `quiccly you are the N° 1 Investment Platform. I love your platform.
+Henceforth, it's Acesworld or no other.`,
         },
         {
-          image: "/quiccly-io.jpg",
+          image: "/aces.png",
           name: "Oluwatobi Omotola",
-          company: "FUNAAB",
+          company: "Engineer",
           text: `I had this experience before and I really would
-continue to patronize you because your
-customer services are good.`,
+continue to investing with you because your
+ ROI is premium.`,
         },
         {
-          image: "/quiccly-io.jpg",
+          image: "/aces.png",
           name: "Ifeoluwa Bankole",
           company: "FUNAAB",
-          text: `Woooooow you guys impress me a lot barely 24hrs i made an order 
-          and that your delivery service is top notch.`,
+          text: `Woooooow your platfor impressed me a lot, this nothing but lovely
+          service is top notch payments are also instant .`,
         },
       ],
     };
+  },
+  methods: {
+    investNow() {
+      console.log(this.userEmail + this.userFullName);
+      this.dialog = false;
+    },
   },
 };
 </script>
@@ -209,34 +279,5 @@ customer services are good.`,
 .partners img {
   max-width: 160px;
   margin: 0 10px;
-}
-.grow {
-  animation: slidein 3s ease-out forwards infinite;
-  animation-delay: 1s;
-}
-@keyframes slidein {
-  from {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
-    color: #673ab7;
-  }
-
-  to {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-  }
-}
-.rotate:hover {
-  -webkit-transform: rotateZ(15deg) scale(1.2);
-  -ms-transform: rotateZ(15deg) scale(1.2);
-  transform: rotateZ(15deg) scale(1.2);
 }
 </style>

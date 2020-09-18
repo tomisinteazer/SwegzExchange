@@ -1,220 +1,53 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-col>
-      <h1 class="text-center display-2 font-weight-bold mb-6 my-5">About Quiccly-io</h1>
-      <p>
-        Quiccly moves in to solve the problem of everyday students as it hopes to replace your struggle for certain things in life, as a student there are a set of things that you need at all time and wouldnt
-        it be amazing if you can get a vendor that delivers to you without any delivery charge.
-        Your everyday needs from feeding to clothing to stationary all on
-        preoder through whatsapp so long as you are within the drop location the delivery is all free.
-        we deliver within 24 hrs
-      </p>
-      <v-card color="universal">
-        <v-carousel
-          cycle
-          height="400"
-          hide-delimiter-background
-          show-arrows-on-hover
-          :show-arrows="false"
-          delimiter-icon="mdi-cube-outline"
-        >
-          <v-carousel-item v-for="(slide, i) in slides" :key="i">
-            <v-sheet :color="colors[i]" height="100%">
-              <v-row class="fill-height" align="center" justify="center">
-                <div class="display-3 text-center">{{ slide }} Available</div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-        </v-carousel>
+  <div class="pb-6 pt-4 text-center">
+    <v-container>
+      <div class="mb-10">
+        <h1 class="display-2 mb-6 text-uppercase primary--text">About us</h1>
+        <div class="mx-auto text-left" style="max-width: 700px">
+          <p class="body-1 font-weight-bold">
+            Acesworld Enterprise (formerly Aces Enterprise) is a financial solutions firm birthed on 2nd of October 2019. The brand in a bid to serve people better has been restructured and registered with the Corporate Affairs Commission (CAC) for ease of operations.
+            WHO WE ARE: We are a registered Nigerian firm (RC: 3152773) with expertise and experience in finance. We deal majorly in the foreign exchange (forex) market and the cryptocurrency world. We are also in partnerships with prominent investment companies with the sole purpose of maximizing the benefits our investors relish.
+            With a dedicated team of experts, we are continuously working on better investment opportunities to enrich the lives of our investors.
+          </p>
+        </div>
+        <h1 class="display-1 mb-6 text-uppercase primary--text">WHO WE ARE</h1>
+        <div class="mx-auto text-left" style="max-width: 700px">
+          <p class="body-1 font-weight-bold">
+            We are a registered Nigerian firm (RC: 3152773) with expertise and experience in finance. We deal majorly in the foreign exchange (forex) market and the cryptocurrency world. We are also in partnerships with prominent investment companies with the sole purpose of maximizing the benefits our investors relish.
+            With a dedicated team of experts, we are continuously working on better investment opportunities to enrich the lives of our investors
+          </p>
+        </div>
+        <h1 class="display-1 mb-6 text-uppercase primary--text">What we offer</h1>
+        <div class="mx-auto text-left" style="max-width: 700px">
+          <p
+            class="body-1 font-weight-bold"
+          >An investment platform that gives people with little or no knowledge about the forex markets an opportunity to earn from it. Our investment platform offers monthly returns on any amount invested with us.</p>
+          <p
+            class="body-1 font-weight-bold"
+          >A cryptocurrency exchange platform that offers value for virtual coins.</p>
+        </div>
+      </div>
 
-        <v-card-text>
-          <p>Quiccly-io is being developed and maintained by Tomisinteazer and is currently under continous Integration</p>
-
-          <div class="text-xs-right">
-            <em>
-              <small>&mdash; Tomisinteazer.</small>
-            </em>
-          </div>
-          <hr class="my-3" />
-          <a
-            href="https://tomisinteazer-io.web.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Tomisinteazer.io</a>
-          <br />
-          <a
-            href="https://github.com/tomisinteazer"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Tomisinteazer GitHub</a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/products">Products</v-btn>
-        </v-card-actions>
-      </v-card>
-      <h1 class="text-center display-2 font-weight-bold mb-6 my-5">Information From Tomisinteazer-io</h1>
-    </v-col>
-    <v-container class="my-5">
-      <v-layout row wrap>
-        <v-flex xs12 sm6 md4 lg4 v-for="idea in ideas" :key="idea.name">
-          <v-hover>
-            <template v-slot="{ hover }">
-              <v-card class="text-center ma-3 universal" :elevation="hover ? 24 : 1">
-                <v-card-text>
-                  <v-icon x-large>{{idea.icon}}</v-icon>
-
-                  <div class="headline primary--text">{{ idea.name }}</div>
-                  <v-responsive class="pt-4"></v-responsive>
-                  <p>{{ idea.role }}</p>
-                </v-card-text>
-              </v-card>
-            </template>
-          </v-hover>
-        </v-flex>
-      </v-layout>
-      <h1 class="text-center display-2 font-weight-bold mb-6 my-5">Contact Us</h1>
-      <h3 class="text-center font-weight-bold mb-6 my-5">Email: tomisinteazer@gmail.com</h3>
-      <h3 class="text-center font-weight-bold mb-6 my-5">whatsapp: +2348130617579</h3>
+      <v-divider></v-divider>
+      <div class="my-10">
+        <h2 class="text-uppercase primary--text">COMPANY’S WATCHWORD</h2>
+        <p
+          class="body-1 font-weight-bold"
+        >A cryptocurrency exchange platform that offers value for virtual coins.</p>
+        <h2 class="text-uppercase primary--text">OUR VISION</h2>
+        <p
+          class="body-1 font-weight-bold"
+        >A cryptocurrency exchange platform that offers value for virtual coins.</p>
+        <h2 class="text-uppercase primary--text">OUR MISSION</h2>
+        <p
+          class="body-1 font-weight-bold"
+        >A cryptocurrency exchange platform that offers value for virtual coins.</p>
+        <h2 class="text-uppercase primary--text">OUR CORE VALUES</h2>
+        <p
+          class="body-1 font-weight-bold"
+        >A cryptocurrency exchange platform that offers value for virtual coins.</p>
+      </div>
+      <v-divider></v-divider>
     </v-container>
-  </v-layout>
+  </div>
 </template>
-<script>
-//import db from "@/fb";
-//import dialogue from "../components/dialogue.vue";
-export default {
-  components: {},
-  data: () => ({
-    colors: [
-      "indigo",
-      "warning",
-      "pink darken-2",
-      "red lighten-1",
-      "deep-purple accent-4",
-    ],
-    slides: [
-      "Foodstuff",
-      "vegetables",
-      "Provisions",
-      "Drinks",
-      "And many more",
-    ],
-    ideas: [
-      {
-        name: "Speed",
-        role:
-          "We build out projects with the speed and efficiency of a machine",
-        icon: "mdi-flash",
-      },
-      {
-        name: "Creativity",
-        role:
-          "Dwelling on the borders of the extra ordinary is how we like to live",
-        icon: "mdi-palette",
-      },
-
-      {
-        name: "Expertise",
-        role:
-          "Nothin like solid experience to guide your choices to make the ultimate product",
-        icon: "mdi-leaf",
-      },
-      {
-        name: "Security",
-        role: "Your information and Privacy is secure with us ",
-        icon: "mdi-lock",
-      },
-      {
-        name: "Mission",
-        role: "To offer top quality web development services",
-        icon: "mdi-transfer",
-      },
-
-      {
-        name: "Customer Relationship",
-        role: "Top notch satisfaction from our customers unbeatable Quality",
-        icon: "mdi-emoticon",
-      },
-    ],
-
-    valid: true,
-    name: "",
-    message: "",
-    nameRules: [
-      (v) => !!v || "Name is required",
-      (v) => (v && v.length <= 45) || "Name must be less than 45 characters",
-    ],
-    email: "",
-    emailRules: [
-      (v) => !!v || "E-mail is required",
-      (v) => /.+@.+/.test(v) || "E-mail must be valid",
-    ],
-    messageType: "",
-    inputRules: [
-      (v) => !!v || "This field is required",
-      (v) => v.length >= 5 || "Minimum length is 5 characters",
-    ],
-    items: ["Personal", "Official", "Other"],
-    checkbox: false,
-    loading: false,
-    snackbar: false,
-  }),
-
-  methods: {
-    // validate() {
-    //   if (this.$refs.form.validate()) {
-    //     this.loading = true;
-    //     const message = {
-    //       name: this.name,
-    //       messageType: this.messageType,
-    //       email: this.email,
-    //       message: this.message
-    //     };
-    //     db.collection("messages")
-    //       .add(message)
-    //       .then(() => {
-    //         this.loading = false;
-    //         this.snackbar = true;
-    //         this.reset();
-    //       });
-    //   }
-    // },
-    reset() {
-      this.$refs.form.reset();
-    },
-    resetValidation() {
-      this.$refs.form.resetValidation();
-    },
-  },
-};
-</script>
-
-<style>
-.v-application .display-2 {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application .subtitle-1 {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application .body-1 {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application .caption {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application body {
-  font-family: "Quicksand", sans-serif !important;
-}
-.landing-image {
-  text-align: center;
-}
-.landing-image img {
-  width: 100%;
-  max-width: 600px;
-}
-
-.partners img {
-  max-width: 160px;
-  margin: 0 10px;
-}
-</style>

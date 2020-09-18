@@ -23,7 +23,7 @@
  
 <script>
 import Cookies from "js-cookie";
-import firebase from "firebase";
+
 export default {
   data: () => ({
     valid: false,
@@ -36,24 +36,8 @@ export default {
     ],
   }),
   methods: {
-    googleSignIn() {
-      this.provider = new firebase.auth.GoogleAuthProvider();
-      this.$fireAuth
-        .signInWithPopup(this.provider)
-        .then((result) => {
-          console.log(result);
-          // store the user ore wathever
-          this.$router.push("/login");
-        })
-        .catch((e) => {
-          this.$snotify.error(e.message);
-          console.log(e);
-        });
-    },
-
     signInWithEmailAndPassword() {
-      firebase
-        .auth()
+      this.$fireAuth
         .signInWithEmailAndPassword(this.email, this.password)
         .then((result) => {
           console.log(result);
@@ -67,13 +51,12 @@ export default {
           alert(`${errorCode} ${errorMessage}`);
           // ...
         });
-      firebase.auth().onAuthStateChanged((user) => {
+      this.$fireAuth.onAuthStateChanged((user) => {
         if (user) {
           // User is signed in.
           console.log("signed in");
-          firebase
-            .auth()
-            .currentUser.getIdToken(true)
+          this.$fireAuth.currentUser
+            .getIdToken(true)
             .then((token) => Cookies.set("access_token", token));
           this.loggedIn = true;
         } else {

@@ -42,7 +42,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["~/assets/global.css"],
+
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -63,18 +63,17 @@ export default {
   modules: ["@nuxtjs/pwa", "@nuxtjs/firebase"],
   firebase: {
     config: {
-      apiKey: "AIzaSyBhUrkcxR4QuWKFyWyI0Nlbj9SrMotVDxU",
-      authDomain: "quiccly-io.firebaseapp.com",
-      databaseURL: "https://quiccly-io.firebaseio.com",
-      projectId: "quiccly-io",
-      storageBucket: "quiccly-io.appspot.com",
-      messagingSenderId: "440953390925",
-      appId: "1:440953390925:web:95cb681817bba1f5519904",
-      measurementId: "G-CEMCBN2YT9"
+      apiKey: "AIzaSyBrHREfUwmNSO1liUHsv4YvR4_Z-ajGFW0",
+      authDomain: "acesworld-ng.firebaseapp.com",
+      databaseURL: "https://acesworld-ng.firebaseio.com",
+      projectId: "acesworld-ng",
+      storageBucket: "acesworld-ng.appspot.com",
+      messagingSenderId: "407849957910",
+      appId: "1:407849957910:web:6dac6af811a00224fc9337",
+      measurementId: "G-R1XV4FZ907"
     },
     services: {
       auth: true,
-      storage: true,
       firestore: true // Just as example. Can be any other service.
     }
   },
@@ -89,24 +88,13 @@ export default {
       dark: false,
       themes: {
         dark: {
-          primary: "#673ab7",
-          secondary: "#00bcd4",
-          accent: "#9c27b0",
-          error: "#e91e63",
-          warning: "#ffc107",
-          info: "#4caf50",
-          success: "#8bc34a",
-          universal: colors.grey.darken4
-        },
-        light: {
-          universal: colors.grey.lighten3,
-          primary: "#673ab7",
-          secondary: "#00bcd4",
-          accent: "#9c27b0",
-          error: "#e91e63",
-          warning: "#ffc107",
-          info: "#4caf50",
-          success: "#8bc34a"
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3
         }
       }
     }
