@@ -7,10 +7,11 @@
         <v-row no-gutters>
           <v-col cols="12" md="6" class="mt-md-8 text-center my-5">
             <h2 class="display-2 mb-6 my-5">Welcome to</h2>
-            <h1 class="display-3 primary--text font-weight-bold mb-6 my-5 text-uppercase">Acesworld</h1>
-            <p
-              class="body-1"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia officia sunt nostrum cum cumque vero corrupti, magnam labore totam modi. Atque quasi reiciendis quam dolorum quisquam neque cum aliquam modi?</p>
+            <h1 class="display-3 primary--text font-weight-bold mb-6 my-5">Acesworld NG</h1>
+            <p class="body-1">
+              One of Nigeria’s leading investment firms. With our digital platform,
+              investing is now simplified and you can invest safely without having to navigate the complex financial markets.
+            </p>
 
             <v-dialog v-model="dialog" width="500">
               <template v-slot:activator="{ on, attrs }">
@@ -25,9 +26,9 @@
               </template>
 
               <v-card>
-                <v-card-title class>Invest with us</v-card-title>
+                <v-card-title class>Open an Investment Portfolio.</v-card-title>
 
-                <v-card-text>Lorem ipsum dolor sit amet,</v-card-text>
+                <v-card-text>Fill in your details below and submit. You will be contacted shortly</v-card-text>
                 <v-form v-model="valid">
                   <v-container>
                     <v-row>
@@ -55,7 +56,6 @@
                       <v-col cols="12">
                         <v-text-field
                           v-model="userNumber"
-                          :rules="nameRules"
                           type="number"
                           label="Phonenumber"
                           required
@@ -113,19 +113,19 @@
         <v-row>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Days</div>
-            <div class="display-1">1732</div>
+            <div class="display-1">365+</div>
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Investors</div>
-            <div class="display-1">12k</div>
+            <div class="display-1">200+</div>
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Up time</div>
-            <div class="display-1">4,344</div>
+            <div class="display-1">365+</div>
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Active Members</div>
-            <div class="display-1">11k</div>
+            <div class="display-1">235+</div>
           </v-col>
         </v-row>
       </v-container>
@@ -167,7 +167,7 @@
     <section class="text-center pt-2">
       <v-container>
         <div class="display-1 font-weight-bold">Acesworld news letter</div>
-        <p class="mt-2">Get the latest updates and information in your inbox.</p>
+        <p class="mt-2">Subscribe to Acesworld NG newsletter</p>
         <NewsletterForm />
       </v-container>
       <v-divider class="mt-2"></v-divider>
@@ -200,21 +200,21 @@ export default {
       features: [
         {
           image: "/feature4.svg",
-          title: "Acesworld",
+          title: "Innovative & Simple",
           text:
-            "connect with us on all platforms through any device , you are auto directed to whatsapp messanger for easy access, dont worry all payments are made directy to our bank account, all from your mobile or laptop,ease and comfort for you.",
+            "Open an investment portfolio in Naira on our easy-to-use digital platform. You can now easily access short and medium-term investment opportunities.",
         },
         {
           image: "/feature2.svg",
-          title: "Trusted Investment",
+          title: "Secure & Consistent",
           text:
-            "A Trusted Investment platform , all our investors are free of hassle and stress just invest and wait for your ROI and expect your payment deliverd to your account , no worries no hassle all will be easily be handled by us from that point on.",
+            " Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account.",
         },
         {
           image: "/features.svg",
-          title: "Our Social platforms",
+          title: "Our Social Media Platforms",
           text:
-            "connect with us on all social platforms , Whatsapp, Instagram, twitter and follow us for updates and more as new features are coming soon and will be announced on our various platforms, flex with us online and enjoy our premium sevices to suit your needs.",
+            " Connect with us on all major social media pages. You can also subscribe to our newsletter to receive major updates and finance tips and news. ",
         },
       ],
       testimonies: [
@@ -245,39 +245,21 @@ continue to investing with you because your
   },
   methods: {
     investNow() {
-      console.log(this.userEmail + this.userFullName);
-      this.dialog = false;
+      if (
+        (this.userNumber && this.userEmail && this.userFullName != "") ||
+        null
+      ) {
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2349019881034&text=Hello+I+want+to+invest+with+Acesworld+my+name+is+${this.userFullName}%0Amy+email+addresss+is+${this.userEmail}%0Aand+my+phone+number+is${this.userNumber}`;
+        window.location.replace(this.contactUrl);
+        this.dialog = false;
+      } else {
+        alert(
+          "please ensure all fields are filled correctly with valid details"
+        );
+      }
     },
   },
 };
 </script>
 
-<style>
-.v-application .display-2 {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application .subtitle-1 {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application .body-1 {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application .caption {
-  font-family: "Quicksand", sans-serif !important;
-}
-.v-application body {
-  font-family: "Quicksand", sans-serif !important;
-}
-.landing-image {
-  text-align: center;
-}
-.landing-image img {
-  width: 100%;
-  max-width: 600px;
-}
 
-.partners img {
-  max-width: 160px;
-  margin: 0 10px;
-}
-</style>

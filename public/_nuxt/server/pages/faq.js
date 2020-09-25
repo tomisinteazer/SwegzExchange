@@ -1,20 +1,20 @@
 exports.ids = [4];
 exports.modules = {
 
-/***/ 155:
+/***/ 160:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(156);
+var content = __webpack_require__(161);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("48751daa", content, true)
 
 /***/ }),
 
-/***/ 156:
+/***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -28,14 +28,14 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 169:
+/***/ 173:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _mixins_groupable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
-/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+/* harmony import */ var _mixins_groupable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
 // Mixins
 
  // Utilities
@@ -124,16 +124,16 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 170:
+/***/ 174:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(45);
-/* harmony import */ var _mixins_bootable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(47);
+/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _mixins_bootable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(53);
 /* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(27);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(0);
-/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
  // Mixins
 
 
@@ -178,17 +178,17 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default *
 
 /***/ }),
 
-/***/ 171:
+/***/ 175:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(45);
-/* harmony import */ var _VIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
+/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _VIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
 /* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
-/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(27);
-/* harmony import */ var _directives_ripple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(16);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+/* harmony import */ var _directives_ripple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(19);
 /* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
-/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2);
 // Components
 
  // Mixins
@@ -298,14 +298,14 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_6__[/* default *
 
 /***/ }),
 
-/***/ 172:
+/***/ 176:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(155);
+/* harmony import */ var _src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(160);
 /* harmony import */ var _src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37);
-/* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
+/* harmony import */ var _VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39);
+/* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 // Styles
  // Components
 
@@ -376,19 +376,19 @@ const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_6__[/* default *
 
 /***/ }),
 
-/***/ 202:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=template&id=d2759244&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h1',[_vm._v("FAQ")]),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mt-5"},_vm._l((_vm.Questions),function(que){return _c('v-expansion-panel',{key:que.Q},[_c('v-expansion-panel-header',{staticClass:"font-weight-black"},[_vm._v(_vm._s(que.Q))]),_vm._v(" "),_c('v-expansion-panel-content',[_vm._v("Answer : "+_vm._s(que.A))])],1)}),1),_vm._v(" "),_c('div',{staticClass:"caption mt-2 text-center"},[_vm._v("\n    call\n    "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("contact")])],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=template&id=7e2253fe&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h1',{staticClass:"text-center primary--text"},[_vm._v("FAQ")]),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mt-5"},_vm._l((_vm.Questions),function(que){return _c('v-expansion-panel',{key:que.Q},[_c('v-expansion-panel-header',{staticClass:"font-weight-black primary--text"},[_vm._v(_vm._s(que.Q))]),_vm._v(" "),_c('v-expansion-panel-content',[_vm._v("Answer : "+_vm._s(que.A))])],1)}),1),_vm._v(" "),_c('div',{staticClass:"caption mt-2 text-center"},[_vm._v("\n    call\n    "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("contact")])],1)],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/faq.vue?vue&type=template&id=d2759244&
+// CONCATENATED MODULE: ./pages/faq.vue?vue&type=template&id=7e2253fe&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=script&lang=js&
 //
@@ -422,9 +422,6 @@ var staticRenderFns = []
         Q: "Is my money safe?",
         A: "The risk management policy is confidential to the company, we have an hedge fund strategy that makes us to maximize profits and minimize losses."
       }, {
-        Q: "Can you give more than 20%?",
-        A: "The 20% interest rate allows for proper risk management and profit maximization. That way we don’t run out of funds to pay our investors."
-      }, {
         Q: "Do you make more than the percentage offered?",
         A: "Yes, we certainly do. But there are also times when we make losses so we turn our excess profits into reserves to ensure steady payouts for investors."
       }, {
@@ -442,6 +439,16 @@ var staticRenderFns = []
       }, {
         Q: "In case of an emergency, Can I withdraw before my due date?",
         A: "Yes you can. However, the accrued interest will be forfeited and payment will be processed in 2-4 working days."
+      }, {
+        Q: "Help lines.",
+        A: `Email: infoacesworld@gmail.com 
+Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).`
+      }, {
+        Q: "How do I fund my investment portfolio?",
+        A: "A simple bank transfer or bank deposit to the company’s account will fund your investment portfolio."
+      }, {
+        Q: "Can I top up an already existing investment?",
+        A: "Unless it is due for payment, no you can’t. However, you can have multiple investments running simultaneously."
       }]
     };
   }
@@ -450,26 +457,26 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/faq.vue?vue&type=script&lang=js&
  /* harmony default export */ var pages_faqvue_type_script_lang_js_ = (faqvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(15);
+var componentNormalizer = __webpack_require__(13);
 
 // EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
-var installComponents = __webpack_require__(28);
+var installComponents = __webpack_require__(15);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js
-var VContainer = __webpack_require__(126);
+var VContainer = __webpack_require__(133);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanel.js
-var VExpansionPanel = __webpack_require__(169);
+var VExpansionPanel = __webpack_require__(173);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelContent.js
-var VExpansionPanelContent = __webpack_require__(170);
+var VExpansionPanelContent = __webpack_require__(174);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelHeader.js
-var VExpansionPanelHeader = __webpack_require__(171);
+var VExpansionPanelHeader = __webpack_require__(175);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanels.js
-var VExpansionPanels = __webpack_require__(172);
+var VExpansionPanels = __webpack_require__(176);
 
 // CONCATENATED MODULE: ./pages/faq.vue
 
@@ -486,7 +493,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "8ff0dea8"
+  "28e1fa6c"
   
 )
 

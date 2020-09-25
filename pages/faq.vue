@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <h1>FAQ</h1>
+    <h1 class="text-center primary--text">FAQ</h1>
     <v-expansion-panels class="mt-5">
       <v-expansion-panel v-for="que in Questions" :key="que.Q">
-        <v-expansion-panel-header class="font-weight-black">{{que.Q}}</v-expansion-panel-header>
+        <v-expansion-panel-header class="font-weight-black primary--text">{{que.Q}}</v-expansion-panel-header>
         <v-expansion-panel-content>Answer : {{que.A}}</v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
@@ -38,11 +38,6 @@ export default {
         },
 
         {
-          Q: "Can you give more than 20%?",
-          A:
-            "The 20% interest rate allows for proper risk management and profit maximization. That way we don’t run out of funds to pay our investors.",
-        },
-        {
           Q: "Do you make more than the percentage offered?",
           A:
             "Yes, we certainly do. But there are also times when we make losses so we turn our excess profits into reserves to ensure steady payouts for investors.",
@@ -73,6 +68,22 @@ export default {
           Q: "In case of an emergency, Can I withdraw before my due date?",
           A:
             "Yes you can. However, the accrued interest will be forfeited and payment will be processed in 2-4 working days.",
+        },
+        {
+          Q: "Help lines.",
+          A: `Email: infoacesworld@gmail.com 
+Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).`,
+        },
+
+        {
+          Q: "How do I fund my investment portfolio?",
+          A:
+            "A simple bank transfer or bank deposit to the company’s account will fund your investment portfolio.",
+        },
+        {
+          Q: "Can I top up an already existing investment?",
+          A:
+            "Unless it is due for payment, no you can’t. However, you can have multiple investments running simultaneously.",
         },
       ],
     };

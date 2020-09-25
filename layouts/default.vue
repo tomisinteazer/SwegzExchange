@@ -57,14 +57,12 @@
                 <v-btn small href="javascript:void(0)" icon>
                   <v-icon small>mdi-twitter</v-icon>
                 </v-btn>
-                <v-btn small href="javascript:void(0)" icon>
-                  <v-icon small>mdi-github</v-icon>
-                </v-btn>
+
                 <v-btn small href="javascript:void(0)" icon>
                   <v-icon small>mdi-instagram</v-icon>
                 </v-btn>
                 <v-btn small href="javascript:void(0)" icon>
-                  <v-icon small>mdi-pinterest</v-icon>
+                  <v-icon small>mdi-whatsapp</v-icon>
                 </v-btn>
               </div>
             </v-col>
@@ -87,13 +85,18 @@
         </v-container>
       </v-footer>
     </v-main>
+    <biconic />
 
     <v-footer :absolute="!fixed" app></v-footer>
   </v-app>
 </template>
 
 <script>
+import bionic from "../components/biconic";
 export default {
+  components: {
+    bionic,
+  },
   data() {
     return {
       clipped: false,

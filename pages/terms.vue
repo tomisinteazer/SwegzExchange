@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h2>Terms</h2>
+    <h2 class="primary--text">Terms</h2>
     <div v-for="(item,i) in terms" :key="i">
       <p>{{item}}</p>
     </div>
