@@ -2229,14 +2229,20 @@ function validateAttachTarget(val) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=template&id=d03cd7fa&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-form',[_c('div',{staticClass:"d-flex flex-column flex-md-row justify-center align-top mx-auto",staticStyle:{"max-width":"600px"}},[_c('v-text-field',{staticClass:"mr-md-2",attrs:{"outlined":"","placeholder":"Email"},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-btn',{attrs:{"x-large":"","color":"primary","nuxt":"","to":"/contact"}},[_vm._v("Subscribe")])],1)])}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=template&id=d7e80326&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-form',[_c('div',{staticClass:"d-flex flex-column flex-md-row justify-center align-top mx-auto",staticStyle:{"max-width":"600px"}},[_c('v-text-field',{staticClass:"mr-md-2",attrs:{"outlined":"","placeholder":"Email","rules":_vm.emailRules},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-btn',{attrs:{"x-large":"","color":"primary"},on:{"click":_vm.mailernwletter}},[_vm._v("Subscribe")])],1)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/NewsletterForm.vue?vue&type=template&id=d03cd7fa&
+// CONCATENATED MODULE: ./components/NewsletterForm.vue?vue&type=template&id=d7e80326&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2254,10 +2260,23 @@ var staticRenderFns = []
 
   data() {
     return {
-      email: ""
+      email: "",
+      emailRules: [v => !!v || "E-mail is required", v => /.+@.+/.test(v) || "E-mail must be valid"]
     };
-  }
+  },
 
+  methods: {
+    mailernwletter() {
+      if (this.email != "" || null) {
+        let subject = "I want to subscribe to you news letter : " + this.email;
+        let mailRef = "mailto:infoacesworld@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(this.email);
+        window.location.replace(mailRef);
+      } else {
+        alert("please ensure all fields are filled correctly with valid details");
+      }
+    }
+
+  }
 });
 // CONCATENATED MODULE: ./components/NewsletterForm.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_NewsletterFormvue_type_script_lang_js_ = (NewsletterFormvue_type_script_lang_js_); 
@@ -2372,29 +2391,49 @@ module.exports = exports;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=5828a880&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"force"},[_vm._ssrNode("<section class=\"pb-6 mt-5\">","</section>",[_c('v-container',[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"mt-md-8 text-center my-5",attrs:{"cols":"12","md":"6"}},[_c('h2',{staticClass:"display-2 mb-6 my-5"},[_vm._v("Welcome to")]),_vm._v(" "),_c('h1',{staticClass:"display-3 primary--text font-weight-bold mb-6 my-5"},[_vm._v("Acesworld NG")]),_vm._v(" "),_c('p',{staticClass:"body-1"},[_vm._v("\n            One of Nigeria’s leading investment firms. With our digital platform,\n            investing is now simplified and you can invest safely without having to navigate the complex financial markets.\n          ")]),_vm._v(" "),_c('v-dialog',{attrs:{"width":"500"},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=4f4b47cc&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"force"},[_vm._ssrNode("<section class=\"pb-6 mt-5\">","</section>",[_c('v-container',[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"mt-md-8 text-center my-5",attrs:{"cols":"12","md":"6"}},[_c('h2',{staticClass:"display-1 mb-6 my-5"},[_vm._v("Welcome to")]),_vm._v(" "),_c('h1',{staticClass:"display-2 primary--text font-weight-bold mb-6 my-5"},[_vm._v("\n            Acesworld NG\n          ")]),_vm._v(" "),_c('p',{staticClass:"body-1"},[_vm._v("\n            One of Nigeria’s leading investment firms. With our digital\n            platform, investing is now simplified and you can invest safely\n            without having to navigate the complex financial markets.\n          ")]),_vm._v(" "),_c('v-dialog',{attrs:{"width":"500"},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
 var on = ref.on;
 var attrs = ref.attrs;
-return [_c('v-btn',_vm._g(_vm._b({staticClass:"text-uppercase",attrs:{"color":"primary","x-large":"","dark":""}},'v-btn',attrs,false),on),[_vm._v("Invest")])]}}]),model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_vm._v(" "),_c('v-card',[_c('v-card-title',{},[_vm._v("Open an Investment Portfolio.")]),_vm._v(" "),_c('v-card-text',[_vm._v("Fill in your details below and submit. You will be contacted shortly")]),_vm._v(" "),_c('v-form',{model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Full Name","required":""},model:{value:(_vm.userFullName),callback:function ($$v) {_vm.userFullName=$$v},expression:"userFullName"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"rules":_vm.emailRules,"type":"email","label":"Email Address","required":""},model:{value:(_vm.userEmail),callback:function ($$v) {_vm.userEmail=$$v},expression:"userEmail"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"type":"number","label":"Phonenumber","required":""},model:{value:(_vm.userNumber),callback:function ($$v) {_vm.userNumber=$$v},expression:"userNumber"}})],1)],1)],1)],1),_vm._v(" "),_c('v-divider'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary","text":""},on:{"click":function($event){return _vm.investNow()}}},[_vm._v("Invest Now")])],1)],1)],1),_vm._v(" "),_c('v-btn',{staticClass:"ml-2 text-uppercase",attrs:{"x-large":"","nuxt":"","to":"/about"}},[_c('v-icon',{attrs:{"left":""}},[_vm._v("mdi-magnify")]),_vm._v("About\n          ")],1)],1),_vm._v(" "),_c('v-col',{staticClass:"landing-image",attrs:{"cols":"12","md":"6"}},[_c('img',{attrs:{"src":"/feature1.svg","alt":"","height":"70%"}})])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center\">","</section>",[_c('v-container',[_c('v-row',_vm._l((_vm.features),function(feature,i){return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
+return [_c('v-btn',_vm._g(_vm._b({staticClass:"text-uppercase",attrs:{"color":"primary","x-large":"","dark":""}},'v-btn',attrs,false),on),[_vm._v("Invest")])]}}]),model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_vm._v(" "),_c('v-card',[_c('v-card-title',{},[_vm._v("Open an Investment"),_c('br'),_vm._v("\n                Portfolio.")]),_vm._v(" "),_c('v-card-text',[_vm._v("Fill in your details below and submit. You will be contacted\n                shortly.")]),_vm._v(" "),_c('v-form',{model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Full Name","required":""},model:{value:(_vm.userFullName),callback:function ($$v) {_vm.userFullName=$$v},expression:"userFullName"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"rules":_vm.emailRules,"type":"email","label":"Email Address","required":""},model:{value:(_vm.userEmail),callback:function ($$v) {_vm.userEmail=$$v},expression:"userEmail"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"type":"number","label":"Phone number","required":""},model:{value:(_vm.userNumber),callback:function ($$v) {_vm.userNumber=$$v},expression:"userNumber"}})],1)],1)],1)],1),_vm._v(" "),_c('v-divider'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":function($event){return _vm.investNow()}}},[_vm._v("Submit")])],1)],1)],1),_vm._v(" "),_c('v-btn',{staticClass:"ml-2 text-uppercase",attrs:{"x-large":"","nuxt":"","to":"/about"}},[_c('v-icon',{attrs:{"left":""}},[_vm._v("mdi-magnify")]),_vm._v("About\n          ")],1)],1),_vm._v(" "),_c('v-col',{staticClass:"landing-image",attrs:{"cols":"12","md":"6"}},[_c('img',{attrs:{"src":"/feature1.svg","alt":"","height":"70%"}})])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center\">","</section>",[_c('v-container',[_c('v-row',_vm._l((_vm.features),function(feature,i){return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var hover = ref.hover;
-return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 0}},[_c('img',{staticClass:"mb-5",attrs:{"height":"200px","contain":"","src":feature.image}}),_vm._v(" "),_c('v-card-title',{staticClass:"justify-center font-weight-black text-uppercase primary--text"},[_vm._v(_vm._s(feature.title))]),_vm._v(" "),_c('v-card-text',{staticClass:"subtitle-1",domProps:{"textContent":_vm._s(feature.text)}})],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"universal pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('v-row',[_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Days")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Investors")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("200+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Up time")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Active Members")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("235+")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('h2',{staticClass:"display-1 ma-4"},[_vm._v("What are people saying")]),_vm._v(" "),_c('v-row',_vm._l((_vm.testimonies),function(ref,i){
+return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 0}},[_c('img',{staticClass:"mb-5",attrs:{"height":"200px","contain":"","src":feature.image}}),_vm._v(" "),_c('v-card-title',{staticClass:"justify-center primary--text"},[_vm._v(_vm._s(feature.title))]),_vm._v(" "),_c('v-card-text',{staticClass:"subtitle-1",domProps:{"textContent":_vm._s(feature.text)}})],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"universal pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('v-row',[_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Days")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Investors")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("200+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Up time")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Active Members")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("235+")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('h2',{staticClass:"display-1 ma-4 primary--text"},[_vm._v("What are people saying")]),_vm._v(" "),_c('v-row',_vm._l((_vm.testimonies),function(ref,i){
 var image = ref.image;
 var text = ref.text;
 var name = ref.name;
 var company = ref.company;
 return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var hover = ref.hover;
-return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 1}},[_c('div',[_c('v-avatar',{attrs:{"color":"white","size":"88"}},[_c('img',{attrs:{"src":image}})])],1),_vm._v(" "),_c('v-card-text',[_c('div',{staticClass:"subtitle-1"},[_vm._v(_vm._s(text))]),_vm._v(" "),_c('div',{staticClass:"subtitle-1 font-weight-bold mt-5"},[_vm._v(_vm._s(name))]),_vm._v(" "),_c('div',{staticClass:"caption"},[_vm._v(_vm._s(company))])])],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center pt-2\">","</section>",[_c('v-container',[_c('div',{staticClass:"display-1 font-weight-bold"},[_vm._v("Acesworld news letter")]),_vm._v(" "),_c('p',{staticClass:"mt-2"},[_vm._v("Subscribe to Acesworld NG newsletter")]),_vm._v(" "),_c('NewsletterForm')],1),_vm._ssrNode(" "),_c('v-divider',{staticClass:"mt-2"})],2)],2)}
+return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 1}},[_c('div',[_c('v-avatar',{attrs:{"color":"white","size":"88"}},[_c('img',{attrs:{"src":image}})])],1),_vm._v(" "),_c('v-card-text',[_c('div',{staticClass:"subtitle-1"},[_vm._v(_vm._s(text))]),_vm._v(" "),_c('div',{staticClass:"subtitle-1 font-weight-bold mt-5 primary--text"},[_vm._v("\n                    "+_vm._s(name)+"\n                  ")]),_vm._v(" "),_c('div',{staticClass:"caption"},[_vm._v(_vm._s(company))])])],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center pt-2\">","</section>",[_c('v-container',[_c('div',{staticClass:"text-h5 primary--text"},[_vm._v("Acesworld NG newsletter")]),_vm._v(" "),_c('p',{staticClass:"mt-2"},[_vm._v("Subscribe to Acesworld NG newsletter")]),_vm._v(" "),_c('NewsletterForm')],1),_vm._ssrNode(" "),_c('v-divider',{staticClass:"mt-2"})],2)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=5828a880&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=4f4b47cc&
 
 // EXTERNAL MODULE: ./components/NewsletterForm.vue + 4 modules
 var NewsletterForm = __webpack_require__(167);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2598,14 +2637,14 @@ var NewsletterForm = __webpack_require__(167);
         text: " Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account."
       }, {
         image: "/features.svg",
-        title: "Our Social Media Platforms",
+        title: "Social media platforms",
         text: " Connect with us on all major social media pages. You can also subscribe to our newsletter to receive major updates and finance tips and news. "
       }],
       testimonies: [{
         image: "/aces.png",
         name: "Oluwatomisin Babatunde ",
         company: "Doctor",
-        text: `quiccly you are the N° 1 Investment Platform. I love your platform.
+        text: ` You are the N° 1 Investment Platform. I love your platform.
 Henceforth, it's Acesworld or no other.`
       }, {
         image: "/aces.png",

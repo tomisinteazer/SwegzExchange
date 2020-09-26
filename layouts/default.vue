@@ -13,11 +13,21 @@
           <v-avatar size="150" color="white">
             <img class="text-lg-center" src="aces.png" />
           </v-avatar>
-          <p class="font-weight-black text-lg-center mt-3 text-center">Acesworld</p>
+          <p
+            class="font-weight-black text-lg-center mt-3 primary--text text-center"
+          >
+            Acesworld NG
+          </p>
         </v-flex>
       </v-layout>
       <v-list>
-        <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :to="item.to"
+          router
+          exact
+        >
           <v-list-item-action>
             <v-icon color="primary">{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -48,21 +58,33 @@
             <v-col cols="12" md="6">
               <img src="/acw.png" height="40" alt />
               <div class="overline">
-                <span>&copy; {{ new Date().getFullYear() }}</span>Acesworld
+                <span>&copy; {{ new Date().getFullYear() }}</span
+                >Acesworld NG
               </div>
               <div style="margin-left: -8px">
-                <v-btn small href="javascript:void(0)" icon>
+                <v-btn
+                  small
+                  href="https://www.facebook.com/100130125169727"
+                  icon
+                >
                   <v-icon small>mdi-facebook</v-icon>
                 </v-btn>
-                <v-btn small href="javascript:void(0)" icon>
+                <v-btn small href="https://www.twitter.com/AcesworldNG" icon>
                   <v-icon small>mdi-twitter</v-icon>
                 </v-btn>
 
-                <v-btn small href="javascript:void(0)" icon>
+                <v-btn small href="https://www.instagram.com/acesworldng_" icon>
                   <v-icon small>mdi-instagram</v-icon>
                 </v-btn>
-                <v-btn small href="javascript:void(0)" icon>
+                <v-btn
+                  small
+                  href="https://api.whatsapp.com/send?phone=2349019881034&text=Hello+Acesworld+my+name+is___"
+                  icon
+                >
                   <v-icon small>mdi-whatsapp</v-icon>
+                </v-btn>
+                <v-btn small href="mailto:infoacesworld@gmail.com" icon>
+                  <v-icon small>mdi-gmail</v-icon>
                 </v-btn>
               </div>
             </v-col>
@@ -137,7 +159,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Acesworld",
+      title: "Acesworld NG",
     };
   },
   methods: {

@@ -3,18 +3,30 @@
     <v-container>
       <h1 class="display-2 mb-6 text-uppercase primary--text">Contact us</h1>
       <div class="mx-auto mb-6" style="max-width: 700px">
-        <p class="body-1 font-weight-bold">Send Us a Message and we will respond as soon as possible</p>
+        <p class="body-1">
+          Send us a message and we will respond as soon as possible.
+        </p>
         <v-form class="mt-5">
-          <v-text-field label="Full name" outlined v-model="name" :rules="nameRules"></v-text-field>
-          <v-text-field label="Email" outlined v-model="email" :rules="emailRules"></v-text-field>
+          <v-text-field
+            label="Full name"
+            outlined
+            v-model="name"
+            :rules="nameRules"
+          ></v-text-field>
+          <v-text-field
+            label="Email"
+            outlined
+            v-model="email"
+            :rules="emailRules"
+          ></v-text-field>
           <v-textarea label="Message" outlined v-model="message"></v-textarea>
           <v-btn color="primary" x-large block @click="mailer()">Send</v-btn>
         </v-form>
       </div>
-      <h3 class="primary--text">Email: infoacesworld@gmail.com</h3>
-      <h3
-        class="primary--text"
-      >Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).</h3>
+      <p class="primary--text">Email: infoacesworld@gmail.com</p>
+      <p class="primary--text">
+        Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).
+      </p>
     </v-container>
   </div>
 </template>

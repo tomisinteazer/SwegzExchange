@@ -9350,17 +9350,39 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var nuxt_loading = (nuxt_loading_component.exports);
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=79ce9794&
-var defaultvue_type_template_id_79ce9794_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{attrs:{"mini-variant":_vm.miniVariant,"clipped":_vm.clipped,"fixed":"","app":"","flat":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('v-layout',{attrs:{"column":"","align-center":""}},[_c('v-flex',{staticClass:"mt-5"},[_c('v-avatar',{attrs:{"size":"150","color":"white"}},[_c('img',{staticClass:"text-lg-center",attrs:{"src":"aces.png"}})]),_vm._v(" "),_c('p',{staticClass:"font-weight-black text-lg-center mt-3 text-center"},[_vm._v("Acesworld")])],1)],1),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('v-list-item',{key:i,attrs:{"to":item.to,"router":"","exact":""}},[_c('v-list-item-action',[_c('v-icon',{attrs:{"color":"primary"}},[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1)}),1)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"clipped-left":_vm.clipped,"fixed":"","app":"","flat":"","height":"80"}},[_c('v-app-bar-nav-icon',{attrs:{"color":"primary"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('img',{attrs:{"src":"/acw.png","height":"40","alt":""}}),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/","flat":"","transparent":""}},[_c('v-toolbar-title',{domProps:{"textContent":_vm._s(_vm.title)}})],1),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();return _vm.colors($event)}}},[_c('v-icon',{attrs:{"color":"warning"}},[_vm._v("mdi-invert-colors")])],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1),_vm._v(" "),_c('v-footer',{staticClass:"pt-5 pb-5",attrs:{"color":"transparent"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"6"}},[_c('img',{attrs:{"src":"/acw.png","height":"40","alt":""}}),_vm._v(" "),_c('div',{staticClass:"overline"},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))]),_vm._v("Acesworld\n            ")]),_vm._v(" "),_c('div',{staticStyle:{"margin-left":"-8px"}},[_c('v-btn',{attrs:{"small":"","href":"javascript:void(0)","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-facebook")])],1),_vm._v(" "),_c('v-btn',{attrs:{"small":"","href":"javascript:void(0)","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-twitter")])],1),_vm._v(" "),_c('v-btn',{attrs:{"small":"","href":"javascript:void(0)","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-instagram")])],1),_vm._v(" "),_c('v-btn',{attrs:{"small":"","href":"javascript:void(0)","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-whatsapp")])],1)],1)]),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('div',{staticClass:"font-weight-black mb-2"},[_vm._v("General resources")]),_vm._v(" "),_c('div',{staticClass:"d-flex flex-column subtitle-2"},[_c('nuxt-link',{attrs:{"to":"/about"}},[_vm._v("About us")]),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("Contact us")]),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/faq"}},[_vm._v("Frequently asked Question")])],1)]),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('div',{staticClass:"font-weight-black mb-2"},[_vm._v("Terms")]),_vm._v(" "),_c('div',{staticClass:"d-flex flex-column subtitle-2"},[_c('nuxt-link',{attrs:{"to":"/terms"}},[_vm._v("Terms of service")]),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/policy"}},[_vm._v("Privacy policy")])],1)])],1)],1)],1)],1),_vm._v(" "),_c('biconic'),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}})],1)}
-var defaultvue_type_template_id_79ce9794_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=template&id=7aa23f32&
+var defaultvue_type_template_id_7aa23f32_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-app',{attrs:{"dark":""}},[_c('v-navigation-drawer',{attrs:{"mini-variant":_vm.miniVariant,"clipped":_vm.clipped,"fixed":"","app":"","flat":""},model:{value:(_vm.drawer),callback:function ($$v) {_vm.drawer=$$v},expression:"drawer"}},[_c('v-layout',{attrs:{"column":"","align-center":""}},[_c('v-flex',{staticClass:"mt-5"},[_c('v-avatar',{attrs:{"size":"150","color":"white"}},[_c('img',{staticClass:"text-lg-center",attrs:{"src":"aces.png"}})]),_vm._v(" "),_c('p',{staticClass:"font-weight-black text-lg-center mt-3 primary--text text-center"},[_vm._v("\n          Acesworld NG\n        ")])],1)],1),_vm._v(" "),_c('v-list',_vm._l((_vm.items),function(item,i){return _c('v-list-item',{key:i,attrs:{"to":item.to,"router":"","exact":""}},[_c('v-list-item-action',[_c('v-icon',{attrs:{"color":"primary"}},[_vm._v(_vm._s(item.icon))])],1),_vm._v(" "),_c('v-list-item-content',[_c('v-list-item-title',{domProps:{"textContent":_vm._s(item.title)}})],1)],1)}),1)],1),_vm._v(" "),_c('v-app-bar',{attrs:{"clipped-left":_vm.clipped,"fixed":"","app":"","flat":"","height":"80"}},[_c('v-app-bar-nav-icon',{attrs:{"color":"primary"},on:{"click":function($event){$event.stopPropagation();_vm.drawer = !_vm.drawer}}}),_vm._v(" "),_c('img',{attrs:{"src":"/acw.png","height":"40","alt":""}}),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/","flat":"","transparent":""}},[_c('v-toolbar-title',{domProps:{"textContent":_vm._s(_vm.title)}})],1),_vm._v(" "),_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"icon":""},on:{"click":function($event){$event.stopPropagation();return _vm.colors($event)}}},[_c('v-icon',{attrs:{"color":"warning"}},[_vm._v("mdi-invert-colors")])],1)],1),_vm._v(" "),_c('v-main',[_c('v-container',[_c('nuxt')],1),_vm._v(" "),_c('v-footer',{staticClass:"pt-5 pb-5",attrs:{"color":"transparent"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"6"}},[_c('img',{attrs:{"src":"/acw.png","height":"40","alt":""}}),_vm._v(" "),_c('div',{staticClass:"overline"},[_c('span',[_vm._v("© "+_vm._s(new Date().getFullYear()))]),_vm._v("Acesworld NG\n            ")]),_vm._v(" "),_c('div',{staticStyle:{"margin-left":"-8px"}},[_c('v-btn',{attrs:{"small":"","href":"https://www.facebook.com/100130125169727","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-facebook")])],1),_vm._v(" "),_c('v-btn',{attrs:{"small":"","href":"https://www.twitter.com/AcesworldNG","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-twitter")])],1),_vm._v(" "),_c('v-btn',{attrs:{"small":"","href":"https://www.instagram.com/acesworldng_","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-instagram")])],1),_vm._v(" "),_c('v-btn',{attrs:{"small":"","href":"https://api.whatsapp.com/send?phone=2349019881034&text=Hello+Acesworld+my+name+is___","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-whatsapp")])],1),_vm._v(" "),_c('v-btn',{attrs:{"small":"","href":"mailto:infoacesworld@gmail.com","icon":""}},[_c('v-icon',{attrs:{"small":""}},[_vm._v("mdi-gmail")])],1)],1)]),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('div',{staticClass:"font-weight-black mb-2"},[_vm._v("General resources")]),_vm._v(" "),_c('div',{staticClass:"d-flex flex-column subtitle-2"},[_c('nuxt-link',{attrs:{"to":"/about"}},[_vm._v("About us")]),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("Contact us")]),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/faq"}},[_vm._v("Frequently asked Question")])],1)]),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('div',{staticClass:"font-weight-black mb-2"},[_vm._v("Terms")]),_vm._v(" "),_c('div',{staticClass:"d-flex flex-column subtitle-2"},[_c('nuxt-link',{attrs:{"to":"/terms"}},[_vm._v("Terms of service")]),_vm._v(" "),_c('nuxt-link',{attrs:{"to":"/policy"}},[_vm._v("Privacy policy")])],1)])],1)],1)],1)],1),_vm._v(" "),_c('biconic'),_vm._v(" "),_c('v-footer',{attrs:{"absolute":!_vm.fixed,"app":""}})],1)}
+var defaultvue_type_template_id_7aa23f32_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=79ce9794&
+// CONCATENATED MODULE: ./layouts/default.vue?vue&type=template&id=7aa23f32&
 
 // EXTERNAL MODULE: ./components/biconic.vue + 2 modules
 var biconic = __webpack_require__(49);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./layouts/default.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -9493,7 +9515,7 @@ var biconic = __webpack_require__(49);
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Acesworld"
+      title: "Acesworld NG"
     };
   },
 
@@ -11300,8 +11322,8 @@ if (style0.__inject__) style0.__inject__(context)
 
 var default_component = Object(componentNormalizer["a" /* default */])(
   layouts_defaultvue_type_script_lang_js_,
-  defaultvue_type_template_id_79ce9794_render,
-  defaultvue_type_template_id_79ce9794_staticRenderFns,
+  defaultvue_type_template_id_7aa23f32_render,
+  defaultvue_type_template_id_7aa23f32_staticRenderFns,
   false,
   default_injectStyles,
   null,

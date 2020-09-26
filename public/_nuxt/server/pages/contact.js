@@ -1686,14 +1686,26 @@ module.exports = exports;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/contact.vue?vue&type=template&id=1c3083c2&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pb-6 pt-4 text-center"},[_c('v-container',[_c('h1',{staticClass:"display-2 mb-6 text-uppercase primary--text"},[_vm._v("Contact us")]),_vm._v(" "),_c('div',{staticClass:"mx-auto mb-6",staticStyle:{"max-width":"700px"}},[_c('p',{staticClass:"body-1 font-weight-bold"},[_vm._v("Send Us a Message and we will respond as soon as possible")]),_vm._v(" "),_c('v-form',{staticClass:"mt-5"},[_c('v-text-field',{attrs:{"label":"Full name","outlined":"","rules":_vm.nameRules},model:{value:(_vm.name),callback:function ($$v) {_vm.name=$$v},expression:"name"}}),_vm._v(" "),_c('v-text-field',{attrs:{"label":"Email","outlined":"","rules":_vm.emailRules},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-textarea',{attrs:{"label":"Message","outlined":""},model:{value:(_vm.message),callback:function ($$v) {_vm.message=$$v},expression:"message"}}),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary","x-large":"","block":""},on:{"click":function($event){return _vm.mailer()}}},[_vm._v("Send")])],1)],1),_vm._v(" "),_c('h3',{staticClass:"primary--text"},[_vm._v("Email: infoacesworld@gmail.com")]),_vm._v(" "),_c('h3',{staticClass:"primary--text"},[_vm._v("Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).")])])],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/contact.vue?vue&type=template&id=477c1e2a&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"pb-6 pt-4 text-center"},[_c('v-container',[_c('h1',{staticClass:"display-2 mb-6 text-uppercase primary--text"},[_vm._v("Contact us")]),_vm._v(" "),_c('div',{staticClass:"mx-auto mb-6",staticStyle:{"max-width":"700px"}},[_c('p',{staticClass:"body-1"},[_vm._v("\n        Send us a message and we will respond as soon as possible.\n      ")]),_vm._v(" "),_c('v-form',{staticClass:"mt-5"},[_c('v-text-field',{attrs:{"label":"Full name","outlined":"","rules":_vm.nameRules},model:{value:(_vm.name),callback:function ($$v) {_vm.name=$$v},expression:"name"}}),_vm._v(" "),_c('v-text-field',{attrs:{"label":"Email","outlined":"","rules":_vm.emailRules},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-textarea',{attrs:{"label":"Message","outlined":""},model:{value:(_vm.message),callback:function ($$v) {_vm.message=$$v},expression:"message"}}),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary","x-large":"","block":""},on:{"click":function($event){return _vm.mailer()}}},[_vm._v("Send")])],1)],1),_vm._v(" "),_c('p',{staticClass:"primary--text"},[_vm._v("Email: infoacesworld@gmail.com")]),_vm._v(" "),_c('p',{staticClass:"primary--text"},[_vm._v("\n      Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).\n    ")])])],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/contact.vue?vue&type=template&id=1c3083c2&
+// CONCATENATED MODULE: ./pages/contact.vue?vue&type=template&id=477c1e2a&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/contact.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
