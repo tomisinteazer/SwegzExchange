@@ -15,17 +15,17 @@
     "pages/administrator.f815483.js",
     "pages/contact.684594f.js",
     "pages/faq.36eb97c.js",
-    "pages/index.eeac7d9.js",
+    "pages/index.71e0b9c.js",
     "pages/login.73b89d2.js",
     "pages/policy.f81dcb2.js",
-    "pages/terms.d6bc7bc.js",
-    "runtime.411ae61.js",
+    "pages/terms.ef018fb.js",
+    "runtime.70f9755.js",
     "vendors~app.564cced.js",
     "vendors~pages/administrator.fcac53d.js",
     "vendors~pages/index.5bdcbb1.js"
   ],
   "initial": [
-    "runtime.411ae61.js",
+    "runtime.70f9755.js",
     "commons/app.d7eff14.js",
     "vendors~app.564cced.js",
     "app.f2daf44.js"
@@ -39,10 +39,10 @@
     "pages/administrator.f815483.js",
     "pages/contact.684594f.js",
     "pages/faq.36eb97c.js",
-    "pages/index.eeac7d9.js",
+    "pages/index.71e0b9c.js",
     "pages/login.73b89d2.js",
     "pages/policy.f81dcb2.js",
-    "pages/terms.d6bc7bc.js",
+    "pages/terms.ef018fb.js",
     "vendors~pages/administrator.fcac53d.js",
     "vendors~pages/index.5bdcbb1.js"
   ],
@@ -1498,13 +1498,13 @@
     "58a5be46": [
       17
     ],
-    "7c4d9187": [
+    "4d7ad0f2": [
       17
     ],
     "351c4979": [
       17
     ],
-    "12594d5a": [
+    "53c85f53": [
       17
     ],
     "a6ac9f20": [
@@ -1550,7 +1550,7 @@
       6,
       21
     ],
-    "a55f02c2": [
+    "320ffa9f": [
       14,
       6,
       21
@@ -1560,7 +1560,7 @@
       6,
       21
     ],
-    "27d6466b": [
+    "a6d47b2a": [
       14,
       6,
       21
@@ -1623,7 +1623,7 @@
       "pages/faq.36eb97c.js"
     ],
     "2a130dde": [
-      "pages/index.eeac7d9.js"
+      "pages/index.71e0b9c.js"
     ],
     "29bd80b0": [
       "pages/login.73b89d2.js"
@@ -1632,10 +1632,10 @@
       "pages/policy.f81dcb2.js"
     ],
     "28e4cc74": [
-      "pages/terms.d6bc7bc.js"
+      "pages/terms.ef018fb.js"
     ],
     "6fca0322": [
-      "runtime.411ae61.js"
+      "runtime.70f9755.js"
     ],
     "7ec635d8": [
       "vendors~app.564cced.js"

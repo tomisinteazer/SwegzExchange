@@ -1,9 +1,18 @@
 <template>
   <v-container>
-    <h2 class="primary--text">Terms</h2>
-    <div v-for="(item,i) in terms" :key="i">
-      <p>{{item}}</p>
+    <h2 class="primary--text">Terms of Service</h2>
+    <h4>
+      By opening an investment portfolio with Acesworld NG, you expressly
+      warrant and represent that:
+    </h4>
+
+    <div v-for="(item, i) in terms" :key="i">
+      <p>{{ item }}</p>
     </div>
+    <h4>
+      Disclaimer: The company will not take responsibility for any transaction
+      not conducted through the official channel.
+    </h4>
   </v-container>
 </template>
 <script>
@@ -11,11 +20,11 @@ export default {
   data() {
     return {
       terms: [
-        "• All clients must be of legal age (18 and above). This means all clients of the firm must be eligible to enter contracts.",
-        "• All clients must be of sound mind and health.",
-        "• Clients must be able to provide all information as required by the Company.",
-        "• Clients must have valid means of identification and should be able to provide it at the request of the company.",
-        "• In case of unlikely unfavorable market conditions that result in damaging losses, the company will pay back the capital of the investors without the accrued interest within a space of 1-4 months.",
+        "• You are 18 years of age or over and have full capacity to accept the Terms and enter any transaction available through the Platform.",
+        "• you clients must be of sound mind and health.",
+        "• you must be able to provide all information as required by the Company.",
+        "• you must have valid means of identification and should be able to provide it at the request of the company.",
+        "• Should in case the company incurs damaging loses as a result of trading, the investor agrees to installment repayment of his/her investment within 1-4 months.",
       ],
     };
   },

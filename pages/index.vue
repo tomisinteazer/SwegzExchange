@@ -151,7 +151,9 @@
 
     <section class="pa-5">
       <v-container class="text-center">
-        <h2 class="display-1 ma-4 primary--text">What are people saying</h2>
+        <h2 class="display-1 ma-4 primary--text">
+          Testimonials from Investors
+        </h2>
 
         <v-row>
           <v-col
