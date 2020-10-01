@@ -2391,13 +2391,13 @@ module.exports = exports;
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=4f4b47cc&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=4c65088d&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"force"},[_vm._ssrNode("<section class=\"pb-6 mt-5\">","</section>",[_c('v-container',[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"mt-md-8 text-center my-5",attrs:{"cols":"12","md":"6"}},[_c('h2',{staticClass:"display-1 mb-6 my-5"},[_vm._v("Welcome to")]),_vm._v(" "),_c('h1',{staticClass:"display-2 primary--text font-weight-bold mb-6 my-5"},[_vm._v("\n            Acesworld NG\n          ")]),_vm._v(" "),_c('p',{staticClass:"body-1"},[_vm._v("\n            One of Nigeria’s leading investment firms. With our digital\n            platform, investing is now simplified and you can invest safely\n            without having to navigate the complex financial markets.\n          ")]),_vm._v(" "),_c('v-dialog',{attrs:{"width":"500"},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
 var on = ref.on;
 var attrs = ref.attrs;
 return [_c('v-btn',_vm._g(_vm._b({staticClass:"text-uppercase",attrs:{"color":"primary","x-large":"","dark":""}},'v-btn',attrs,false),on),[_vm._v("Invest")])]}}]),model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_vm._v(" "),_c('v-card',[_c('v-card-title',{},[_vm._v("Open an Investment"),_c('br'),_vm._v("\n                Portfolio.")]),_vm._v(" "),_c('v-card-text',[_vm._v("Fill in your details below and submit. You will be contacted\n                shortly.")]),_vm._v(" "),_c('v-form',{model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Full Name","required":""},model:{value:(_vm.userFullName),callback:function ($$v) {_vm.userFullName=$$v},expression:"userFullName"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"rules":_vm.emailRules,"type":"email","label":"Email Address","required":""},model:{value:(_vm.userEmail),callback:function ($$v) {_vm.userEmail=$$v},expression:"userEmail"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-text-field',{attrs:{"type":"number","label":"Phone number","required":""},model:{value:(_vm.userNumber),callback:function ($$v) {_vm.userNumber=$$v},expression:"userNumber"}})],1)],1)],1)],1),_vm._v(" "),_c('v-divider'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":function($event){return _vm.investNow()}}},[_vm._v("Submit")])],1)],1)],1),_vm._v(" "),_c('v-btn',{staticClass:"ml-2 text-uppercase",attrs:{"x-large":"","nuxt":"","to":"/about"}},[_c('v-icon',{attrs:{"left":""}},[_vm._v("mdi-magnify")]),_vm._v("About\n          ")],1)],1),_vm._v(" "),_c('v-col',{staticClass:"landing-image",attrs:{"cols":"12","md":"6"}},[_c('img',{attrs:{"src":"/feature1.svg","alt":"","height":"70%"}})])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center\">","</section>",[_c('v-container',[_c('v-row',_vm._l((_vm.features),function(feature,i){return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var hover = ref.hover;
-return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 0}},[_c('img',{staticClass:"mb-5",attrs:{"height":"200px","contain":"","src":feature.image}}),_vm._v(" "),_c('v-card-title',{staticClass:"justify-center primary--text"},[_vm._v(_vm._s(feature.title))]),_vm._v(" "),_c('v-card-text',{staticClass:"subtitle-1",domProps:{"textContent":_vm._s(feature.text)}})],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"universal pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('v-row',[_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Days")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Investors")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("200+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Up time")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Active Members")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("235+")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('h2',{staticClass:"display-1 ma-4 primary--text"},[_vm._v("What are people saying")]),_vm._v(" "),_c('v-row',_vm._l((_vm.testimonies),function(ref,i){
+return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 0}},[_c('img',{staticClass:"mb-5",attrs:{"height":"200px","contain":"","src":feature.image}}),_vm._v(" "),_c('v-card-title',{staticClass:"justify-center primary--text"},[_vm._v(_vm._s(feature.title))]),_vm._v(" "),_c('v-card-text',{staticClass:"subtitle-1",domProps:{"textContent":_vm._s(feature.text)}})],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"universal pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('v-row',[_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Days")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Investors")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("100+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Up time")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Active Members")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("235+")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('h2',{staticClass:"display-1 ma-4 primary--text"},[_vm._v("What are people saying")]),_vm._v(" "),_c('v-row',_vm._l((_vm.testimonies),function(ref,i){
 var image = ref.image;
 var text = ref.text;
 var name = ref.name;
@@ -2408,7 +2408,7 @@ return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 1}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=4f4b47cc&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=4c65088d&
 
 // EXTERNAL MODULE: ./components/NewsletterForm.vue + 4 modules
 var NewsletterForm = __webpack_require__(167);
@@ -2634,7 +2634,7 @@ var NewsletterForm = __webpack_require__(167);
       }, {
         image: "/feature2.svg",
         title: "Secure & Consistent",
-        text: " Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account."
+        text: "Get 20% return on investment in 25 working days. Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account."
       }, {
         image: "/features.svg",
         title: "Social media platforms",
@@ -2642,23 +2642,30 @@ var NewsletterForm = __webpack_require__(167);
       }],
       testimonies: [{
         image: "/aces.png",
-        name: "Oluwatomisin Babatunde ",
-        company: "Doctor",
-        text: ` You are the N° 1 Investment Platform. I love your platform.
-Henceforth, it's Acesworld or no other.`
+        name: "Papa ",
+        company: "Lagos State, Nigeria",
+        text: ` Started investing with Acesworld investment 7months ago,so far, it has 
+been a great experience. I've been able to meet up with some of my 
+financial goals for the year. The management-investor relationship have 
+been professional. I get alerted of my money being available a day before 
+and I get option on how to reinvest. It's been a joy ride.`
       }, {
         image: "/aces.png",
-        name: "Oluwatobi Omotola",
-        company: "Engineer",
-        text: `I had this experience before and I really would
-continue to investing with you because your
- ROI is premium.`
+        name: "Kehinde Aguda",
+        company: "Lagos State, Nigeria",
+        text: ` I started forex investment with Acesworld in February 2020 and I've been 
+investing up until now because my personal expectations were met and 
+Aces delivered the services absolutely! I've been meeting my financial 
+expectations since I started in February and the Interest always come on 
+due date. My personal experience has an investor has been smooth, no 
+complaints whatsoever. `
       }, {
         image: "/aces.png",
-        name: "Ifeoluwa Bankole",
-        company: "FUNAAB",
-        text: `Woooooow your platfor impressed me a lot, this nothing but lovely
-          service is top notch payments are also instant .`
+        name: "Blessing Justin",
+        company: "Kaduna state, Nigeria",
+        text: `This is the first time I am investing my money and for once I feel at peace... 
+I don't even remember or panic about the cash sef cos I just know its super 
+safe and growing. Thanks for not giving up on all my enquiry times.`
       }]
     };
   },

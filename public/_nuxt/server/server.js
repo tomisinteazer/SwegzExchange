@@ -11704,7 +11704,7 @@ async function createApp(ssrContext, config = {}) {
   const app = {
     head: {
       "titleTemplate": "%s - acesworld",
-      "title": "acesworld",
+      "title": "Acesworld NG - The official website of Acesworld NG.",
       "meta": [{
         "charset": "utf-8"
       }, {
@@ -11713,7 +11713,7 @@ async function createApp(ssrContext, config = {}) {
       }, {
         "hid": "description",
         "name": "description",
-        "content": "## Build Setup"
+        "content": "One of Nigeria’s leading investment firms."
       }, {
         "hid": "mobile-web-app-capable",
         "name": "mobile-web-app-capable",

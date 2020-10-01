@@ -135,7 +135,7 @@
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Investors</div>
-            <div class="display-1">200+</div>
+            <div class="display-1">100+</div>
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Up time</div>
@@ -228,7 +228,7 @@ export default {
           image: "/feature2.svg",
           title: "Secure & Consistent",
           text:
-            " Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account.",
+            "Get 20% return on investment in 25 working days. Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account.",
         },
         {
           image: "/features.svg",
@@ -240,25 +240,32 @@ export default {
       testimonies: [
         {
           image: "/aces.png",
-          name: "Oluwatomisin Babatunde ",
-          company: "Doctor",
-          text: ` You are the N° 1 Investment Platform. I love your platform.
-Henceforth, it's Acesworld or no other.`,
+          name: "Papa ",
+          company: "Lagos State, Nigeria",
+          text: ` Started investing with Acesworld investment 7months ago,so far, it has 
+been a great experience. I've been able to meet up with some of my 
+financial goals for the year. The management-investor relationship have 
+been professional. I get alerted of my money being available a day before 
+and I get option on how to reinvest. It's been a joy ride.`,
         },
         {
           image: "/aces.png",
-          name: "Oluwatobi Omotola",
-          company: "Engineer",
-          text: `I had this experience before and I really would
-continue to investing with you because your
- ROI is premium.`,
+          name: "Kehinde Aguda",
+          company: "Lagos State, Nigeria",
+          text: ` I started forex investment with Acesworld in February 2020 and I've been 
+investing up until now because my personal expectations were met and 
+Aces delivered the services absolutely! I've been meeting my financial 
+expectations since I started in February and the Interest always come on 
+due date. My personal experience has an investor has been smooth, no 
+complaints whatsoever. `,
         },
         {
           image: "/aces.png",
-          name: "Ifeoluwa Bankole",
-          company: "FUNAAB",
-          text: `Woooooow your platfor impressed me a lot, this nothing but lovely
-          service is top notch payments are also instant .`,
+          name: "Blessing Justin",
+          company: "Kaduna state, Nigeria",
+          text: `This is the first time I am investing my money and for once I feel at peace... 
+I don't even remember or panic about the cash sef cos I just know its super 
+safe and growing. Thanks for not giving up on all my enquiry times.`,
         },
       ],
     };
