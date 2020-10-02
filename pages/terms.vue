@@ -11,7 +11,7 @@
     </div>
     <h4>
       Disclaimer: The company will not take responsibility for any transaction
-      not conducted through the official channel.
+      not conducted through the official channels.
     </h4>
   </v-container>
 </template>
@@ -21,10 +21,11 @@ export default {
     return {
       terms: [
         "• You are 18 years of age or over and have full capacity to accept the Terms and enter any transaction available through the Platform.",
-        "• you clients must be of sound mind and health.",
-        "• you must be able to provide all information as required by the Company.",
-        "• you must have valid means of identification and should be able to provide it at the request of the company.",
-        "• Should in case the company incurs damaging loses as a result of trading, the investor agrees to installment repayment of his/her investment within 1-4 months.",
+        "• You must be of sound mind and health.",
+        "• You must have a valid bank account that is fully operational.",
+        "• You must be able to provide all information as required by the Company.",
+        "• You must have valid means of identification and should be able to provide it at the request of the company.",
+        "• Should in case the company incure damaging loses as a result of trading, the investor agrees to installment repayment of his/her investment within 1-4 months.",
       ],
     };
   },

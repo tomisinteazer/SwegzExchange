@@ -18,14 +18,14 @@
     "pages/index.71e0b9c.js",
     "pages/login.73b89d2.js",
     "pages/policy.f81dcb2.js",
-    "pages/terms.ef018fb.js",
-    "runtime.70f9755.js",
+    "pages/terms.786c213.js",
+    "runtime.3e4e7da.js",
     "vendors~app.564cced.js",
     "vendors~pages/administrator.fcac53d.js",
     "vendors~pages/index.5bdcbb1.js"
   ],
   "initial": [
-    "runtime.70f9755.js",
+    "runtime.3e4e7da.js",
     "commons/app.d7eff14.js",
     "vendors~app.564cced.js",
     "app.f2daf44.js"
@@ -42,7 +42,7 @@
     "pages/index.71e0b9c.js",
     "pages/login.73b89d2.js",
     "pages/policy.f81dcb2.js",
-    "pages/terms.ef018fb.js",
+    "pages/terms.786c213.js",
     "vendors~pages/administrator.fcac53d.js",
     "vendors~pages/index.5bdcbb1.js"
   ],
@@ -1498,13 +1498,13 @@
     "58a5be46": [
       17
     ],
-    "4d7ad0f2": [
+    "27b40095": [
       17
     ],
     "351c4979": [
       17
     ],
-    "53c85f53": [
+    "bb8c6f3e": [
       17
     ],
     "a6ac9f20": [
@@ -1632,10 +1632,10 @@
       "pages/policy.f81dcb2.js"
     ],
     "28e4cc74": [
-      "pages/terms.ef018fb.js"
+      "pages/terms.786c213.js"
     ],
     "6fca0322": [
-      "runtime.70f9755.js"
+      "runtime.3e4e7da.js"
     ],
     "7ec635d8": [
       "vendors~app.564cced.js"

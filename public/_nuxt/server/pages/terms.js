@@ -8,12 +8,12 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/terms.vue?vue&type=template&id=68b91948&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h2',{staticClass:"primary--text"},[_vm._v("Terms of Service")]),_vm._v(" "),_c('h4',[_vm._v("\n    By opening an investment portfolio with Acesworld NG, you expressly\n    warrant and represent that:\n  ")]),_vm._v(" "),_vm._l((_vm.terms),function(item,i){return _c('div',{key:i},[_c('p',[_vm._v(_vm._s(item))])])}),_vm._v(" "),_c('h4',[_vm._v("\n    Disclaimer: The company will not take responsibility for any transaction\n    not conducted through the official channel.\n  ")])],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/terms.vue?vue&type=template&id=ea422bc0&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h2',{staticClass:"primary--text"},[_vm._v("Terms of Service")]),_vm._v(" "),_c('h4',[_vm._v("\n    By opening an investment portfolio with Acesworld NG, you expressly\n    warrant and represent that:\n  ")]),_vm._v(" "),_vm._l((_vm.terms),function(item,i){return _c('div',{key:i},[_c('p',[_vm._v(_vm._s(item))])])}),_vm._v(" "),_c('h4',[_vm._v("\n    Disclaimer: The company will not take responsibility for any transaction\n    not conducted through the official channels.\n  ")])],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/terms.vue?vue&type=template&id=68b91948&
+// CONCATENATED MODULE: ./pages/terms.vue?vue&type=template&id=ea422bc0&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/terms.vue?vue&type=script&lang=js&
 //
@@ -36,7 +36,7 @@ var staticRenderFns = []
 /* harmony default export */ var termsvue_type_script_lang_js_ = ({
   data() {
     return {
-      terms: ["• You are 18 years of age or over and have full capacity to accept the Terms and enter any transaction available through the Platform.", "• you clients must be of sound mind and health.", "• you must be able to provide all information as required by the Company.", "• you must have valid means of identification and should be able to provide it at the request of the company.", "• Should in case the company incurs damaging loses as a result of trading, the investor agrees to installment repayment of his/her investment within 1-4 months."]
+      terms: ["• You are 18 years of age or over and have full capacity to accept the Terms and enter any transaction available through the Platform.", "• You must be of sound mind and health.", "• You must have a valid bank account that is fully operational.", "• You must be able to provide all information as required by the Company.", "• You must have valid means of identification and should be able to provide it at the request of the company.", "• Should in case the company incure damaging loses as a result of trading, the investor agrees to installment repayment of his/her investment within 1-4 months."]
     };
   }
 
