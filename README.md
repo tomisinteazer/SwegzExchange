@@ -1,8 +1,6 @@
-# Acesworldng
+# SwegzExchange
 
-## The official website of  Acesworld ng
-One of Nigeria’s leading investment firms. With our digital platform, investing is now simplified and you can invest safely without having to navigate the complex financial markets.
-
+## The official website of swegz Exchange
 
 ```bash
 # install dependencies
