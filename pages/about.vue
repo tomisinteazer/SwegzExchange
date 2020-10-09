@@ -17,19 +17,18 @@
             We are a registered Nigerian firm (RC: 3152773) with expertise and
             experience in finance. We deal majorly in the foreign exchange
             (forex) market and the cryptocurrency world. We are also in
-            partnerships with prominent investment companies with the sole
-            purpose of maximizing the benefits our investors relish. With a
-            dedicated team of experts, we are continuously working on better
-            investment opportunities to enrich the lives of our investors
+            partnerships with prominent Trade companies with the sole purpose of
+            maximizing the benefits our investors relish. With a dedicated team
+            of experts, we are continuously working on better Trade
+            opportunities to enrich the lives of our investors
           </p>
         </div>
         <h1 class="mb-4 mx-auto text-h5 primary--text">What we offer</h1>
         <div class="mx-auto text-left" style="max-width: 700px">
           <p class="body-1">
-            An investment platform that gives people with little or no knowledge
-            about the forex markets an opportunity to earn from it. Our
-            investment platform offers monthly returns on any amount invested
-            with us.
+            An Trade platform that gives people with little or no knowledge
+            about the forex markets an opportunity to earn from it. Our Trade
+            platform offers monthly returns on any amount invested with us.
           </p>
           <p class="body-1">
             A cryptocurrency exchange platform that offers value for virtual
@@ -50,7 +49,7 @@
         <p class="body-1">
           At SwegzExchange, we believe in our cause to financially liberate the
           new generation and financially empower as much people as we can with
-          our investment platform and financial expertise.
+          our Trade platform and financial expertise.
         </p>
         <h2 class="text-h5 primary--text">OUR CORE VALUES</h2>
         <p class="body-1">Innovation</p>

@@ -10,12 +10,10 @@
     >
       <v-layout column align-center>
         <v-flex class="mt-5">
-          <v-avatar size="150" color="white">
-            <img class="text-lg-center" src="aces.png" />
+          <v-avatar size="150">
+            <v-img contain src="/swg.png"></v-img>
           </v-avatar>
-          <p
-            class="font-weight-black text-lg-center mt-3 primary--text text-center"
-          >
+          <p class="font-weight-black text-lg-center mt-3 text-center">
             SwegzExchange
           </p>
         </v-flex>
@@ -39,7 +37,7 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app flat height="80">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="primary" />
-      <img src="/acw.png" height="40" alt />
+      <img src="/swg.png" height="40" alt />
       <nuxt-link to="/" flat transparent>
         <v-toolbar-title v-text="title" />
       </nuxt-link>
@@ -49,14 +47,13 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
+
       <v-footer color="transparent" class="pt-5 pb-5">
         <v-container>
           <v-row>
             <v-col cols="12" md="6">
-              <img src="/acw.png" height="40" alt />
+              <img src="/swg.png" height="40" alt />
               <div class="overline">
                 <span>&copy; {{ new Date().getFullYear() }}</span
                 >SwegzExchange

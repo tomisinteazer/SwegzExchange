@@ -2,8 +2,8 @@
   <v-container>
     <h2 class="primary--text">Terms of Service</h2>
     <h4>
-      By opening an investment portfolio with SwegzExchange, you expressly
-      warrant and represent that:
+      By opening an Trade portfolio with SwegzExchange, you expressly warrant
+      and represent that:
     </h4>
 
     <div v-for="(item, i) in terms" :key="i">
@@ -25,7 +25,7 @@ export default {
         "• You must have a valid bank account that is fully operational.",
         "• You must be able to provide all information as required by the Company.",
         "• You must have valid means of identification and should be able to provide it at the request of the company.",
-        "• Should in case the company incure damaging loses as a result of trading, the investor agrees to installment repayment of his/her investment within 1-4 months.",
+        "• Should in case the company incure damaging loses as a result of trading, the investor agrees to installment repayment of his/her Trade within 1-4 months.",
       ],
     };
   },

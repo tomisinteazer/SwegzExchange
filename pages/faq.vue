@@ -49,7 +49,7 @@ export default {
         {
           Q: "How long before I get paid?",
           A:
-            "Investments made with us mature after 25 working days but there are also custom investment plans that can range from 2 months to a year.",
+            "Trades made with us mature after 25 working days but there are also custom Trade plans that can range from 2 months to a year.",
         },
         {
           Q: "How do I request payout?",
@@ -57,13 +57,13 @@ export default {
             "You only need to provide a signed copy of your MOU and your account details on your due date and you will get paid.",
         },
         {
-          Q: "Can I have multiple investments?",
+          Q: "Can I have multiple Trades?",
           A:
-            "Yes, you can have as many investments as you want. They will all be properly documented with different MOUs.",
+            "Yes, you can have as many Trades as you want. They will all be properly documented with different MOUs.",
         },
 
         {
-          Q: "What binds the investments I make?",
+          Q: "What binds the Trades I make?",
           A:
             "We provide a signed Memorandum of Understanding (in pdf format) that serves as an agreement and an obligation to pay.",
         },
@@ -80,14 +80,14 @@ Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).`,
         },
 
         {
-          Q: "How do I fund my investment portfolio?",
+          Q: "How do I fund my Trade portfolio?",
           A:
-            "A simple bank transfer or bank deposit to the company’s account will fund your investment portfolio.",
+            "A simple bank transfer or bank deposit to the company’s account will fund your Trade portfolio.",
         },
         {
-          Q: "Can I top up an already existing investment?",
+          Q: "Can I top up an already existing Trade?",
           A:
-            "Unless it is due for payment, no you can’t. However, you can have multiple investments running simultaneously.",
+            "Unless it is due for payment, no you can’t. However, you can have multiple Trades running simultaneously.",
         },
       ],
     };
