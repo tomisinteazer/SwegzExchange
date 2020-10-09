@@ -1,5 +1,5 @@
 {
-  "name": "acesworld",
+  "name": "swegztradelink",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,10 +12,7 @@
   "dependencies": {
     "@nuxtjs/firebase": "^6.1.1",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "cookieparser": "^0.1.0",
     "firebase": "^7.17.1",
-    "js-cookie": "^2.2.1",
-    "jwt-decode": "^2.2.0",
     "nuxt": "^2.13.0"
   },
   "devDependencies": {

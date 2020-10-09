@@ -16,7 +16,7 @@
           <p
             class="font-weight-black text-lg-center mt-3 primary--text text-center"
           >
-            Acesworld NG
+            SwegzExchange
           </p>
         </v-flex>
       </v-layout>
@@ -59,7 +59,7 @@
               <img src="/acw.png" height="40" alt />
               <div class="overline">
                 <span>&copy; {{ new Date().getFullYear() }}</span
-                >Acesworld NG
+                >SwegzExchange
               </div>
               <div style="margin-left: -8px">
                 <v-btn
@@ -69,21 +69,29 @@
                 >
                   <v-icon small>mdi-facebook</v-icon>
                 </v-btn>
-                <v-btn small href="https://www.twitter.com/AcesworldNG" icon>
+                <v-btn
+                  small
+                  href="https://www.twitter.com/SwegzExchangeNG"
+                  icon
+                >
                   <v-icon small>mdi-twitter</v-icon>
                 </v-btn>
 
-                <v-btn small href="https://www.instagram.com/acesworldng_" icon>
+                <v-btn
+                  small
+                  href="https://www.instagram.com/SwegzExchangeng_"
+                  icon
+                >
                   <v-icon small>mdi-instagram</v-icon>
                 </v-btn>
                 <v-btn
                   small
-                  href="https://api.whatsapp.com/send?phone=2349019881034&text=Hello+Acesworld+my+name+is___"
+                  href="https://api.whatsapp.com/send?phone=2349019881034&text=Hello+SwegzExchange+my+name+is___"
                   icon
                 >
                   <v-icon small>mdi-whatsapp</v-icon>
                 </v-btn>
-                <v-btn small href="mailto:infoacesworld@gmail.com" icon>
+                <v-btn small href="mailto:infoSwegzExchange@gmail.com" icon>
                   <v-icon small>mdi-gmail</v-icon>
                 </v-btn>
               </div>
@@ -159,7 +167,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "Acesworld NG",
+      title: "SwegzExchange",
     };
   },
   methods: {

@@ -8,7 +8,7 @@
           <v-col cols="12" md="6" class="mt-md-8 text-center my-5">
             <h2 class="display-1 mb-6 my-5">Welcome to</h2>
             <h1 class="display-2 primary--text font-weight-bold mb-6 my-5">
-              Acesworld NG
+              SwegzExchange
             </h1>
             <p class="body-1">
               One of Nigeria’s leading investment firms. With our digital
@@ -188,8 +188,8 @@
 
     <section class="text-center pt-2">
       <v-container>
-        <div class="text-h5 primary--text">Acesworld NG newsletter</div>
-        <p class="mt-2">Subscribe to Acesworld NG newsletter</p>
+        <div class="text-h5 primary--text">SwegzExchange newsletter</div>
+        <p class="mt-2">Subscribe to SwegzExchange newsletter</p>
         <NewsletterForm />
       </v-container>
       <v-divider class="mt-2"></v-divider>
@@ -197,7 +197,7 @@
   </div>
 </template>
 <script>
-//infoacesworld@gmail.com
+//infoSwegzExchange@gmail.com
 //Forexway007
 import NewsletterForm from "../components/NewsletterForm";
 export default {
@@ -244,7 +244,7 @@ export default {
           image: "/aces.png",
           name: "Papa ",
           company: "Lagos State, Nigeria",
-          text: ` Started investing with Acesworld investment 7months ago,so far, it has 
+          text: ` Started investing with SwegzExchange investment 7months ago,so far, it has 
 been a great experience. I've been able to meet up with some of my 
 financial goals for the year. The management-investor relationship have 
 been professional. I get alerted of my money being available a day before 
@@ -254,7 +254,7 @@ and I get option on how to reinvest. It's been a joy ride.`,
           image: "/aces.png",
           name: "Kehinde Aguda",
           company: "Lagos State, Nigeria",
-          text: ` I started forex investment with Acesworld in February 2020 and I've been 
+          text: ` I started forex investment with SwegzExchange in February 2020 and I've been 
 investing up until now because my personal expectations were met and 
 Aces delivered the services absolutely! I've been meeting my financial 
 expectations since I started in February and the Interest always come on 
@@ -278,7 +278,7 @@ safe and growing. Thanks for not giving up on all my enquiry times.`,
         (this.userNumber && this.userEmail && this.userFullName != "") ||
         null
       ) {
-        this.contactUrl = `https://api.whatsapp.com/send?phone=2349019881034&text=Hello+I+want+to+invest+with+Acesworld+my+name+is+${this.userFullName}%0Amy+email+addresss+is+${this.userEmail}%0Aand+my+phone+number+is${this.userNumber}`;
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2349019881034&text=Hello+I+want+to+invest+with+SwegzExchange+my+name+is+${this.userFullName}%0Amy+email+addresss+is+${this.userEmail}%0Aand+my+phone+number+is${this.userNumber}`;
         window.location.replace(this.contactUrl);
         this.dialog = false;
       } else {

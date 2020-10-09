@@ -5,7 +5,7 @@
         <h1 class="display-2 mb-6 text-uppercase primary--text">About us</h1>
         <div class="mx-auto text-left" style="max-width: 700px">
           <p class="body-1">
-            Acesworld Enterprise (formerly Aces Enterprise) is a financial
+            SwegzExchange Enterprise (formerly Aces Enterprise) is a financial
             solutions firm birthed on 2nd of October 2019. The brand in a bid to
             serve people better has been restructured and registered with the
             Corporate Affairs Commission (CAC) for ease of operations.
@@ -48,9 +48,9 @@
         </p>
         <h2 class="text-h5 primary--text">OUR MISSION</h2>
         <p class="body-1">
-          At Acesworld, we believe in our cause to financially liberate the new
-          generation and financially empower as much people as we can with our
-          investment platform and financial expertise.
+          At SwegzExchange, we believe in our cause to financially liberate the
+          new generation and financially empower as much people as we can with
+          our investment platform and financial expertise.
         </p>
         <h2 class="text-h5 primary--text">OUR CORE VALUES</h2>
         <p class="body-1">Innovation</p>

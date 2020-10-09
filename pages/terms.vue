@@ -2,7 +2,7 @@
   <v-container>
     <h2 class="primary--text">Terms of Service</h2>
     <h4>
-      By opening an investment portfolio with Acesworld NG, you expressly
+      By opening an investment portfolio with SwegzExchange, you expressly
       warrant and represent that:
     </h4>
 
