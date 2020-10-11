@@ -1,33 +1,45 @@
 <template>
-  <div class="pb-6 pt-4 text-center">
-    <v-container>
-      <h1 class="display-2 mb-6 text-uppercase primary--text">Contact us</h1>
-      <div class="mx-auto mb-6" style="max-width: 700px">
-        <p class="body-1">
+  <div class="text-center">
+    <div class="primary py-16">
+      <h1 class="display-2 mb-6 pb-8 text-uppercase white--text">Contact us</h1>
+      <div class="mx-auto text-left" style="max-width: 700px">
+        <p class="text-h5 mb-0 pb-16 text-center white--text">
           Send us a message and we will respond as soon as possible.
         </p>
-        <v-form class="mt-5">
-          <v-text-field
-            label="Full name"
-            outlined
-            v-model="name"
-            :rules="nameRules"
-          ></v-text-field>
-          <v-text-field
-            label="Email"
-            outlined
-            v-model="email"
-            :rules="emailRules"
-          ></v-text-field>
-          <v-textarea label="Message" outlined v-model="message"></v-textarea>
-          <v-btn color="primary" x-large block @click="mailer()">Send</v-btn>
-        </v-form>
       </div>
-      <p class="primary--text">Email: infoSwegzExchange@gmail.com</p>
-      <p class="primary--text">
-        Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).
-      </p>
-    </v-container>
+    </div>
+    <svg viewBox="0 0 1440 88" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="evenodd">
+        <path fill="#ffffff00" d="M0 0h1440v88H0z" />
+        <path
+          d="M1440 72.353C1154.087 40.784 917.42 25 730 25 542.58 25 299.246 40.784 0 72.353V0h1440v72.353z"
+          fill="#691616"
+        />
+      </g>
+    </svg>
+
+    <div class="mx-auto mb-6" style="max-width: 700px">
+      <v-form class="mt-5">
+        <v-text-field
+          label="Full name"
+          outlined
+          v-model="name"
+          :rules="nameRules"
+        ></v-text-field>
+        <v-text-field
+          label="Email"
+          outlined
+          v-model="email"
+          :rules="emailRules"
+        ></v-text-field>
+        <v-textarea label="Message" outlined v-model="message"></v-textarea>
+        <v-btn color="primary" x-large block @click="mailer()">Send</v-btn>
+      </v-form>
+    </div>
+    <p class="primary--text">Email: infoSwegzExchange@gmail.com</p>
+    <p class="primary--text">
+      Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).
+    </p>
   </div>
 </template>
 <script>

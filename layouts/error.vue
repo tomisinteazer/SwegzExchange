@@ -1,40 +1,86 @@
 <template>
   <v-app dark>
     <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
+      <section class="my-12">
+        <v-row no-gutters>
+          <v-col cols="12" md="6" class="mt-md-8 text-center">
+            <h2 class="display-1 mb-6 my-5">404 - Not found</h2>
+            <h1 class="display-2 primary--text font-weight-bold mb-6 my-5">
+              OOPs - Seems you are lost
+            </h1>
+            <p class="body-1">
+              {{ pageNotFound }}
+            </p>
+            <NuxtLink to="/"
+              ><v-btn
+                class="ml-2 text-uppercase primary"
+                x-large
+                nuxt
+                to="/about"
+              >
+                <v-icon left>mdi-home</v-icon>Home
+              </v-btn></NuxtLink
+            >
+          </v-col>
+
+          <v-col cols="12" md="6" class="landing-image pt-12">
+            <v-img contain max-height="300" src="/404.svg"></v-img>
+          </v-col>
+        </v-row>
+      </section>
     </h1>
     <h1 v-else>
-      {{ otherError }}
+      <section class="my-12">
+        <v-row no-gutters>
+          <v-col cols="12" md="6" class="mt-md-8 text-center">
+            <h1 class="display-2 primary--text font-weight-bold mb-6 my-5">
+              An error occured
+            </h1>
+
+            <NuxtLink to="/"
+              ><v-btn
+                class="ml-2 text-uppercase primary"
+                x-large
+                nuxt
+                to="/about"
+              >
+                <v-icon left>mdi-home</v-icon>Home
+              </v-btn></NuxtLink
+            >
+          </v-col>
+
+          <v-col cols="12" md="6" class="landing-image pt-12">
+            <v-img contain max-height="300" src="/error.svg"></v-img>
+          </v-col>
+        </v-row>
+      </section>
     </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
   </v-app>
 </template>
 
 <script>
 export default {
-  layout: 'empty',
+  layout: "empty",
   props: {
     error: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
-  data () {
+  data() {
     return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
-    }
+      pageNotFound: "The page you requested doesn't exist.",
+      otherError: "An error occurred",
+    };
   },
-  head () {
+  head() {
     const title =
-      this.error.statusCode === 404 ? this.pageNotFound : this.otherError
+      this.error.statusCode === 404 ? this.pageNotFound : this.otherError;
     return {
-      title
-    }
-  }
-}
+      title,
+    };
+  },
+};
 </script>
 
 <style scoped>
