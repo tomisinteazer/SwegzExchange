@@ -40,6 +40,7 @@
                   <v-row>
                     <v-col cols="12">
                       <v-select
+                        v-model="detailsOfTrade"
                         :items="tradeDetails"
                         label="Cryptocurrency /Giftcards /other"
                       ></v-select>
@@ -48,6 +49,7 @@
                   <v-row>
                     <v-col cols="12">
                       <v-select
+                        v-model="typeOfTrade"
                         :items="tradeType"
                         label="Buy / Sell"
                       ></v-select>
@@ -276,6 +278,7 @@ export default {
   data() {
     return {
       valid: true,
+
       tradeType: ["Buying", "Selling"],
       tradeDetails: ["Cryptocurrency", "Giftcards", "others"],
       nameRules: [
@@ -339,11 +342,21 @@ safe and growing. Thanks for not giving up on all my enquiry times.`,
         },
       ],
       ambassadors: [{ image: "src", information: "txt", name: "name" }],
+      typeOfTrade: "",
+      detailsOfTrade: "",
     };
   },
   methods: {
     tradeNow() {
-      console.log("clicked me");
+      if ((this.detailsOfTrade && this.typeOfTrade != "") || null) {
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzExchange+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
+        window.location.replace(this.contactUrl);
+        this.dialog = false;
+      } else {
+        alert(
+          "please ensure all fields are filled correctly with valid details"
+        );
+      }
     },
   },
 };

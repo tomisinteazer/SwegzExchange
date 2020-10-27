@@ -2,6 +2,7 @@ import colors from "vuetify/es5/util/colors";
 
 export default {
   mode: "universal",
+  buildDir: "functions/.nuxt",
 
   /*
    ** Nuxt rendering mode
@@ -55,14 +56,14 @@ export default {
   modules: ["@nuxtjs/pwa", "@nuxtjs/firebase"],
   firebase: {
     config: {
-      apiKey: "AIzaSyBrHREfUwmNSO1liUHsv4YvR4_Z-ajGFW0",
-      authDomain: "acesworld-ng.firebaseapp.com",
-      databaseURL: "https://acesworld-ng.firebaseio.com",
-      projectId: "acesworld-ng",
-      storageBucket: "acesworld-ng.appspot.com",
-      messagingSenderId: "407849957910",
-      appId: "1:407849957910:web:6dac6af811a00224fc9337",
-      measurementId: "G-R1XV4FZ907"
+      apiKey: "AIzaSyDoCSVBz2-a3olc95VB-DwIsU5h2FHNJHE",
+      authDomain: "swegztradelink.firebaseapp.com",
+      databaseURL: "https://swegztradelink.firebaseio.com",
+      projectId: "swegztradelink",
+      storageBucket: "swegztradelink.appspot.com",
+      messagingSenderId: "471286698302",
+      appId: "1:471286698302:web:b18cc92acd4f15aa135c6f",
+      measurementId: "G-GK9CRE26TL"
     },
     services: {
       auth: true,
