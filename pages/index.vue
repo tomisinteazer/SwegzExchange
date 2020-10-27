@@ -3,78 +3,78 @@
   <div class="force">
     <!-- landing section -->
     <section class="my-12">
-      <v-container>
-        <v-row no-gutters>
-          <v-col cols="12" md="6" class="mt-md-8 text-center">
-            <h2 class="display-1 mb-6 my-5">Welcome to</h2>
-            <h1 class="display-2 primary--text font-weight-bold mb-6 my-5">
-              SwegzExchange
-            </h1>
-            <p class="body-1">
-              Swegz Exchange is a simple, safe and secure platform that provides
-              alternative solutions to payments through the use of Bitcoin,
-              Perfect Money and Giftcard Technology.
-            </p>
+      <v-row no-gutters>
+        <v-col cols="12" md="6" class="mt-md-8 text-center">
+          <h2 class="display-1 mb-6 my-5">Welcome to</h2>
+          <h1 class="display-2 primary--text font-weight-bold mb-6 my-5">
+            SwegzExchange
+          </h1>
+          <p class="body-1">
+            Swegz Exchange is a simple, safe and secure platform that provides
+            alternative solutions to payments through the use of Bitcoin,
+            Perfect Money and Giftcard Technology.
+          </p>
 
-            <v-dialog v-model="dialog" width="500">
-              <template v-slot:activator="{ on, attrs }">
-                <v-btn
-                  class="text-uppercase"
-                  color="primary"
-                  x-large
-                  dark
-                  v-bind="attrs"
-                  v-on="on"
-                  >Trade</v-btn
-                >
-              </template>
+          <v-dialog v-model="dialog" width="500">
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn
+                class="text-uppercase"
+                color="primary"
+                x-large
+                dark
+                v-bind="attrs"
+                v-on="on"
+                >Trade</v-btn
+              >
+            </template>
 
-              <v-card>
-                <v-card-title class>trade with SwegzExchange</v-card-title>
+            <v-card>
+              <v-card-title class>trade with SwegzExchange</v-card-title>
 
-                <v-card-text
-                  >Fill in your trade details below and submit. Transaction will
-                  proceed immediately.</v-card-text
-                >
-                <v-form v-model="valid">
-                  <v-container>
-                    <v-row>
-                      <v-col cols="12">
-                        <v-select
-                          :items="tradeDetails"
-                          label="Cryptocurrency /Giftcards /other"
-                        ></v-select>
-                      </v-col>
-                    </v-row>
-                    <v-row>
-                      <v-col cols="12">
-                        <v-select
-                          :items="tradeType"
-                          label="Buy / Sell"
-                        ></v-select>
-                      </v-col>
-                    </v-row>
-                  </v-container>
-                </v-form>
+              <v-card-text
+                >Fill in your trade details below and submit. Transaction will
+                proceed immediately.</v-card-text
+              >
+              <v-form v-model="valid">
+                <v-container>
+                  <v-row>
+                    <v-col cols="12">
+                      <v-select
+                        v-model="detailsOfTrade"
+                        :items="tradeDetails"
+                        label="Cryptocurrency /Giftcards /other"
+                      ></v-select>
+                    </v-col>
+                  </v-row>
+                  <v-row>
+                    <v-col cols="12">
+                      <v-select
+                        v-model="typeOfTrade"
+                        :items="tradeType"
+                        label="Buy / Sell"
+                      ></v-select>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </v-form>
 
-                <v-divider></v-divider>
+              <v-divider></v-divider>
 
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                  <v-btn color="primary" @click="tradeNow()">Submit</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-dialog>
-            <v-btn class="ml-2 text-uppercase" x-large nuxt to="/about">
-              <v-icon left>mdi-magnify</v-icon>About
-            </v-btn>
-          </v-col>
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" @click="tradeNow()">Submit</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+          <v-btn class="ml-2 text-uppercase" x-large nuxt to="/about">
+            <v-icon left>mdi-magnify</v-icon>About
+          </v-btn>
+        </v-col>
 
-          <v-col cols="12" md="6" class="landing-image pt-12">
-            <v-img contain max-height="300" src="/feature1.svg"></v-img>
-          </v-col>
-        </v-row>
-      </v-container>
+        <v-col cols="12" md="6" class="landing-image pt-12">
+          <v-img contain max-height="300" src="/feature1.svg"></v-img>
+        </v-col>
+      </v-row>
     </section>
 
     <!-- features -->
@@ -278,6 +278,7 @@ export default {
   data() {
     return {
       valid: true,
+
       tradeType: ["Buying", "Selling"],
       tradeDetails: ["Cryptocurrency", "Giftcards", "others"],
       nameRules: [
@@ -341,11 +342,21 @@ safe and growing. Thanks for not giving up on all my enquiry times.`,
         },
       ],
       ambassadors: [{ image: "src", information: "txt", name: "name" }],
+      typeOfTrade: "",
+      detailsOfTrade: "",
     };
   },
   methods: {
     tradeNow() {
-      console.log("clicked me");
+      if ((this.detailsOfTrade && this.typeOfTrade != "") || null) {
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzExchange+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
+        window.location.replace(this.contactUrl);
+        this.dialog = false;
+      } else {
+        alert(
+          "please ensure all fields are filled correctly with valid details"
+        );
+      }
     },
   },
 };
