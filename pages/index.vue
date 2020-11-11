@@ -7,12 +7,13 @@
         <v-col cols="12" md="6" class="mt-md-8 text-center">
           <h2 class="display-1 mb-6 my-5">Welcome to</h2>
           <h1 class="display-2 primary--text font-weight-bold mb-6 my-5">
-            SwegzExchange
+            SwegzTradeLink
           </h1>
           <p class="body-1">
-            Swegz Exchange is a simple, safe and secure platform that provides
-            alternative solutions to payments through the use of Bitcoin,
-            Perfect Money and Giftcard Technology.
+            The fastest and safest exchange platform
+to trade and convert all your 
+Bitcoins, Digital assets, Giftcards, Smart devices and E-commerce
+
           </p>
 
           <v-dialog v-model="dialog" width="500">
@@ -29,7 +30,7 @@
             </template>
 
             <v-card>
-              <v-card-title class>trade with SwegzExchange</v-card-title>
+              <v-card-title class>trade with SwegzTradeLink</v-card-title>
 
               <v-card-text
                 >Fill in your trade details below and submit. Transaction will
@@ -152,15 +153,15 @@
         <v-row>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Days</div>
-            <div class="display-1">365+</div>
+            <div class="display-1">1790+</div>
           </v-col>
           <v-col cols="6" md="3">
-            <div class="text-uppercase caption">Investors</div>
-            <div class="display-1">100+</div>
+            <div class="text-uppercase caption">Transactions</div>
+            <div class="display-1">10k+ </div>
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Up time</div>
-            <div class="display-1">365+</div>
+            <div class="display-1">24/7</div>
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Active Members</div>
@@ -178,11 +179,12 @@
           </v-col>
           <v-col cols="12" md="6" class="mt-md-8 text-center">
             <p class="display-1 font-weight-thin">
-              Swegz Exchange is a simple, safe and secure platform that provides
+              SwegzTradeLink is a simple, safe and secure platform that provides
               alternative solutions to payments through the use of Bitcoin,
               Perfect Money and Giftcard Technology.
             </p>
-            <p>Ambassador name- job desc</p>
+           
+           
           </v-col>
         </v-row>
       </v-container>
@@ -259,8 +261,8 @@
 
     <section class="text-center pt-2">
       <v-container>
-        <div class="text-h5 primary--text">SwegzExchange newsletter</div>
-        <p class="mt-2">Subscribe to SwegzExchange newsletter</p>
+        <div class="text-h5 primary--text">SwegzTradeLink newsletter</div>
+        <p class="mt-2">Subscribe to SwegzTradeLink newsletter</p>
         <NewsletterForm />
       </v-container>
       <v-divider class="mt-2"></v-divider>
@@ -268,7 +270,7 @@
   </div>
 </template>
 <script>
-//infoSwegzExchange@gmail.com
+//contact@swegztradelink.com
 //Forexway007
 import NewsletterForm from "../components/NewsletterForm";
 export default {
@@ -293,29 +295,23 @@ export default {
       features: [
         {
           image: "/feature4.svg",
-          title: "Innovative & Simple",
-          text:
-            "Open an Trade portfolio in Naira on our easy-to-use digital platform. You can now easily access short and medium-term Trade opportunities.",
-        },
+          title: "At an incredible speed",
+          text:"Time is of the essence, we buy and sell your cryptocurrency and gift cards at the shortest time possible."        },
         {
           image: "/feature2.svg",
-          title: "Secure & Consistent",
-          text:
-            "Get 20% return on Trade in 25 working days. Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account.",
-        },
+          title: "Secure Platform",
+          text:"The safety of your funds is our utmost priority, our platform is secured for any transaction you perform. Trade with us with both eyes closed."        },
         {
           image: "/features.svg",
-          title: "Social media platforms",
-          text:
-            " Connect with us on all major social media pages. You can also subscribe to our newsletter to receive major updates and finance tips and news. ",
-        },
+          title: "At the best market rate",
+          text:"Being shortchanged isn't an option, get the actual worth of your bitcoins and gift cards on SwegzTradeLink."        },
       ],
       testimonies: [
         {
           image: "/users.svg",
           name: "Papa ",
           company: "Lagos State, Nigeria",
-          text: ` Started investing with SwegzExchange Trade 7months ago,so far, it has 
+          text: ` Started trading with SwegzTradeLink Trade 7months ago,so far, it has 
 been a great experience. I've been able to meet up with some of my 
 financial goals for the year. The management-investor relationship have 
 been professional. I get alerted of my money being available a day before 
@@ -325,9 +321,9 @@ and I get option on how to reinvest. It's been a joy ride.`,
           image: "/users.svg",
           name: "Kehinde Aguda",
           company: "Lagos State, Nigeria",
-          text: ` I started forex Trade with SwegzExchange in February 2020 and I've been 
-investing up until now because my personal expectations were met and 
-Aces delivered the services absolutely! I've been meeting my financial 
+          text: ` I started cryptoTrade with SwegzTradeLink in February 2020 and I've been 
+trading up until now because my personal expectations were met and 
+Swegzdelivered the services absolutely! I've been meeting my financial 
 expectations since I started in February and the Interest always come on 
 due date. My personal experience has an investor has been smooth, no 
 complaints whatsoever. `,
@@ -336,7 +332,7 @@ complaints whatsoever. `,
           image: "/users.svg",
           name: "Blessing Justin",
           company: "Kaduna state, Nigeria",
-          text: `This is the first time I am investing my money and for once I feel at peace... 
+          text: `This is the first time I am trading my money and for once I feel at peace... 
 I don't even remember or panic about the cash sef cos I just know its super 
 safe and growing. Thanks for not giving up on all my enquiry times.`,
         },
@@ -349,7 +345,7 @@ safe and growing. Thanks for not giving up on all my enquiry times.`,
   methods: {
     tradeNow() {
       if ((this.detailsOfTrade && this.typeOfTrade != "") || null) {
-        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzExchange+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzTradeLink+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
         window.location.replace(this.contactUrl);
         this.dialog = false;
       } else {

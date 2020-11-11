@@ -1,6 +1,6 @@
-# SwegzExchange
+# SwegzTradeLink
 
-## The official website of swegz Exchange
+## The official website of SwegzTradeLink
 
 ```bash
 # install dependencies

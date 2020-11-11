@@ -14,7 +14,7 @@
             <v-img contain src="/swg.png"></v-img>
           </v-avatar>
           <p class="font-weight-black text-lg-center mt-3 text-center">
-            SwegzExchange
+            SwegzTradeLink
           </p>
         </v-flex>
       </v-layout>
@@ -56,7 +56,7 @@
               <img src="/swg.png" height="40" alt />
               <div class="overline">
                 <span>&copy; {{ new Date().getFullYear() }}</span
-                >SwegzExchange
+                >SwegzTradeLink
               </div>
               <div style="margin-left: -8px">
                 <v-btn
@@ -68,7 +68,7 @@
                 </v-btn>
                 <v-btn
                   small
-                  href="https://www.twitter.com/SwegzExchangeNG"
+                  href="https://www.twitter.com/SwegzTradeLinkNG"
                   icon
                 >
                   <v-icon small>mdi-twitter</v-icon>
@@ -76,19 +76,19 @@
 
                 <v-btn
                   small
-                  href="https://www.instagram.com/SwegzExchangeng_"
+                  href="https://www.instagram.com/SwegzTradeLinkng_"
                   icon
                 >
                   <v-icon small>mdi-instagram</v-icon>
                 </v-btn>
                 <v-btn
                   small
-                  href="https://api.whatsapp.com/send?phone=2349019881034&text=Hello+SwegzExchange+my+name+is___"
+                  href="https://api.whatsapp.com/send?phone=2348102192374&text=Hello+SwegzTradeLink+my+name+is___"
                   icon
                 >
                   <v-icon small>mdi-whatsapp</v-icon>
                 </v-btn>
-                <v-btn small href="mailto:infoSwegzExchange@gmail.com" icon>
+                <v-btn small href="mailto:contact@swegztradelink.com" icon>
                   <v-icon small>mdi-gmail</v-icon>
                 </v-btn>
               </div>
@@ -164,7 +164,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: "SwegzExchange",
+      title: "SwegzTradeLink",
     };
   },
   methods: {

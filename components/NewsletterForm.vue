@@ -33,7 +33,7 @@ export default {
       if (this.email != "" || null) {
         let subject = "I want to subscribe to you news letter : " + this.email;
         let mailRef =
-          "mailto:infoSwegzExchange@gmail.com?subject=" +
+          "mailto:contact@swegztradelink.com?subject=" +
           encodeURIComponent(subject) +
           "&body=" +
           encodeURIComponent(this.email);

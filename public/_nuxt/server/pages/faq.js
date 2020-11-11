@@ -1,20 +1,20 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ 163:
+/***/ 166:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(164);
+var content = __webpack_require__(167);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("48751daa", content, true)
 
 /***/ }),
 
-/***/ 164:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -28,19 +28,19 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 182:
+/***/ 189:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=template&id=8d929314&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h1',{staticClass:"text-center primary--text"},[_vm._v("FAQ")]),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mt-5"},_vm._l((_vm.Questions),function(que){return _c('v-expansion-panel',{key:que.Q},[_c('v-expansion-panel-header',{staticClass:"font-weight-black primary--text"},[_vm._v(_vm._s(que.Q))]),_vm._v(" "),_c('v-expansion-panel-content',[_vm._v("Answer : "+_vm._s(que.A))])],1)}),1),_vm._v(" "),_c('div',{staticClass:"caption mt-2 text-center"},[_vm._v("\n    call\n    "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("contact")])],1)],1)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=template&id=4d97022e&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h1',{staticClass:"text-center primary--text"},[_vm._v("FAQ")]),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mt-5"},_vm._l((_vm.Questions),function(que){return _c('v-expansion-panel',{key:que.Q},[_c('v-expansion-panel-header',{staticClass:"font-weight-black primary--text"},[_vm._v(_vm._s(que.Q))]),_vm._v(" "),_c('v-expansion-panel-content',[_vm._v("Answer : "+_vm._s(que.Answer))])],1)}),1),_vm._v(" "),_c('div',{staticClass:"caption mt-2 text-center"},[_vm._v("\n    call\n    "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("contact")])],1)],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/faq.vue?vue&type=template&id=8d929314&
+// CONCATENATED MODULE: ./pages/faq.vue?vue&type=template&id=4d97022e&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=script&lang=js&
 //
@@ -65,7 +65,40 @@ var staticRenderFns = []
 /* harmony default export */ var faqvue_type_script_lang_js_ = ({
   data() {
     return {
-      Questions: []
+      Questions: [{
+        Q: ` Can I buy bitcoins on 2348102192374?`,
+        Answer: " Yes, you can."
+      }, {
+        Q: ` Can I buy gift cards on 2348102192374?`,
+        Answer: `Yes, gift cards and others are available. You can check the site for more.`
+      }, {
+        Q: `I know nothing about cryptocurrency, can I still buy or sell cryptocurrency?`,
+        Answer: `Yes, our trading system is very easy and less technical. All you need is your money.`
+      }, {
+        Q: ` Is it possible to sell my bitcoins or gift cards on 2348102192374?`,
+        Answer: `Yes, that's part of our major business at 2348102192374.`
+      }, {
+        Q: `Is bitcoins the only cryptocurrency I can buy or sell?`,
+        Answer: ` No we deal in all cryptocurrency buying and selling.`
+      }, {
+        Q: `How do I buy or sell?`,
+        Answer: ` Go to the homepage and kindly click on the trade icon.
+Fill in what you will like to trade and the kind of trade(buying or selling).
+You will be automatically redirected to one of our members, where you chat to begin your transactions.or contact us directly on whatsapp or call us on our lines `
+      }, {
+        Q: `Is your platform safe?`,
+        Answer: `2348102192374 is completely safe.`
+      }, {
+        Q: `How do I contact 2348102192374?`,
+        Answer: `You can reach us via any of this; Email: info2348102192374@gmail.com 
+Call: +2348136908208 (9:00am – 5:00pm. Monday – Friday).`
+      }, {
+        Q: `How fast is 2348102192374?`,
+        Answer: `We reply in a couple of seconds and attend to your demands as fast as possible.`
+      }, {
+        Q: `How good are the rates?`,
+        Answer: `we offer the best rate you can ever imagine.`
+      }]
     };
   }
 
@@ -345,7 +378,7 @@ const VExpansionPanelHeader_baseMixins = Object(mixins["a" /* default */])(color
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VExpansionPanel/VExpansionPanel.sass
-var VExpansionPanel_VExpansionPanel = __webpack_require__(163);
+var VExpansionPanel_VExpansionPanel = __webpack_require__(166);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VItemGroup/VItemGroup.js
 var VItemGroup = __webpack_require__(40);
@@ -436,7 +469,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "ef624128"
+  "5d094a33"
   
 )
 

@@ -8,7 +8,7 @@
       </h1>
       <div class="mx-auto text-left" style="max-width: 700px">
         <p class="text-h5 mb-0 pb-16 text-center white--text font-weight-bold">
-          SwegzExchange- Upgrading the world to a better trading system
+          SwegzTradeLink- Upgrading the world to a better trading system
         </p>
       </div>
     </div>
@@ -22,42 +22,58 @@
 
     <div class="mx-auto text-center my-6 py-10" style="max-width: 1000px">
       <p class="text-h6 font-weight-regular">
-        We are a registered Nigerian firm (RC: 3152773) with expertise and
-        experience in finance. We deal majorly in the foreign exchange (forex)
-        market and the cryptocurrency world.
+        SwegzTradeLink is a registered Nigerian firm (RC:300000) based in Abeokuta,
+         Ogun state. We started with the major goal of making cryptocurrency and gift cards trade seamless,
+          which we have achieved and doing more. With the upsurge in the cryptocurrency market and also the remarkable publicity gift cards have achieved over the years,
+           we aim at creating a digitally secured platform that is not only fast but reliable. We are focused on the buying and selling of bitcoins and 
+        gift cards in the Nigerian market, with Abeokuta being our largest market. The aim is to become the largest and safest trading platform in Southwest Nigeria.
       </p>
     </div>
     <v-divider class="mx-auto" style="max-width: 1000px"></v-divider>
-    <h1 class="mb-4 mx-auto text-h5 primary--text">What we offer</h1>
+    <h1 class="mb-4 mx-auto text-h5 primary--text">Get to know something about cryptocurrency.</h1>
     <div class="mx-auto text-left" style="max-width: 1000px">
       <p class="body-1">
-        An Trade platform that gives people with little or no knowledge about
-        the forex markets an opportunity to earn from it. Our Trade platform
-        offers monthly returns on any amount invested with us.
+        Just like our regular currency, crypto is another currency but a virtual and digital one which can be used by individuals or organizations. 
+        Unlike our regular currencies, cryptos are decentralized and allow users to make secure financial transactions while shielding their identity. 
+        The first of this currency is bitcoin which was created by Satoshi Nakamoto in 2009,
+         presently there are thousands of alternative coins which can also be used for transactions just like bitcoins.
       </p>
-      <p class="body-1">
-        A cryptocurrency exchange platform that offers value for virtual coins.
-      </p>
+     
     </div>
 
     <v-divider></v-divider>
     <div class="my-10">
       <h2 class="text-h5 primary--text">COMPANY’S WATCHWORD</h2>
-      <p class="body-1">“Building Wealth, Creating Value.”</p>
-      <h2 class="text-h5 primary--text">OUR VISION</h2>
+      <p class="body-1">“Your legit plug for all transactions.”</p>
+      <h2 class="text-h5 primary--text">
+Vision statement
+</h2>
       <p class="body-1">
-        To be a global high-ranking multi-faceted brand that creates value.
+        To become the largest and safest trade exchange platform across 
+        Southwest Nigeria by bringing value to your fingertips.
       </p>
-      <h2 class="text-h5 primary--text">OUR MISSION</h2>
+      <h2 class="text-h5 primary--text">
+Mission statement
+</h2>
       <p class="body-1">
-        At SwegzExchange, we believe in our cause to financially liberate the
-        new generation and financially empower as much people as we can with our
-        Trade platform and financial expertise.
+        SwegzTradeLink is committed to offering the best cryptocurrency and gift cards 
+        trading services to our clients. We are focused on providing a reliable, efficient 
+        and secure platform that will be accessed with ease across Southwest Nigeria and beyond.
       </p>
-      <h2 class="text-h5 primary--text">OUR CORE VALUES</h2>
-      <p class="body-1">Innovation</p>
-      <p>Integrity</p>
-      <p>Accountability.</p>
+      <h2 class="text-h5 primary--text">Value statement</h2>
+      <p class="body-1">
+We strive for the best at SwegzTradeLink, mediocrity is never an option for us. We are committed to building a brand that is;
+
+Reliable: You can count on us, any time or day without delay.
+
+Fast: Speed is never underrated, paying attentions to your demands as fast as possible is the goal.
+
+Secure: We are dedicated to ensuring your financial transactions are secure.
+
+Inclusive: We value people and give equal attention to all our clients despite the diversity.
+
+</p>
+    
     </div>
     <v-divider></v-divider>
   </div>

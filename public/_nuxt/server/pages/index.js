@@ -958,7 +958,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 154:
+/***/ 157:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -969,7 +969,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 155:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1593,19 +1593,19 @@ const dirtyTypes = ['color', 'file', 'time', 'date', 'datetime-local', 'week', '
 
 /***/ }),
 
-/***/ 157:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=template&id=f4466990&
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=template&id=4f94ed9a&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-form',[_c('div',{staticClass:"d-flex flex-column flex-md-row justify-center align-top mx-auto",staticStyle:{"max-width":"600px"}},[_c('v-text-field',{staticClass:"mr-md-2",attrs:{"outlined":"","placeholder":"Email","rules":_vm.emailRules},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-btn',{attrs:{"x-large":"","color":"primary"},on:{"click":_vm.mailernwletter}},[_vm._v("Subscribe")])],1)])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/NewsletterForm.vue?vue&type=template&id=f4466990&
+// CONCATENATED MODULE: ./components/NewsletterForm.vue?vue&type=template&id=4f94ed9a&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=script&lang=js&
 //
@@ -1640,7 +1640,7 @@ var staticRenderFns = []
     mailernwletter() {
       if (this.email != "" || null) {
         let subject = "I want to subscribe to you news letter : " + this.email;
-        let mailRef = "mailto:infoSwegzExchange@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(this.email);
+        let mailRef = "mailto:contact@swegztradelink.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(this.email);
         window.location.replace(mailRef);
       } else {
         alert("please ensure all fields are filled correctly with valid details");
@@ -1662,10 +1662,10 @@ var installComponents_default = /*#__PURE__*/__webpack_require__.n(installCompon
 var VBtn = __webpack_require__(63);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(160);
+var VForm = __webpack_require__(163);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField = __webpack_require__(155);
+var VTextField = __webpack_require__(158);
 
 // CONCATENATED MODULE: ./components/NewsletterForm.vue
 
@@ -1682,7 +1682,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "4f4c5212"
+  "448e3510"
   
 )
 
@@ -1698,7 +1698,7 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VForm: VFo
 
 /***/ }),
 
-/***/ 160:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1841,20 +1841,20 @@ installComponents_default()(component, {VBtn: VBtn["a" /* default */],VForm: VFo
 
 /***/ }),
 
-/***/ 165:
+/***/ 170:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(166);
+var content = __webpack_require__(171);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("2065bca8", content, true)
 
 /***/ }),
 
-/***/ 166:
+/***/ 171:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1868,20 +1868,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 167:
+/***/ 172:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(168);
+var content = __webpack_require__(173);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("3f1da7f4", content, true)
 
 /***/ }),
 
-/***/ 168:
+/***/ 173:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1895,20 +1895,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 169:
+/***/ 174:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(170);
+var content = __webpack_require__(175);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("5c37caa6", content, true)
 
 /***/ }),
 
-/***/ 170:
+/***/ 175:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1922,20 +1922,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 171:
+/***/ 176:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(172);
+var content = __webpack_require__(177);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("e8b41e5e", content, true)
 
 /***/ }),
 
-/***/ 172:
+/***/ 177:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1949,20 +1949,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 173:
+/***/ 178:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(174);
+var content = __webpack_require__(179);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("197fcea4", content, true)
 
 /***/ }),
 
-/***/ 174:
+/***/ 179:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1976,20 +1976,20 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 175:
+/***/ 180:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(176);
+var content = __webpack_require__(181);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("1f651591", content, true)
 
 /***/ }),
 
-/***/ 176:
+/***/ 181:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -2003,34 +2003,34 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 181:
+/***/ 188:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=400b530a&
-var lib_vue_loader_options_pagesvue_type_template_id_400b530a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"force"},[_vm._ssrNode("<section class=\"my-12\">","</section>",[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"mt-md-8 text-center",attrs:{"cols":"12","md":"6"}},[_c('h2',{staticClass:"display-1 mb-6 my-5"},[_vm._v("Welcome to")]),_vm._v(" "),_c('h1',{staticClass:"display-2 primary--text font-weight-bold mb-6 my-5"},[_vm._v("\n          SwegzExchange\n        ")]),_vm._v(" "),_c('p',{staticClass:"body-1"},[_vm._v("\n          Swegz Exchange is a simple, safe and secure platform that provides\n          alternative solutions to payments through the use of Bitcoin,\n          Perfect Money and Giftcard Technology.\n        ")]),_vm._v(" "),_c('v-dialog',{attrs:{"width":"500"},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=1ffef770&
+var lib_vue_loader_options_pagesvue_type_template_id_1ffef770_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"force"},[_vm._ssrNode("<section class=\"my-12\">","</section>",[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"mt-md-8 text-center",attrs:{"cols":"12","md":"6"}},[_c('h2',{staticClass:"display-1 mb-6 my-5"},[_vm._v("Welcome to")]),_vm._v(" "),_c('h1',{staticClass:"display-2 primary--text font-weight-bold mb-6 my-5"},[_vm._v("\n            SwegzTradeLink\n          ")]),_vm._v(" "),_c('p',{staticClass:"body-1"},[_vm._v("\n            The fastest and safest exchange platform\nto trade and convert all your \nBitcoins, Digital assets, Giftcards, Smart devices and E-commerce\n\n          ")]),_vm._v(" "),_c('v-dialog',{attrs:{"width":"500"},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
 var on = ref.on;
 var attrs = ref.attrs;
-return [_c('v-btn',_vm._g(_vm._b({staticClass:"text-uppercase",attrs:{"color":"primary","x-large":"","dark":""}},'v-btn',attrs,false),on),[_vm._v("Trade")])]}}]),model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_vm._v(" "),_c('v-card',[_c('v-card-title',{},[_vm._v("trade with SwegzExchange")]),_vm._v(" "),_c('v-card-text',[_vm._v("Fill in your trade details below and submit. Transaction will\n              proceed immediately.")]),_vm._v(" "),_c('v-form',{model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-select',{attrs:{"items":_vm.tradeDetails,"label":"Cryptocurrency /Giftcards /other"},model:{value:(_vm.detailsOfTrade),callback:function ($$v) {_vm.detailsOfTrade=$$v},expression:"detailsOfTrade"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-select',{attrs:{"items":_vm.tradeType,"label":"Buy / Sell"},model:{value:(_vm.typeOfTrade),callback:function ($$v) {_vm.typeOfTrade=$$v},expression:"typeOfTrade"}})],1)],1)],1)],1),_vm._v(" "),_c('v-divider'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":function($event){return _vm.tradeNow()}}},[_vm._v("Submit")])],1)],1)],1),_vm._v(" "),_c('v-btn',{staticClass:"ml-2 text-uppercase",attrs:{"x-large":"","nuxt":"","to":"/about"}},[_c('v-icon',{attrs:{"left":""}},[_vm._v("mdi-magnify")]),_vm._v("About\n        ")],1)],1),_vm._v(" "),_c('v-col',{staticClass:"landing-image pt-12",attrs:{"cols":"12","md":"6"}},[_c('v-img',{attrs:{"contain":"","max-height":"300","src":"/feature1.svg"}})],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center primary pb-16\">","</section>",[_c('v-container',[_c('div',{staticClass:"display-1 white--text font-weight-bold my-14"},[_c('p',[_vm._v("Get the best trading experience")])]),_vm._v(" "),_c('v-row',_vm._l((_vm.features),function(feature,i){return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
+return [_c('v-btn',_vm._g(_vm._b({staticClass:"text-uppercase",attrs:{"color":"primary","x-large":"","dark":""}},'v-btn',attrs,false),on),[_vm._v("Trade")])]}}]),model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_vm._v(" "),_c('v-card',[_c('v-card-title',{},[_vm._v("trade with SwegzTradeLink")]),_vm._v(" "),_c('v-card-text',[_vm._v("Fill in your trade details below and submit. Transaction will\n                proceed immediately.")]),_vm._v(" "),_c('v-form',{model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-select',{attrs:{"items":_vm.tradeDetails,"label":"Cryptocurrency /Giftcards /other"},model:{value:(_vm.detailsOfTrade),callback:function ($$v) {_vm.detailsOfTrade=$$v},expression:"detailsOfTrade"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-select',{attrs:{"items":_vm.tradeType,"label":"Buy / Sell"},model:{value:(_vm.typeOfTrade),callback:function ($$v) {_vm.typeOfTrade=$$v},expression:"typeOfTrade"}})],1)],1)],1)],1),_vm._v(" "),_c('v-divider'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":function($event){return _vm.tradeNow()}}},[_vm._v("Submit")])],1)],1)],1),_vm._v(" "),_c('v-btn',{staticClass:"ml-2 text-uppercase",attrs:{"x-large":"","nuxt":"","to":"/about"}},[_c('v-icon',{attrs:{"left":""}},[_vm._v("mdi-magnify")]),_vm._v("About\n          ")],1)],1),_vm._v(" "),_c('v-col',{staticClass:"landing-image pt-12",attrs:{"cols":"12","md":"6"}},[_c('v-img',{attrs:{"contain":"","max-height":"300","src":"/feature1.svg"}})],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center primary pb-16\">","</section>",[_c('v-container',[_c('div',{staticClass:"display-1 white--text font-weight-bold my-14"},[_c('p',[_vm._v("Get the best trading experience")])]),_vm._v(" "),_c('v-row',_vm._l((_vm.features),function(feature,i){return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var hover = ref.hover;
-return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 0}},[_c('img',{staticClass:"mb-5",attrs:{"height":"200px","contain":"","src":feature.image}}),_vm._v(" "),_c('v-card-title',{staticClass:"justify-center primary--text"},[_vm._v(_vm._s(feature.title))]),_vm._v(" "),_c('v-card-text',{staticClass:"subtitle-1",domProps:{"textContent":_vm._s(feature.text)}})],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<svg viewBox=\"0 0 1920 135\">","</svg>",[_vm._ssrNode("<defs>","</defs>",[_vm._ssrNode("<filter id=\"Path_1006\" x=\"-152.573\" y=\"-460.806\" width=\"2324.175\" height=\"631.369\" filterUnits=\"userSpaceOnUse\">","</filter>",[_c('feOffset',{attrs:{"input":"SourceAlpha"}}),_vm._ssrNode(" "),_c('feGaussianBlur',{attrs:{"stdDeviation":"25","result":"blur"}}),_vm._ssrNode(" "),_c('feFlood',{attrs:{"flood-opacity":"0.161"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"operator":"in","in2":"blur"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"in":"SourceGraphic"}})],2),_vm._ssrNode(" <clipPath id=\"clip-Home\"><rect width=\"1920\" height=\"135\"></rect></clipPath>")],2),_vm._ssrNode(" <g id=\"Home\" clip-path=\"url(#clip-Home)\"><rect width=\"1920\" height=\"135\" fill=\"#ffffff00\"></rect> <g transform=\"matrix(1, 0, 0, 1, 0, 0)\" filter=\"url(#Path_1006)\"><path id=\"Path_1006-2\" data-name=\"Path 1006\" d=\"M-9948.83,7778.837s223.576,20.394,386.754,27.238,264.528,2.657,433.32-7.967,394.238-56.657,849.857-44.854,433.191,56.657,433.191,56.657l-37.3-459.818H-8937.946s-717.868,3.541-721.409,0S-9970.4,7333.23-9970.4,7333.23l-47.161,238.25,15.345,197.12Z\" transform=\"translate(9941 -7718)\" fill=\"#691616\" stroke=\"#691616\" stroke-width=\"2\"></path></g></g>")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"universal pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('v-row',[_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Days")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Investors")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("100+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Up time")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("365+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Active Members")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("235+")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"my-12\">","</section>",[_c('v-container',[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"landing-image",attrs:{"cols":"12","md":"6"}},[_c('v-img',{attrs:{"contain":"","max-height":"300","src":"/feature1.svg"}})],1),_vm._v(" "),_c('v-col',{staticClass:"mt-md-8 text-center",attrs:{"cols":"12","md":"6"}},[_c('p',{staticClass:"display-1 font-weight-thin"},[_vm._v("\n            Swegz Exchange is a simple, safe and secure platform that provides\n            alternative solutions to payments through the use of Bitcoin,\n            Perfect Money and Giftcard Technology.\n          ")]),_vm._v(" "),_c('p',[_vm._v("Ambassador name- job desc")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"pa-5 primary\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('h2',{staticClass:"display-1 ma-4 white--text"},[_vm._v("Our users are Happy!")]),_vm._v(" "),_c('v-row',_vm._l((_vm.testimonies),function(ref,i){
+return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 0}},[_c('img',{staticClass:"mb-5",attrs:{"height":"200px","contain":"","src":feature.image}}),_vm._v(" "),_c('v-card-title',{staticClass:"justify-center primary--text"},[_vm._v(_vm._s(feature.title))]),_vm._v(" "),_c('v-card-text',{staticClass:"subtitle-1",domProps:{"textContent":_vm._s(feature.text)}})],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<svg viewBox=\"0 0 1920 135\">","</svg>",[_vm._ssrNode("<defs>","</defs>",[_vm._ssrNode("<filter id=\"Path_1006\" x=\"-152.573\" y=\"-460.806\" width=\"2324.175\" height=\"631.369\" filterUnits=\"userSpaceOnUse\">","</filter>",[_c('feOffset',{attrs:{"input":"SourceAlpha"}}),_vm._ssrNode(" "),_c('feGaussianBlur',{attrs:{"stdDeviation":"25","result":"blur"}}),_vm._ssrNode(" "),_c('feFlood',{attrs:{"flood-opacity":"0.161"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"operator":"in","in2":"blur"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"in":"SourceGraphic"}})],2),_vm._ssrNode(" <clipPath id=\"clip-Home\"><rect width=\"1920\" height=\"135\"></rect></clipPath>")],2),_vm._ssrNode(" <g id=\"Home\" clip-path=\"url(#clip-Home)\"><rect width=\"1920\" height=\"135\" fill=\"#ffffff00\"></rect> <g transform=\"matrix(1, 0, 0, 1, 0, 0)\" filter=\"url(#Path_1006)\"><path id=\"Path_1006-2\" data-name=\"Path 1006\" d=\"M-9948.83,7778.837s223.576,20.394,386.754,27.238,264.528,2.657,433.32-7.967,394.238-56.657,849.857-44.854,433.191,56.657,433.191,56.657l-37.3-459.818H-8937.946s-717.868,3.541-721.409,0S-9970.4,7333.23-9970.4,7333.23l-47.161,238.25,15.345,197.12Z\" transform=\"translate(9941 -7718)\" fill=\"#691616\" stroke=\"#691616\" stroke-width=\"2\"></path></g></g>")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"universal pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('v-row',[_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Days")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("1790+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Transactions")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("10k+ ")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Up time")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("24/7")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Active Members")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("235+")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"my-12\">","</section>",[_c('v-container',[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"landing-image",attrs:{"cols":"12","md":"6"}},[_c('v-img',{attrs:{"contain":"","max-height":"300","src":"/feature1.svg"}})],1),_vm._v(" "),_c('v-col',{staticClass:"mt-md-8 text-center",attrs:{"cols":"12","md":"6"}},[_c('p',{staticClass:"display-1 font-weight-thin"},[_vm._v("\n              SwegzTradeLink is a simple, safe and secure platform that provides\n              alternative solutions to payments through the use of Bitcoin,\n              Perfect Money and Giftcard Technology.\n            ")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"pa-5 primary\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('h2',{staticClass:"display-1 ma-4 white--text"},[_vm._v("Our users are Happy!")]),_vm._v(" "),_c('v-row',_vm._l((_vm.testimonies),function(ref,i){
 var image = ref.image;
 var text = ref.text;
 var name = ref.name;
 var company = ref.company;
 return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
 var hover = ref.hover;
-return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 1}},[_c('div',[_c('v-avatar',{attrs:{"size":"88"}},[_c('img',{attrs:{"src":image}})])],1),_vm._v(" "),_c('v-card-text',[_c('div',{staticClass:"subtitle-1"},[_vm._v(_vm._s(text))]),_vm._v(" "),_c('div',{staticClass:"subtitle-1 font-weight-bold mt-5 primary--text"},[_vm._v("\n                    "+_vm._s(name)+"\n                  ")]),_vm._v(" "),_c('div',{staticClass:"caption"},[_vm._v(_vm._s(company))])])],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<svg viewBox=\"0 0 1920 135\">","</svg>",[_vm._ssrNode("<defs>","</defs>",[_vm._ssrNode("<filter id=\"Path_1006\" x=\"-152.573\" y=\"-460.806\" width=\"2324.175\" height=\"631.369\" filterUnits=\"userSpaceOnUse\">","</filter>",[_c('feOffset',{attrs:{"input":"SourceAlpha"}}),_vm._ssrNode(" "),_c('feGaussianBlur',{attrs:{"stdDeviation":"25","result":"blur"}}),_vm._ssrNode(" "),_c('feFlood',{attrs:{"flood-opacity":"0.161"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"operator":"in","in2":"blur"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"in":"SourceGraphic"}})],2),_vm._ssrNode(" <clipPath id=\"clip-Home\"><rect width=\"1920\" height=\"135\"></rect></clipPath>")],2),_vm._ssrNode(" <g id=\"Home\" clip-path=\"url(#clip-Home)\"><rect width=\"1920\" height=\"135\" fill=\"#ffffff00\"></rect> <g transform=\"matrix(1, 0, 0, 1, 0, 0)\" filter=\"url(#Path_1006)\"><path id=\"Path_1006-2\" data-name=\"Path 1006\" d=\"M-9948.83,7778.837s223.576,20.394,386.754,27.238,264.528,2.657,433.32-7.967,394.238-56.657,849.857-44.854,433.191,56.657,433.191,56.657l-37.3-459.818H-8937.946s-717.868,3.541-721.409,0S-9970.4,7333.23-9970.4,7333.23l-47.161,238.25,15.345,197.12Z\" transform=\"translate(9941 -7718)\" fill=\"#691616\" stroke=\"#691616\" stroke-width=\"2\"></path></g></g>")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center pt-2\">","</section>",[_c('v-container',[_c('div',{staticClass:"text-h5 primary--text"},[_vm._v("SwegzExchange newsletter")]),_vm._v(" "),_c('p',{staticClass:"mt-2"},[_vm._v("Subscribe to SwegzExchange newsletter")]),_vm._v(" "),_c('NewsletterForm')],1),_vm._ssrNode(" "),_c('v-divider',{staticClass:"mt-2"})],2)],2)}
+return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 1}},[_c('div',[_c('v-avatar',{attrs:{"size":"88"}},[_c('img',{attrs:{"src":image}})])],1),_vm._v(" "),_c('v-card-text',[_c('div',{staticClass:"subtitle-1"},[_vm._v(_vm._s(text))]),_vm._v(" "),_c('div',{staticClass:"subtitle-1 font-weight-bold mt-5 primary--text"},[_vm._v("\n                      "+_vm._s(name)+"\n                    ")]),_vm._v(" "),_c('div',{staticClass:"caption"},[_vm._v(_vm._s(company))])])],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<svg viewBox=\"0 0 1920 135\">","</svg>",[_vm._ssrNode("<defs>","</defs>",[_vm._ssrNode("<filter id=\"Path_1006\" x=\"-152.573\" y=\"-460.806\" width=\"2324.175\" height=\"631.369\" filterUnits=\"userSpaceOnUse\">","</filter>",[_c('feOffset',{attrs:{"input":"SourceAlpha"}}),_vm._ssrNode(" "),_c('feGaussianBlur',{attrs:{"stdDeviation":"25","result":"blur"}}),_vm._ssrNode(" "),_c('feFlood',{attrs:{"flood-opacity":"0.161"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"operator":"in","in2":"blur"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"in":"SourceGraphic"}})],2),_vm._ssrNode(" <clipPath id=\"clip-Home\"><rect width=\"1920\" height=\"135\"></rect></clipPath>")],2),_vm._ssrNode(" <g id=\"Home\" clip-path=\"url(#clip-Home)\"><rect width=\"1920\" height=\"135\" fill=\"#ffffff00\"></rect> <g transform=\"matrix(1, 0, 0, 1, 0, 0)\" filter=\"url(#Path_1006)\"><path id=\"Path_1006-2\" data-name=\"Path 1006\" d=\"M-9948.83,7778.837s223.576,20.394,386.754,27.238,264.528,2.657,433.32-7.967,394.238-56.657,849.857-44.854,433.191,56.657,433.191,56.657l-37.3-459.818H-8937.946s-717.868,3.541-721.409,0S-9970.4,7333.23-9970.4,7333.23l-47.161,238.25,15.345,197.12Z\" transform=\"translate(9941 -7718)\" fill=\"#691616\" stroke=\"#691616\" stroke-width=\"2\"></path></g></g>")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center pt-2\">","</section>",[_c('v-container',[_c('div',{staticClass:"text-h5 primary--text"},[_vm._v("SwegzTradeLink newsletter")]),_vm._v(" "),_c('p',{staticClass:"mt-2"},[_vm._v("Subscribe to SwegzTradeLink newsletter")]),_vm._v(" "),_c('NewsletterForm')],1),_vm._ssrNode(" "),_c('v-divider',{staticClass:"mt-2"})],2)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=400b530a&
+// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=1ffef770&
 
 // EXTERNAL MODULE: ./components/NewsletterForm.vue + 4 modules
-var NewsletterForm = __webpack_require__(157);
+var NewsletterForm = __webpack_require__(160);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&
 //
@@ -2302,7 +2302,9 @@ var NewsletterForm = __webpack_require__(157);
 //
 //
 //
-//infoSwegzExchange@gmail.com
+//
+//
+//contact@swegztradelink.com
 //Forexway007
 
 /* harmony default export */ var lib_vue_loader_options_pagesvue_type_script_lang_js_ = ({
@@ -2320,22 +2322,22 @@ var NewsletterForm = __webpack_require__(157);
       dialog: false,
       features: [{
         image: "/feature4.svg",
-        title: "Innovative & Simple",
-        text: "Open an Trade portfolio in Naira on our easy-to-use digital platform. You can now easily access short and medium-term Trade opportunities."
+        title: "At an incredible speed",
+        text: "Time is of the essence, we buy and sell your cryptocurrency and gift cards at the shortest time possible."
       }, {
         image: "/feature2.svg",
-        title: "Secure & Consistent",
-        text: "Get 20% return on Trade in 25 working days. Invest your funds in a secure platform with guaranteed consistent returns paid promptly into your bank account."
+        title: "Secure Platform",
+        text: "The safety of your funds is our utmost priority, our platform is secured for any transaction you perform. Trade with us with both eyes closed."
       }, {
         image: "/features.svg",
-        title: "Social media platforms",
-        text: " Connect with us on all major social media pages. You can also subscribe to our newsletter to receive major updates and finance tips and news. "
+        title: "At the best market rate",
+        text: "Being shortchanged isn't an option, get the actual worth of your bitcoins and gift cards on SwegzTradeLink."
       }],
       testimonies: [{
         image: "/users.svg",
         name: "Papa ",
         company: "Lagos State, Nigeria",
-        text: ` Started investing with SwegzExchange Trade 7months ago,so far, it has 
+        text: ` Started trading with SwegzTradeLink Trade 7months ago,so far, it has 
 been a great experience. I've been able to meet up with some of my 
 financial goals for the year. The management-investor relationship have 
 been professional. I get alerted of my money being available a day before 
@@ -2344,9 +2346,9 @@ and I get option on how to reinvest. It's been a joy ride.`
         image: "/users.svg",
         name: "Kehinde Aguda",
         company: "Lagos State, Nigeria",
-        text: ` I started forex Trade with SwegzExchange in February 2020 and I've been 
-investing up until now because my personal expectations were met and 
-Aces delivered the services absolutely! I've been meeting my financial 
+        text: ` I started cryptoTrade with SwegzTradeLink in February 2020 and I've been 
+trading up until now because my personal expectations were met and 
+Swegzdelivered the services absolutely! I've been meeting my financial 
 expectations since I started in February and the Interest always come on 
 due date. My personal experience has an investor has been smooth, no 
 complaints whatsoever. `
@@ -2354,7 +2356,7 @@ complaints whatsoever. `
         image: "/users.svg",
         name: "Blessing Justin",
         company: "Kaduna state, Nigeria",
-        text: `This is the first time I am investing my money and for once I feel at peace... 
+        text: `This is the first time I am trading my money and for once I feel at peace... 
 I don't even remember or panic about the cash sef cos I just know its super 
 safe and growing. Thanks for not giving up on all my enquiry times.`
       }],
@@ -2371,7 +2373,7 @@ safe and growing. Thanks for not giving up on all my enquiry times.`
   methods: {
     tradeNow() {
       if (this.detailsOfTrade && this.typeOfTrade != "" || null) {
-        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzExchange+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzTradeLink+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
         window.location.replace(this.contactUrl);
         this.dialog = false;
       } else {
@@ -2409,7 +2411,7 @@ var VCol = __webpack_require__(131);
 var VContainer = __webpack_require__(133);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VDialog/VDialog.sass
-var VDialog = __webpack_require__(165);
+var VDialog = __webpack_require__(170);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/themeable/index.js
 var themeable = __webpack_require__(7);
@@ -3223,7 +3225,7 @@ const VDialog_baseMixins = Object(mixins["a" /* default */])(activatable, depend
 var VDivider = __webpack_require__(142);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(160);
+var VForm = __webpack_require__(163);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VHover/VHover.js
 // Mixins
@@ -3307,10 +3309,10 @@ var VRow = __webpack_require__(132);
 var VTextField = __webpack_require__(139);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VSelect/VSelect.sass
-var VSelect = __webpack_require__(167);
+var VSelect = __webpack_require__(172);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VChip/VChip.sass
-var VChip = __webpack_require__(173);
+var VChip = __webpack_require__(178);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/transitions/index.js + 2 modules
 var transitions = __webpack_require__(26);
@@ -3501,7 +3503,7 @@ var sizeable = __webpack_require__(36);
 
 /* harmony default export */ var components_VChip = (VChip_VChip);
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VMenu/VMenu.sass
-var VMenu = __webpack_require__(175);
+var VMenu = __webpack_require__(180);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/positionable/index.js
 var positionable = __webpack_require__(21);
@@ -4324,7 +4326,7 @@ const VMenu_baseMixins = Object(mixins["a" /* default */])(dependent["a" /* defa
 
 /* harmony default export */ var components_VMenu = (VMenu_VMenu);
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VCheckbox/VSimpleCheckbox.sass
-var VSimpleCheckbox = __webpack_require__(169);
+var VSimpleCheckbox = __webpack_require__(174);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/ripple/index.js
 var directives_ripple = __webpack_require__(19);
@@ -4421,10 +4423,10 @@ var mergeData = __webpack_require__(9);
 
 }));
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDivider/index.js
-var components_VDivider = __webpack_require__(154);
+var components_VDivider = __webpack_require__(157);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VSubheader/VSubheader.sass
-var VSubheader = __webpack_require__(171);
+var VSubheader = __webpack_require__(176);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VSubheader/VSubheader.js
 // Styles
@@ -4719,7 +4721,7 @@ var VList_VList = __webpack_require__(48);
 var VInput = __webpack_require__(140);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField_VTextField = __webpack_require__(155);
+var VTextField_VTextField = __webpack_require__(158);
 
 // CONCATENATED MODULE: ./node_modules/vuetify/lib/mixins/comparable/index.js
 
@@ -5527,19 +5529,19 @@ var VSpacer = __webpack_require__(134);
 
 var component = Object(componentNormalizer["a" /* default */])(
   pagesvue_type_script_lang_js_,
-  lib_vue_loader_options_pagesvue_type_template_id_400b530a_render,
+  lib_vue_loader_options_pagesvue_type_template_id_1ffef770_render,
   staticRenderFns,
   false,
   null,
   null,
-  "617707a8"
+  "1d7c46a2"
   
 )
 
 /* harmony default export */ var pages = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents_default()(component, {NewsletterForm: __webpack_require__(157).default})
+installComponents_default()(component, {NewsletterForm: __webpack_require__(160).default})
 
 
 /* vuetify-loader */

@@ -36,9 +36,9 @@
         <v-btn color="primary" x-large block @click="mailer()">Send</v-btn>
       </v-form>
     </div>
-    <p class="primary--text">Email: infoSwegzExchange@gmail.com</p>
+    <p class="primary--text">Email: contact@swegztradelink.com</p>
     <p class="primary--text">
-      Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).
+      Call: +2348136908208, +2348102192374 (9:00am – 5:00pm. Monday – Friday).
     </p>
   </div>
 </template>
@@ -64,7 +64,7 @@ export default {
       if ((this.name && this.email && this.message != "") || null) {
         let subject = "from " + this.name + ":@ " + this.email;
         let mailRef =
-          "mailto:infoSwegzExchange@gmail.com?subject=" +
+          "mailto:contact@swegztradelink.com?subject=" +
           encodeURIComponent(subject) +
           "&body=" +
           encodeURIComponent(this.message);

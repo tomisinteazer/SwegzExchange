@@ -885,7 +885,7 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 155:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1509,7 +1509,7 @@ const dirtyTypes = ['color', 'file', 'time', 'date', 'datetime-local', 'week', '
 
 /***/ }),
 
-/***/ 160:
+/***/ 163:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1652,20 +1652,20 @@ const dirtyTypes = ['color', 'file', 'time', 'date', 'datetime-local', 'week', '
 
 /***/ }),
 
-/***/ 161:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(162);
+var content = __webpack_require__(165);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("5c8fbe94", content, true)
 
 /***/ }),
 
-/***/ 162:
+/***/ 165:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -1679,19 +1679,19 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 183:
+/***/ 190:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/contact.vue?vue&type=template&id=19bc23af&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"text-center"},[_vm._ssrNode("<div class=\"primary py-16\"><h1 class=\"display-2 mb-6 pb-8 text-uppercase white--text\">Contact us</h1> <div class=\"mx-auto text-left\" style=\"max-width: 700px\"><p class=\"text-h5 mb-0 pb-16 text-center white--text\">\n        Send us a message and we will respond as soon as possible.\n      </p></div></div> <svg viewBox=\"0 0 1440 88\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><path fill=\"#ffffff00\" d=\"M0 0h1440v88H0z\"></path> <path d=\"M1440 72.353C1154.087 40.784 917.42 25 730 25 542.58 25 299.246 40.784 0 72.353V0h1440v72.353z\" fill=\"#691616\"></path></g></svg> "),_vm._ssrNode("<div class=\"mx-auto mb-6\" style=\"max-width: 700px\">","</div>",[_c('v-form',{staticClass:"mt-5"},[_c('v-text-field',{attrs:{"label":"Full name","outlined":"","rules":_vm.nameRules},model:{value:(_vm.name),callback:function ($$v) {_vm.name=$$v},expression:"name"}}),_vm._v(" "),_c('v-text-field',{attrs:{"label":"Email","outlined":"","rules":_vm.emailRules},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-textarea',{attrs:{"label":"Message","outlined":""},model:{value:(_vm.message),callback:function ($$v) {_vm.message=$$v},expression:"message"}}),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary","x-large":"","block":""},on:{"click":function($event){return _vm.mailer()}}},[_vm._v("Send")])],1)],1),_vm._ssrNode(" <p class=\"primary--text\">Email: infoSwegzExchange@gmail.com</p> <p class=\"primary--text\">\n    Call: +2348136908208, +2349019881034 (9:00am – 5:00pm. Monday – Friday).\n  </p>")],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/contact.vue?vue&type=template&id=8bd15c7c&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"text-center"},[_vm._ssrNode("<div class=\"primary py-16\"><h1 class=\"display-2 mb-6 pb-8 text-uppercase white--text\">Contact us</h1> <div class=\"mx-auto text-left\" style=\"max-width: 700px\"><p class=\"text-h5 mb-0 pb-16 text-center white--text\">\n        Send us a message and we will respond as soon as possible.\n      </p></div></div> <svg viewBox=\"0 0 1440 88\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><path fill=\"#ffffff00\" d=\"M0 0h1440v88H0z\"></path> <path d=\"M1440 72.353C1154.087 40.784 917.42 25 730 25 542.58 25 299.246 40.784 0 72.353V0h1440v72.353z\" fill=\"#691616\"></path></g></svg> "),_vm._ssrNode("<div class=\"mx-auto mb-6\" style=\"max-width: 700px\">","</div>",[_c('v-form',{staticClass:"mt-5"},[_c('v-text-field',{attrs:{"label":"Full name","outlined":"","rules":_vm.nameRules},model:{value:(_vm.name),callback:function ($$v) {_vm.name=$$v},expression:"name"}}),_vm._v(" "),_c('v-text-field',{attrs:{"label":"Email","outlined":"","rules":_vm.emailRules},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-textarea',{attrs:{"label":"Message","outlined":""},model:{value:(_vm.message),callback:function ($$v) {_vm.message=$$v},expression:"message"}}),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary","x-large":"","block":""},on:{"click":function($event){return _vm.mailer()}}},[_vm._v("Send")])],1)],1),_vm._ssrNode(" <p class=\"primary--text\">Email: contact@swegztradelink.com</p> <p class=\"primary--text\">\n    Call: +2348136908208, +2348102192374 (9:00am – 5:00pm. Monday – Friday).\n  </p>")],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/contact.vue?vue&type=template&id=19bc23af&
+// CONCATENATED MODULE: ./pages/contact.vue?vue&type=template&id=8bd15c7c&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/contact.vue?vue&type=script&lang=js&
 //
@@ -1752,7 +1752,7 @@ var staticRenderFns = []
     mailer() {
       if (this.name && this.email && this.message != "" || null) {
         let subject = "from " + this.name + ":@ " + this.email;
-        let mailRef = "mailto:infoSwegzExchange@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(this.message);
+        let mailRef = "mailto:contact@swegztradelink.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(this.message);
         window.location.replace(mailRef);
       } else {
         alert("please ensure all fields are filled correctly with valid details");
@@ -1774,13 +1774,13 @@ var installComponents_default = /*#__PURE__*/__webpack_require__.n(installCompon
 var VBtn = __webpack_require__(63);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(160);
+var VForm = __webpack_require__(163);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField = __webpack_require__(155);
+var VTextField = __webpack_require__(158);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/src/components/VTextarea/VTextarea.sass
-var VTextarea = __webpack_require__(161);
+var VTextarea = __webpack_require__(164);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mixins.js
 var mixins = __webpack_require__(2);
@@ -1896,7 +1896,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "5db75714"
+  "cce3f886"
   
 )
 

@@ -1,12 +1,12 @@
 <template>
   <v-container>
-    <h1 class="primary--text">Privacy Policy for SwegzExchange</h1>
+    <h1 class="primary--text">Privacy Policy for SwegzTradeLink</h1>
 
     <p>
-      At SwegzExchange.com, accessible from SwegzExchange.com, one of our main
+      At SwegzTradeLink.com, accessible from SwegzTradeLink.com, one of our main
       priorities is the privacy of our visitors. This Privacy Policy document
       contains types of information that is collected and recorded by
-      SwegzExchange.com and how we use it.
+      SwegzTradeLink.com and how we use it.
     </p>
 
     <p>
@@ -17,7 +17,7 @@
     <p>
       This Privacy Policy applies only to our online activities and is valid for
       visitors to our website with regards to the information that they shared
-      and/or collect in SwegzExchange.com. This policy is not applicable to any
+      and/or collect in SwegzTradeLink.com. This policy is not applicable to any
       information collected offline or via channels other than this website.
     </p>
 
@@ -69,7 +69,7 @@
     <h2 class="primary--text">Log Files</h2>
 
     <p>
-      SwegzExchange.com follows a standard procedure of using log files. These
+      SwegzTradeLink.com follows a standard procedure of using log files. These
       files log visitors when they visit websites. All hosting companies do this
       and a part of hosting services' analytics. The information collected by
       log files include internet protocol (IP) addresses, browser type, Internet
@@ -84,13 +84,13 @@
 
     <p>
       You may consult this list to find the Privacy Policy for each of the
-      advertising partners of SwegzExchange.com.
+      advertising partners of SwegzTradeLink.com.
     </p>
 
     <p>
       Third-party ad servers or ad networks uses technologies like cookies,
       JavaScript, or Web Beacons that are used in their respective
-      advertisements and links that appear on SwegzExchange.com, which are sent
+      advertisements and links that appear on SwegzTradeLink.com, which are sent
       directly to users' browser. They automatically receive your IP address
       when this occurs. These technologies are used to measure the effectiveness
       of their advertising campaigns and/or to personalize the advertising
@@ -98,14 +98,14 @@
     </p>
 
     <p>
-      Note that SwegzExchange.com has no access to or control over these cookies
+      Note that SwegzTradeLink.com has no access to or control over these cookies
       that are used by third-party advertisers.
     </p>
 
     <h2 class="primary--text">Third Party Privacy Policies</h2>
 
     <p>
-      SwegzExchange.com's Privacy Policy does not apply to other advertisers or
+      SwegzTradeLink.com's Privacy Policy does not apply to other advertisers or
       websites. Thus, we are advising you to consult the respective Privacy
       Policies of these third-party ad servers for more detailed information. It
       may include their practices and instructions about how to opt-out of
@@ -190,7 +190,7 @@
     </p>
 
     <p>
-      SwegzExchange.com does not knowingly collect any Personal Identifiable
+      SwegzTradeLink.com does not knowingly collect any Personal Identifiable
       Information from children under the age of 13. If you think that your
       child provided this kind of information on our website, we strongly
       encourage you to contact us immediately and we will do our best efforts to
