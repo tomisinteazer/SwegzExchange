@@ -10,10 +10,9 @@
             SwegzTradeLink
           </h1>
           <p class="body-1">
-            The fastest and safest exchange platform
-to trade and convert all your 
-Bitcoins, Digital assets, Giftcards, Smart devices and E-commerce
-
+            The fastest and safest exchange platform to trade and convert all
+            your Bitcoins, Digital assets, Giftcards, Smart devices and
+            E-commerce
           </p>
 
           <v-dialog v-model="dialog" width="500">
@@ -157,7 +156,7 @@ Bitcoins, Digital assets, Giftcards, Smart devices and E-commerce
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Transactions</div>
-            <div class="display-1">10k+ </div>
+            <div class="display-1">10k+</div>
           </v-col>
           <v-col cols="6" md="3">
             <div class="text-uppercase caption">Up time</div>
@@ -183,8 +182,6 @@ Bitcoins, Digital assets, Giftcards, Smart devices and E-commerce
               alternative solutions to payments through the use of Bitcoin,
               Perfect Money and Giftcard Technology.
             </p>
-           
-           
           </v-col>
         </v-row>
       </v-container>
@@ -296,15 +293,21 @@ export default {
         {
           image: "/feature4.svg",
           title: "At an incredible speed",
-          text:"Time is of the essence, we buy and sell your cryptocurrency and gift cards at the shortest time possible."        },
+          text:
+            "Time is of the essence, we buy and sell your cryptocurrency and gift cards at the shortest time possible.",
+        },
         {
           image: "/feature2.svg",
           title: "Secure Platform",
-          text:"The safety of your funds is our utmost priority, our platform is secured for any transaction you perform. Trade with us with both eyes closed."        },
+          text:
+            "The safety of your funds is our utmost priority, our platform is secured for any transaction you perform. Trade with us with both eyes closed.",
+        },
         {
           image: "/features.svg",
           title: "At the best market rate",
-          text:"Being shortchanged isn't an option, get the actual worth of your bitcoins and gift cards on SwegzTradeLink."        },
+          text:
+            "Being shortchanged isn't an option, get the actual worth of your bitcoins and gift cards on SwegzTradeLink.",
+        },
       ],
       testimonies: [
         {

@@ -98,8 +98,8 @@
     </p>
 
     <p>
-      Note that SwegzTradeLink.com has no access to or control over these cookies
-      that are used by third-party advertisers.
+      Note that SwegzTradeLink.com has no access to or control over these
+      cookies that are used by third-party advertisers.
     </p>
 
     <h2 class="primary--text">Third Party Privacy Policies</h2>
