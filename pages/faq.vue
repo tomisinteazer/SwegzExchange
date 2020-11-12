@@ -23,11 +23,11 @@ export default {
     return {
       Questions: [
         {
-          Q: ` Can I buy bitcoins on 2348102192374?`,
+          Q: ` Can I buy bitcoins on Swegztradelink?`,
           Answer: " Yes, you can.",
         },
         {
-          Q: ` Can I buy gift cards on 2348102192374?`,
+          Q: ` Can I buy gift cards on Swegztradelink?`,
           Answer: `Yes, gift cards and others are available. You can check the site for more.`,
         },
         {
@@ -35,8 +35,8 @@ export default {
           Answer: `Yes, our trading system is very easy and less technical. All you need is your money.`,
         },
         {
-          Q: ` Is it possible to sell my bitcoins or gift cards on 2348102192374?`,
-          Answer: `Yes, that's part of our major business at 2348102192374.`,
+          Q: ` Is it possible to sell my bitcoins or gift cards on Swegztradelink?`,
+          Answer: `Yes, that's part of our major business at Swegztradelink.`,
         },
         {
           Q: `Is bitcoins the only cryptocurrency I can buy or sell?`,
@@ -50,15 +50,15 @@ You will be automatically redirected to one of our members, where you chat to be
         },
         {
           Q: `Is your platform safe?`,
-          Answer: `2348102192374 is completely safe.`,
+          Answer: `Swegztradelink is completely safe.`,
         },
         {
-          Q: `How do I contact 2348102192374?`,
-          Answer: `You can reach us via any of this; Email: info2348102192374@gmail.com 
-Call: +2348136908208 (9:00am – 5:00pm. Monday – Friday).`,
+          Q: `How do I contact Swegztradelink?`,
+          Answer: `You can reach us via any of this; Email: infoSwegztradelink@gmail.com 
+Call: +2348102192374.`,
         },
         {
-          Q: `How fast is 2348102192374?`,
+          Q: `How fast is Swegztradelink?`,
           Answer: `We reply in a couple of seconds and attend to your demands as fast as possible.`,
         },
         {
