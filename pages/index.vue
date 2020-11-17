@@ -76,7 +76,8 @@
         </v-col>
       </v-row>
     </section>
-
+<Rates/>
+<Giftcards/>
     <!-- features -->
 
     <section class="text-center primary pb-16">
@@ -267,12 +268,17 @@
   </div>
 </template>
 <script>
+import Giftcards from '../components/giftcards.vue';
 //contact@swegztradelink.com
 //Forexway007
 import NewsletterForm from "../components/NewsletterForm";
+import Rates from '../components/rates.vue';
 export default {
   components: {
     NewsletterForm,
+   
+    Rates,
+    Giftcards,
   },
   data() {
     return {

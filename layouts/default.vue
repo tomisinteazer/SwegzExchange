@@ -93,7 +93,7 @@
                 </v-btn>
               </div>
             </v-col>
-            <v-col cols="12" md="3">
+            <v-col cols="12" md="2">
               <div class="font-weight-black mb-2">General resources</div>
               <div class="d-flex flex-column subtitle-2">
                 <nuxt-link to="/about">About us</nuxt-link>
@@ -101,11 +101,24 @@
                 <nuxt-link to="/faq">Frequently asked Question</nuxt-link>
               </div>
             </v-col>
-            <v-col cols="12" md="3">
+            <v-col cols="12" md="2">
               <div class="font-weight-black mb-2">Terms</div>
               <div class="d-flex flex-column subtitle-2">
                 <nuxt-link to="/terms">Terms of service</nuxt-link>
                 <nuxt-link to="/policy">Privacy policy</nuxt-link>
+              </div>
+            </v-col>
+              <v-col cols="12" md="2">
+              <div class="font-weight-black mb-2">Visit us At :</div>
+              <div class="d-flex flex-column subtitle-2">
+                <Address>
+                  4th Floor
+                  Presidential Boulevard,<br/>
+                   1 Golf Resort Drive, <br/>
+                   Oke Mosan, Abeokuta.
+
+                </Address>
+                
               </div>
             </v-col>
           </v-row>

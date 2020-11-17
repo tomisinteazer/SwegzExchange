@@ -36,6 +36,7 @@
         <v-btn color="primary" x-large block @click="mailer()">Send</v-btn>
       </v-form>
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0325380390063!2d3.3647459!3d7.1222271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4b0a76082ddd%3A0x19d730d0f1ce641d!2sConference%20Hotel%20Abeokuta%2C%20Abeokuta!5e0!3m2!1sen!2sng!4v1605581042794!5m2!1sen!2sng" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <p class="primary--text">Email: contact@swegztradelink.com</p>
     <p class="primary--text">
       Call: +2348136908208, +2348102192374 (9:00am – 5:00pm. Monday – Friday).

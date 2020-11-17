@@ -9,8 +9,6 @@
         <v-btn
       
           fixed
-          large
-         text
           bottom
           right
           color="#25d366"
