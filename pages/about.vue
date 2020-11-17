@@ -22,58 +22,60 @@
 
     <div class="mx-auto text-center my-6 py-10" style="max-width: 1000px">
       <p class="text-h6 font-weight-regular">
-        SwegzTradeLink is a registered Nigerian firm (RC:300000) based in Abeokuta,
-         Ogun state. We started with the major goal of making cryptocurrency and gift cards trade seamless,
-          which we have achieved and doing more. With the upsurge in the cryptocurrency market and also the remarkable publicity gift cards have achieved over the years,
-           we aim at creating a digitally secured platform that is not only fast but reliable. We are focused on the buying and selling of bitcoins and 
-        gift cards in the Nigerian market, with Abeokuta being our largest market. The aim is to become the largest and safest trading platform in Southwest Nigeria.
+        SwegzTradeLink is a registered Nigerian firm (RC:300000) based in
+        Abeokuta, Ogun state. We started with the major goal of making
+        cryptocurrency and gift cards trade seamless, which we have achieved and
+        doing more. With the upsurge in the cryptocurrency market and also the
+        remarkable publicity gift cards have achieved over the years, we aim at
+        creating a digitally secured platform that is not only fast but
+        reliable. We are focused on the buying and selling of bitcoins and gift
+        cards in the Nigerian market, with Abeokuta being our largest market.
+        The aim is to become the largest and safest trading platform in
+        Southwest Nigeria.
       </p>
     </div>
     <v-divider class="mx-auto" style="max-width: 1000px"></v-divider>
-    <h1 class="mb-4 mx-auto text-h5 primary--text">Get to know something about cryptocurrency.</h1>
+    <h1 class="mb-4 mx-auto text-h5 primary--text">
+      Get to know something about cryptocurrency.
+    </h1>
     <div class="mx-auto text-left" style="max-width: 1000px">
       <p class="body-1">
-        Just like our regular currency, crypto is another currency but a virtual and digital one which can be used by individuals or organizations. 
-        Unlike our regular currencies, cryptos are decentralized and allow users to make secure financial transactions while shielding their identity. 
-        The first of this currency is bitcoin which was created by Satoshi Nakamoto in 2009,
-         presently there are thousands of alternative coins which can also be used for transactions just like bitcoins.
+        Just like our regular currency, crypto is another currency but a virtual
+        and digital one which can be used by individuals or organizations.
+        Unlike our regular currencies, cryptos are decentralized and allow users
+        to make secure financial transactions while shielding their identity.
+        The first of this currency is bitcoin which was created by Satoshi
+        Nakamoto in 2009, presently there are thousands of alternative coins
+        which can also be used for transactions just like bitcoins.
       </p>
-     
     </div>
 
     <v-divider></v-divider>
     <div class="my-10">
       <h2 class="text-h5 primary--text">COMPANY’S WATCHWORD</h2>
       <p class="body-1">“Your legit plug for all transactions.”</p>
-      <h2 class="text-h5 primary--text">
-Vision statement
-</h2>
+      <h2 class="text-h5 primary--text">Vision statement</h2>
       <p class="body-1">
-        To become the largest and safest trade exchange platform across 
+        To become the largest and safest trade exchange platform across
         Southwest Nigeria by bringing value to your fingertips.
       </p>
-      <h2 class="text-h5 primary--text">
-Mission statement
-</h2>
+      <h2 class="text-h5 primary--text">Mission statement</h2>
       <p class="body-1">
-        SwegzTradeLink is committed to offering the best cryptocurrency and gift cards 
-        trading services to our clients. We are focused on providing a reliable, efficient 
-        and secure platform that will be accessed with ease across Southwest Nigeria and beyond.
+        SwegzTradeLink is committed to offering the best cryptocurrency and gift
+        cards trading services to our clients. We are focused on providing a
+        reliable, efficient and secure platform that will be accessed with ease
+        across Southwest Nigeria and beyond.
       </p>
       <h2 class="text-h5 primary--text">Value statement</h2>
       <p class="body-1">
-We strive for the best at SwegzTradeLink, mediocrity is never an option for us. We are committed to building a brand that is;
-
-Reliable: You can count on us, any time or day without delay.
-
-Fast: Speed is never underrated, paying attentions to your demands as fast as possible is the goal.
-
-Secure: We are dedicated to ensuring your financial transactions are secure.
-
-Inclusive: We value people and give equal attention to all our clients despite the diversity.
-
-</p>
-    
+        We strive for the best at SwegzTradeLink, mediocrity is never an option
+        for us. We are committed to building a brand that is; Reliable: You can
+        count on us, any time or day without delay. Fast: Speed is never
+        underrated, paying attentions to your demands as fast as possible is the
+        goal. Secure: We are dedicated to ensuring your financial transactions
+        are secure. Inclusive: We value people and give equal attention to all
+        our clients despite the diversity.
+      </p>
     </div>
     <v-divider></v-divider>
   </div>
