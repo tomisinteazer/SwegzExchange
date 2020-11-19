@@ -47,9 +47,7 @@
       tabindex="0"
     ></iframe>
     <p class="primary--text">Email: contact@swegztradelink.com</p>
-    <p class="primary--text">
-      Call: +2348136908208, +2348102192374 (9:00am – 5:00pm. Monday – Friday).
-    </p>
+    <p class="primary--text">Call: +2348102192374 (24/7) Monday - Sunday.</p>
   </div>
 </template>
 <script>

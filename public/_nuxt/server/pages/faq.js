@@ -1,20 +1,20 @@
 exports.ids = [3];
 exports.modules = {
 
-/***/ 166:
+/***/ 167:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(167);
+var content = __webpack_require__(168);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 __webpack_require__(5).default("48751daa", content, true)
 
 /***/ }),
 
-/***/ 167:
+/***/ 168:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -28,113 +28,21 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 189:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=template&id=4d97022e&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h1',{staticClass:"text-center primary--text"},[_vm._v("FAQ")]),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mt-5"},_vm._l((_vm.Questions),function(que){return _c('v-expansion-panel',{key:que.Q},[_c('v-expansion-panel-header',{staticClass:"font-weight-black primary--text"},[_vm._v(_vm._s(que.Q))]),_vm._v(" "),_c('v-expansion-panel-content',[_vm._v("Answer : "+_vm._s(que.Answer))])],1)}),1),_vm._v(" "),_c('div',{staticClass:"caption mt-2 text-center"},[_vm._v("\n    call\n    "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("contact")])],1)],1)}
-var staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./pages/faq.vue?vue&type=template&id=4d97022e&
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var faqvue_type_script_lang_js_ = ({
-  data() {
-    return {
-      Questions: [{
-        Q: ` Can I buy bitcoins on 2348102192374?`,
-        Answer: " Yes, you can."
-      }, {
-        Q: ` Can I buy gift cards on 2348102192374?`,
-        Answer: `Yes, gift cards and others are available. You can check the site for more.`
-      }, {
-        Q: `I know nothing about cryptocurrency, can I still buy or sell cryptocurrency?`,
-        Answer: `Yes, our trading system is very easy and less technical. All you need is your money.`
-      }, {
-        Q: ` Is it possible to sell my bitcoins or gift cards on 2348102192374?`,
-        Answer: `Yes, that's part of our major business at 2348102192374.`
-      }, {
-        Q: `Is bitcoins the only cryptocurrency I can buy or sell?`,
-        Answer: ` No we deal in all cryptocurrency buying and selling.`
-      }, {
-        Q: `How do I buy or sell?`,
-        Answer: ` Go to the homepage and kindly click on the trade icon.
-Fill in what you will like to trade and the kind of trade(buying or selling).
-You will be automatically redirected to one of our members, where you chat to begin your transactions.or contact us directly on whatsapp or call us on our lines `
-      }, {
-        Q: `Is your platform safe?`,
-        Answer: `2348102192374 is completely safe.`
-      }, {
-        Q: `How do I contact 2348102192374?`,
-        Answer: `You can reach us via any of this; Email: info2348102192374@gmail.com 
-Call: +2348136908208 (9:00am – 5:00pm. Monday – Friday).`
-      }, {
-        Q: `How fast is 2348102192374?`,
-        Answer: `We reply in a couple of seconds and attend to your demands as fast as possible.`
-      }, {
-        Q: `How good are the rates?`,
-        Answer: `we offer the best rate you can ever imagine.`
-      }]
-    };
-  }
-
-});
-// CONCATENATED MODULE: ./pages/faq.vue?vue&type=script&lang=js&
- /* harmony default export */ var pages_faqvue_type_script_lang_js_ = (faqvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(14);
-
-// EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
-var installComponents = __webpack_require__(17);
-var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js
-var VContainer = __webpack_require__(133);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/groupable/index.js
-var groupable = __webpack_require__(32);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/registrable/index.js
-var registrable = __webpack_require__(31);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/helpers.js
-var helpers = __webpack_require__(0);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mixins.js
-var mixins = __webpack_require__(2);
-
-// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanel.js
+/* harmony import */ var _mixins_groupable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
 // Mixins
 
  // Utilities
 
 
 
-/* harmony default export */ var VExpansionPanel = (Object(mixins["a" /* default */])(Object(groupable["a" /* factory */])('expansionPanels', 'v-expansion-panel', 'v-expansion-panels'), Object(registrable["b" /* provide */])('expansionPanel', true)
+/* harmony default export */ __webpack_exports__["a"] = (Object(_util_mixins__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Object(_mixins_groupable__WEBPACK_IMPORTED_MODULE_0__[/* factory */ "a"])('expansionPanels', 'v-expansion-panel', 'v-expansion-panels'), Object(_mixins_registrable__WEBPACK_IMPORTED_MODULE_1__[/* provide */ "b"])('expansionPanel', true)
 /* @vue/component */
 ).extend({
   name: 'v-expansion-panel',
@@ -209,20 +117,23 @@ var mixins = __webpack_require__(2);
       attrs: {
         'aria-expanded': String(this.isActive)
       }
-    }, Object(helpers["n" /* getSlot */])(this));
+    }, Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__[/* getSlot */ "n"])(this));
   }
 
 }));
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/transitions/index.js + 2 modules
-var transitions = __webpack_require__(26);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/bootable/index.js
-var bootable = __webpack_require__(56);
+/***/ }),
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/colorable/index.js
-var colorable = __webpack_require__(6);
+/***/ 193:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelContent.js
+"use strict";
+/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _mixins_bootable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(56);
+/* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(0);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
  // Mixins
 
 
@@ -231,10 +142,10 @@ var colorable = __webpack_require__(6);
 
 
 
-const baseMixins = Object(mixins["a" /* default */])(bootable["a" /* default */], colorable["a" /* default */], Object(registrable["a" /* inject */])('expansionPanel', 'v-expansion-panel-content', 'v-expansion-panel'));
+const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_mixins_bootable__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], Object(_mixins_registrable__WEBPACK_IMPORTED_MODULE_3__[/* inject */ "a"])('expansionPanel', 'v-expansion-panel-content', 'v-expansion-panel'));
 /* @vue/component */
 
-/* harmony default export */ var VExpansionPanelContent = (baseMixins.extend().extend({
+/* harmony default export */ __webpack_exports__["a"] = (baseMixins.extend().extend({
   name: 'v-expansion-panel-content',
   computed: {
     isActive() {
@@ -252,7 +163,7 @@ const baseMixins = Object(mixins["a" /* default */])(bootable["a" /* default */]
   },
 
   render(h) {
-    return h(transitions["a" /* VExpandTransition */], this.showLazyContent(() => [h('div', this.setBackgroundColor(this.color, {
+    return h(_transitions__WEBPACK_IMPORTED_MODULE_0__[/* VExpandTransition */ "a"], this.showLazyContent(() => [h('div', this.setBackgroundColor(this.color, {
       staticClass: 'v-expansion-panel-content',
       directives: [{
         name: 'show',
@@ -260,17 +171,24 @@ const baseMixins = Object(mixins["a" /* default */])(bootable["a" /* default */]
       }]
     }), [h('div', {
       class: 'v-expansion-panel-content__wrap'
-    }, Object(helpers["n" /* getSlot */])(this))])]));
+    }, Object(_util_helpers__WEBPACK_IMPORTED_MODULE_4__[/* getSlot */ "n"])(this))])]));
   }
 
 }));
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
-var VIcon = __webpack_require__(16);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/ripple/index.js
-var ripple = __webpack_require__(19);
+/***/ }),
 
-// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelHeader.js
+/***/ 194:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _VIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
+/* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+/* harmony import */ var _directives_ripple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(19);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2);
 // Components
 
  // Mixins
@@ -282,11 +200,11 @@ var ripple = __webpack_require__(19);
 
 
 
-const VExpansionPanelHeader_baseMixins = Object(mixins["a" /* default */])(colorable["a" /* default */], Object(registrable["a" /* inject */])('expansionPanel', 'v-expansion-panel-header', 'v-expansion-panel'));
-/* harmony default export */ var VExpansionPanelHeader = (VExpansionPanelHeader_baseMixins.extend().extend({
+const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_mixins_colorable__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], Object(_mixins_registrable__WEBPACK_IMPORTED_MODULE_3__[/* inject */ "a"])('expansionPanel', 'v-expansion-panel-header', 'v-expansion-panel'));
+/* harmony default export */ __webpack_exports__["a"] = (baseMixins.extend().extend({
   name: 'v-expansion-panel-header',
   directives: {
-    ripple: ripple["a" /* default */]
+    ripple: _directives_ripple__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"]
   },
   props: {
     disableIconRotate: Boolean,
@@ -339,8 +257,8 @@ const VExpansionPanelHeader_baseMixins = Object(mixins["a" /* default */])(color
     },
 
     genIcon() {
-      const icon = Object(helpers["n" /* getSlot */])(this, 'actions') || [this.$createElement(VIcon["a" /* default */], this.expandIcon)];
-      return this.$createElement(transitions["c" /* VFadeTransition */], [this.$createElement('div', {
+      const icon = Object(_util_helpers__WEBPACK_IMPORTED_MODULE_5__[/* getSlot */ "n"])(this, 'actions') || [this.$createElement(_VIcon__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], this.expandIcon)];
+      return this.$createElement(_transitions__WEBPACK_IMPORTED_MODULE_0__[/* VFadeTransition */ "c"], [this.$createElement('div', {
         staticClass: 'v-expansion-panel-header__icon',
         class: {
           'v-expansion-panel-header__icon--disable-rotate': this.disableIconRotate
@@ -371,22 +289,23 @@ const VExpansionPanelHeader_baseMixins = Object(mixins["a" /* default */])(color
         mousedown: () => this.hasMousedown = true,
         mouseup: () => this.hasMousedown = false
       }
-    }), [Object(helpers["n" /* getSlot */])(this, 'default', {
+    }), [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_5__[/* getSlot */ "n"])(this, 'default', {
       open: this.isActive
     }, true), this.hideActions || this.genIcon()]);
   }
 
 }));
-// EXTERNAL MODULE: ./node_modules/vuetify/src/components/VExpansionPanel/VExpansionPanel.sass
-var VExpansionPanel_VExpansionPanel = __webpack_require__(166);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VItemGroup/VItemGroup.js
-var VItemGroup = __webpack_require__(40);
+/***/ }),
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/console.js
-var console = __webpack_require__(3);
+/***/ 195:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanels.js
+"use strict";
+/* harmony import */ var _src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(167);
+/* harmony import */ var _src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39);
+/* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 // Styles
  // Components
 
@@ -395,7 +314,7 @@ var console = __webpack_require__(3);
 
 /* @vue/component */
 
-/* harmony default export */ var VExpansionPanels = (VItemGroup["a" /* BaseItemGroup */].extend({
+/* harmony default export */ __webpack_exports__["a"] = (_VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__[/* BaseItemGroup */ "a"].extend({
   name: 'v-expansion-panels',
 
   provide() {
@@ -417,7 +336,7 @@ var console = __webpack_require__(3);
   },
   computed: {
     classes() {
-      return { ...VItemGroup["a" /* BaseItemGroup */].options.computed.classes.call(this),
+      return { ..._VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__[/* BaseItemGroup */ "a"].options.computed.classes.call(this),
         'v-expansion-panels': true,
         'v-expansion-panels--accordion': this.accordion,
         'v-expansion-panels--flat': this.flat,
@@ -434,13 +353,13 @@ var console = __webpack_require__(3);
   created() {
     /* istanbul ignore next */
     if (this.$attrs.hasOwnProperty('expand')) {
-      Object(console["a" /* breaking */])('expand', 'multiple', this);
+      Object(_util_console__WEBPACK_IMPORTED_MODULE_2__[/* breaking */ "a"])('expand', 'multiple', this);
     }
     /* istanbul ignore next */
 
 
     if (Array.isArray(this.value) && this.value.length > 0 && typeof this.value[0] === 'boolean') {
-      Object(console["a" /* breaking */])(':value="[true, false, true]"', ':value="[0, 2]"', this);
+      Object(_util_console__WEBPACK_IMPORTED_MODULE_2__[/* breaking */ "a"])(':value="[true, false, true]"', ':value="[0, 2]"', this);
     }
   },
 
@@ -454,6 +373,108 @@ var console = __webpack_require__(3);
 
   }
 }));
+
+/***/ }),
+
+/***/ 211:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=template&id=4aac457a&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-container',[_c('h1',{staticClass:"text-center primary--text"},[_vm._v("FAQ")]),_vm._v(" "),_c('v-expansion-panels',{staticClass:"mt-5"},_vm._l((_vm.Questions),function(que){return _c('v-expansion-panel',{key:que.Q},[_c('v-expansion-panel-header',{staticClass:"font-weight-black primary--text"},[_vm._v(_vm._s(que.Q))]),_vm._v(" "),_c('v-expansion-panel-content',[_vm._v("Answer : "+_vm._s(que.Answer))])],1)}),1),_vm._v(" "),_c('div',{staticClass:"caption mt-2 text-center"},[_vm._v("\n    call\n    "),_c('nuxt-link',{attrs:{"to":"/contact"}},[_vm._v("contact")])],1)],1)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./pages/faq.vue?vue&type=template&id=4aac457a&
+
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/faq.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var faqvue_type_script_lang_js_ = ({
+  data() {
+    return {
+      Questions: [{
+        Q: ` Can I buy bitcoins on Swegztradelink?`,
+        Answer: " Yes, you can."
+      }, {
+        Q: ` Can I buy gift cards on Swegztradelink?`,
+        Answer: `Yes, gift cards and others are available. You can check the site for more.`
+      }, {
+        Q: `I know nothing about cryptocurrency, can I still buy or sell cryptocurrency?`,
+        Answer: `Yes, our trading system is very easy and less technical. All you need is your money.`
+      }, {
+        Q: ` Is it possible to sell my bitcoins or gift cards on Swegztradelink?`,
+        Answer: `Yes, that's part of our major business at Swegztradelink.`
+      }, {
+        Q: `Is bitcoins the only cryptocurrency I can buy or sell?`,
+        Answer: ` No we deal in all cryptocurrency buying and selling.`
+      }, {
+        Q: `How do I buy or sell?`,
+        Answer: ` Go to the homepage and kindly click on the trade icon.
+Fill in what you will like to trade and the kind of trade(buying or selling).
+You will be automatically redirected to one of our members, where you chat to begin your transactions.or contact us directly on whatsapp or call us on our lines `
+      }, {
+        Q: `Is your platform safe?`,
+        Answer: `Swegztradelink is completely safe.`
+      }, {
+        Q: `How do I contact Swegztradelink?`,
+        Answer: `You can reach us via any of this; Email: infoSwegztradelink@gmail.com 
+Call: +2348102192374.`
+      }, {
+        Q: `How fast is Swegztradelink?`,
+        Answer: `We reply in a couple of seconds and attend to your demands as fast as possible.`
+      }, {
+        Q: `How good are the rates?`,
+        Answer: `we offer the best rate you can ever imagine.`
+      }]
+    };
+  }
+
+});
+// CONCATENATED MODULE: ./pages/faq.vue?vue&type=script&lang=js&
+ /* harmony default export */ var pages_faqvue_type_script_lang_js_ = (faqvue_type_script_lang_js_); 
+// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+var componentNormalizer = __webpack_require__(14);
+
+// EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
+var installComponents = __webpack_require__(17);
+var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js
+var VContainer = __webpack_require__(137);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanel.js
+var VExpansionPanel = __webpack_require__(192);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelContent.js
+var VExpansionPanelContent = __webpack_require__(193);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelHeader.js
+var VExpansionPanelHeader = __webpack_require__(194);
+
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanels.js
+var VExpansionPanels = __webpack_require__(195);
+
 // CONCATENATED MODULE: ./pages/faq.vue
 
 
@@ -482,7 +503,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 
 
-installComponents_default()(component, {VContainer: VContainer["a" /* default */],VExpansionPanel: VExpansionPanel,VExpansionPanelContent: VExpansionPanelContent,VExpansionPanelHeader: VExpansionPanelHeader,VExpansionPanels: VExpansionPanels})
+installComponents_default()(component, {VContainer: VContainer["a" /* default */],VExpansionPanel: VExpansionPanel["a" /* default */],VExpansionPanelContent: VExpansionPanelContent["a" /* default */],VExpansionPanelHeader: VExpansionPanelHeader["a" /* default */],VExpansionPanels: VExpansionPanels["a" /* default */]})
 
 
 /***/ })

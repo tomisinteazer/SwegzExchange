@@ -11,9 +11,18 @@
               <v-row>
                 <v-col cols="12" md="3">
                   <v-select
+                    v-model="type"
+                    :items="types"
+                    :rules="[(v) => !!v || 'type is required']"
+                    label="Types"
+                    required
+                  ></v-select>
+                </v-col>
+                <v-col cols="12" md="3">
+                  <v-select
                     v-model="name"
                     :items="assets"
-                    :rules="[(v) => !!v || 'Item is required']"
+                    :rules="[(v) => !!v || 'name is required']"
                     label="name"
                     required
                   ></v-select>
@@ -86,7 +95,29 @@
     </v-expansion-panels>
   </div>
 </template><script>
+import firebase from "firebase/app";
+import "firebase/auth";
+import Cookies from "js-cookie";
+import { getUserFromCookie, getUserFromSession } from "@/helpers";
+
 export default {
+  asyncData({ req, redirect }) {
+    if (process.server) {
+      //console.log("server", req.header);
+      const user = getUserFromCookie(req);
+      //   console.log('b', getUserFromCookie(req))
+      if (!user) {
+        console.log("redirecting server");
+        redirect("/login");
+      }
+    } else {
+      var user = firebase.auth().currentUser;
+      if (!user) {
+        redirect("/login");
+      }
+      //   console.log($nuxt.$router)
+    }
+  },
   data: () => ({
     rates: [],
     valid: false,
@@ -106,6 +137,8 @@ export default {
     min: "",
     max: "",
     rates: [],
+    types: ["cryptocurrency", "giftcards", "Efunds"],
+    type: "",
   }),
   methods: {
     getrates() {
@@ -116,12 +149,13 @@ export default {
       });
     },
     addRate() {
-      if (this.name && this.max && this.min && this.rate) {
+      if (this.name && this.max && this.min && this.rate && this.type) {
         let newRate = {
           name: this.name,
           value: this.rate,
           minQuantity: this.min,
           maxQuantity: this.max,
+          type: this.type,
         };
 
         this.$fireStore

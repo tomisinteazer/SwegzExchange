@@ -1,4 +1,4 @@
-exports.ids = [4];
+exports.ids = [7];
 exports.modules = {
 
 /***/ 140:
@@ -2233,6 +2233,33 @@ function validateAttachTarget(val) {
 
 /***/ }),
 
+/***/ 167:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(168);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+__webpack_require__(5).default("48751daa", content, true)
+
+/***/ }),
+
+/***/ 168:
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".theme--light.v-expansion-panels .v-expansion-panel{background-color:#fff;color:rgba(0,0,0,.87)}.theme--light.v-expansion-panels .v-expansion-panel--disabled{color:rgba(0,0,0,.38)}.theme--light.v-expansion-panels .v-expansion-panel:not(:first-child):after{border-color:rgba(0,0,0,.12)}.theme--light.v-expansion-panels .v-expansion-panel-header .v-expansion-panel-header__icon .v-icon{color:rgba(0,0,0,.54)}.theme--light.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header:hover:before{opacity:.04}.theme--light.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header--active:before,.theme--light.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header--active:hover:before,.theme--light.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header:focus:before{opacity:.12}.theme--light.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header--active:focus:before{opacity:.16}.theme--light.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover:hover:before{opacity:.04}.theme--light.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover--active:before,.theme--light.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover--active:hover:before,.theme--light.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover:focus:before{opacity:.12}.theme--light.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover--active:focus:before{opacity:.16}.theme--dark.v-expansion-panels .v-expansion-panel{background-color:#1e1e1e;color:#fff}.theme--dark.v-expansion-panels .v-expansion-panel--disabled{color:hsla(0,0%,100%,.5)}.theme--dark.v-expansion-panels .v-expansion-panel:not(:first-child):after{border-color:hsla(0,0%,100%,.12)}.theme--dark.v-expansion-panels .v-expansion-panel-header .v-expansion-panel-header__icon .v-icon{color:#fff}.theme--dark.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header:hover:before{opacity:.08}.theme--dark.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header--active:before,.theme--dark.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header--active:hover:before,.theme--dark.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header:focus:before{opacity:.24}.theme--dark.v-expansion-panels.v-expansion-panels--focusable .v-expansion-panel-header--active:focus:before{opacity:.32}.theme--dark.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover:hover:before{opacity:.08}.theme--dark.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover--active:before,.theme--dark.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover--active:hover:before,.theme--dark.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover:focus:before{opacity:.24}.theme--dark.v-expansion-panels.v-expansion-panels--hover>.v-expansion-panel>.v-expansion-panel-header:hover--active:focus:before{opacity:.32}.v-expansion-panels{border-radius:4px;display:flex;flex-wrap:wrap;justify-content:center;list-style-type:none;padding:0;width:100%;z-index:1}.v-expansion-panels>*{cursor:auto}.v-expansion-panels>:first-child{border-top-left-radius:inherit;border-top-right-radius:inherit}.v-expansion-panels>:last-child{border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}.v-expansion-panels:not(.v-expansion-panels--accordion):not(.v-expansion-panels--tile)>.v-expansion-panel--active{border-radius:4px}.v-expansion-panels:not(.v-expansion-panels--accordion):not(.v-expansion-panels--tile)>.v-expansion-panel--active+.v-expansion-panel{border-top-left-radius:4px;border-top-right-radius:4px}.v-expansion-panels:not(.v-expansion-panels--accordion):not(.v-expansion-panels--tile)>.v-expansion-panel--next-active{border-bottom-left-radius:4px;border-bottom-right-radius:4px}.v-expansion-panels:not(.v-expansion-panels--accordion):not(.v-expansion-panels--tile)>.v-expansion-panel--next-active .v-expansion-panel-header{border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}.v-expansion-panel{flex:1 0 100%;max-width:100%;position:relative;transition:.3s cubic-bezier(.25,.8,.5,1)}.v-expansion-panel:before{border-radius:inherit;bottom:0;content:\"\";left:0;position:absolute;right:0;top:0;z-index:-1;transition:box-shadow .28s cubic-bezier(.4,0,.2,1);will-change:box-shadow;box-shadow:0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12)}.v-expansion-panel:not(:first-child):after{border-top:thin solid;content:\"\";left:0;position:absolute;right:0;top:0;transition:border-color .2s cubic-bezier(.4,0,.2,1),opacity .2s cubic-bezier(.4,0,.2,1)}.v-expansion-panel--disabled .v-expansion-panel-header{pointer-events:none}.v-expansion-panel--active+.v-expansion-panel,.v-expansion-panel--active:not(:first-child){margin-top:16px}.v-expansion-panel--active+.v-expansion-panel:after,.v-expansion-panel--active:not(:first-child):after{opacity:0}.v-expansion-panel--active>.v-expansion-panel-header{min-height:64px}.v-expansion-panel--active>.v-expansion-panel-header--active .v-expansion-panel-header__icon:not(.v-expansion-panel-header__icon--disable-rotate) .v-icon{transform:rotate(-180deg)}.v-expansion-panel-header__icon{display:inline-flex;margin-bottom:-4px;margin-top:-4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.v-application--is-ltr .v-expansion-panel-header__icon{margin-left:auto}.v-application--is-rtl .v-expansion-panel-header__icon{margin-right:auto}.v-expansion-panel-header{align-items:center;border-top-left-radius:inherit;border-top-right-radius:inherit;display:flex;font-size:.9375rem;line-height:1;min-height:48px;outline:none;padding:16px 24px;position:relative;transition:min-height .3s cubic-bezier(.25,.8,.5,1);width:100%}.v-application--is-ltr .v-expansion-panel-header{text-align:left}.v-application--is-rtl .v-expansion-panel-header{text-align:right}.v-expansion-panel-header:not(.v-expansion-panel-header--mousedown):focus:before{opacity:.12}.v-expansion-panel-header:before{background-color:currentColor;border-radius:inherit;bottom:0;content:\"\";left:0;opacity:0;pointer-events:none;position:absolute;right:0;top:0;transition:opacity .3s cubic-bezier(.25,.8,.5,1)}.v-expansion-panel-header>:not(.v-expansion-panel-header__icon){flex:1 1 auto}.v-expansion-panel-content{display:flex}.v-expansion-panel-content__wrap{padding:0 24px 16px;flex:1 1 auto;max-width:100%}.v-expansion-panels--accordion>.v-expansion-panel{margin-top:0}.v-expansion-panels--accordion>.v-expansion-panel:after{opacity:1}.v-expansion-panels--popout>.v-expansion-panel{max-width:calc(100% - 32px)}.v-expansion-panels--popout>.v-expansion-panel--active{max-width:calc(100% + 16px)}.v-expansion-panels--inset>.v-expansion-panel{max-width:100%}.v-expansion-panels--inset>.v-expansion-panel--active{max-width:calc(100% - 32px)}.v-expansion-panels--flat>.v-expansion-panel:after{border-top:none}.v-expansion-panels--flat>.v-expansion-panel:before{box-shadow:0 0 0 0 rgba(0,0,0,.2),0 0 0 0 rgba(0,0,0,.14),0 0 0 0 rgba(0,0,0,.12)}.v-expansion-panels--tile,.v-expansion-panels--tile>.v-expansion-panel:before{border-radius:0}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ 169:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2395,360 +2422,351 @@ module.exports = exports;
 
 /***/ }),
 
-/***/ 186:
+/***/ 192:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _mixins_groupable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2);
+// Mixins
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/giftcards.vue?vue&type=template&id=4e42bf24&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<p class=\"display-1 text-center py-4 primary white--text\">Giftcards</p> "),_c('v-simple-table',{scopedSlots:_vm._u([{key:"default",fn:function(){return [_c('thead',[_c('tr',[_c('th',{staticClass:"text-left primary--text"},[_vm._v("Type")]),_vm._v(" "),_c('th',{staticClass:"text-left primary--text"},[_vm._v("value")]),_vm._v(" "),_c('th',{staticClass:"text-left primary--text"},[_vm._v("Rate")])])]),_vm._v(" "),_c('tbody',_vm._l((_vm.rates),function(item){return _c('tr',{key:item.id},[_c('td',[_vm._v(_vm._s(item.name))]),_vm._v(" "),_c('td',[_vm._v(_vm._s(item.minQuantity)+" -"+_vm._s(item.maxQuantity))]),_vm._v(" "),_c('td',[_vm._v(_vm._s(item.value)+"/$")])])}),0)]},proxy:true}])})],2)}
-var staticRenderFns = []
+ // Utilities
 
 
-// CONCATENATED MODULE: ./components/giftcards.vue?vue&type=template&id=4e42bf24&
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/giftcards.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var giftcardsvue_type_script_lang_js_ = ({
+/* harmony default export */ __webpack_exports__["a"] = (Object(_util_mixins__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Object(_mixins_groupable__WEBPACK_IMPORTED_MODULE_0__[/* factory */ "a"])('expansionPanels', 'v-expansion-panel', 'v-expansion-panels'), Object(_mixins_registrable__WEBPACK_IMPORTED_MODULE_1__[/* provide */ "b"])('expansionPanel', true)
+/* @vue/component */
+).extend({
+  name: 'v-expansion-panel',
+  props: {
+    disabled: Boolean,
+    readonly: Boolean
+  },
+
   data() {
     return {
-      allrates: []
+      content: null,
+      header: null,
+      nextIsActive: false
     };
   },
 
-  methods: {
-    getRates() {
-      this.$fireStore.collection("rates").onSnapshot(data => {
-        data.forEach(e => {
-          this.allrates.push({ ...e.data(),
-            id: e.id
-          });
-        });
-        console.log(this.rates);
-      });
+  computed: {
+    classes() {
+      return {
+        'v-expansion-panel--active': this.isActive,
+        'v-expansion-panel--next-active': this.nextIsActive,
+        'v-expansion-panel--disabled': this.isDisabled,
+        ...this.groupClasses
+      };
     },
 
-    compare(a, b) {
-      let first = parseInt(a.rank);
-      let sec = parseInt(b.rank);
+    isDisabled() {
+      return this.expansionPanels.disabled || this.disabled;
+    },
 
-      if (first < sec) {
-        return -1;
-      }
-
-      if (first > sec) {
-        return 1;
-      }
-
-      return 0;
+    isReadonly() {
+      return this.expansionPanels.readonly || this.readonly;
     }
 
   },
-  computed: {
-    rates: function () {
-      return this.allrates.filter(e => e.type === "giftcards").sort((a, b) => parseInt(a.minQuantity) - parseInt(b.minQuantity));
+  methods: {
+    registerContent(vm) {
+      this.content = vm;
+    },
+
+    unregisterContent() {
+      this.content = null;
+    },
+
+    registerHeader(vm) {
+      this.header = vm;
+      vm.$on('click', this.onClick);
+    },
+
+    unregisterHeader() {
+      this.header = null;
+    },
+
+    onClick(e) {
+      if (e.detail) this.header.$el.blur();
+      this.$emit('click', e);
+      this.isReadonly || this.isDisabled || this.toggle();
+    },
+
+    toggle() {
+      /* istanbul ignore else */
+      if (this.content) this.content.isBooted = true;
+      this.$nextTick(() => this.$emit('change'));
     }
+
   },
 
-  mounted() {
-    this.getRates();
+  render(h) {
+    return h('div', {
+      staticClass: 'v-expansion-panel',
+      class: this.classes,
+      attrs: {
+        'aria-expanded': String(this.isActive)
+      }
+    }, Object(_util_helpers__WEBPACK_IMPORTED_MODULE_2__[/* getSlot */ "n"])(this));
   }
 
-});
-// CONCATENATED MODULE: ./components/giftcards.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_giftcardsvue_type_script_lang_js_ = (giftcardsvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(14);
-
-// EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
-var installComponents = __webpack_require__(17);
-var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDataTable/VSimpleTable.js
-var VSimpleTable = __webpack_require__(197);
-
-// CONCATENATED MODULE: ./components/giftcards.vue
-
-
-
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  components_giftcardsvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "4c160748"
-  
-)
-
-/* harmony default export */ var giftcards = __webpack_exports__["default"] = (component.exports);
-
-/* vuetify-loader */
-
-
-installComponents_default()(component, {VSimpleTable: VSimpleTable["a" /* default */]})
-
+}));
 
 /***/ }),
 
-/***/ 187:
+/***/ 193:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _mixins_bootable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(56);
+/* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(0);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2);
+ // Mixins
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=template&id=4f94ed9a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('v-form',[_c('div',{staticClass:"d-flex flex-column flex-md-row justify-center align-top mx-auto",staticStyle:{"max-width":"600px"}},[_c('v-text-field',{staticClass:"mr-md-2",attrs:{"outlined":"","placeholder":"Email","rules":_vm.emailRules},model:{value:(_vm.email),callback:function ($$v) {_vm.email=$$v},expression:"email"}}),_vm._v(" "),_c('v-btn',{attrs:{"x-large":"","color":"primary"},on:{"click":_vm.mailernwletter}},[_vm._v("Subscribe")])],1)])}
-var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/NewsletterForm.vue?vue&type=template&id=4f94ed9a&
+ // Utilities
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/NewsletterForm.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var NewsletterFormvue_type_script_lang_js_ = ({
-  name: "NewsletterForm",
 
-  data() {
-    return {
-      email: "",
-      emailRules: [v => !!v || "E-mail is required", v => /.+@.+/.test(v) || "E-mail must be valid"]
-    };
-  },
 
-  methods: {
-    mailernwletter() {
-      if (this.email != "" || null) {
-        let subject = "I want to subscribe to you news letter : " + this.email;
-        let mailRef = "mailto:contact@swegztradelink.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(this.email);
-        window.location.replace(mailRef);
-      } else {
-        alert("please ensure all fields are filled correctly with valid details");
-      }
+const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_mixins_bootable__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], Object(_mixins_registrable__WEBPACK_IMPORTED_MODULE_3__[/* inject */ "a"])('expansionPanel', 'v-expansion-panel-content', 'v-expansion-panel'));
+/* @vue/component */
+
+/* harmony default export */ __webpack_exports__["a"] = (baseMixins.extend().extend({
+  name: 'v-expansion-panel-content',
+  computed: {
+    isActive() {
+      return this.expansionPanel.isActive;
     }
 
+  },
+
+  created() {
+    this.expansionPanel.registerContent(this);
+  },
+
+  beforeDestroy() {
+    this.expansionPanel.unregisterContent();
+  },
+
+  render(h) {
+    return h(_transitions__WEBPACK_IMPORTED_MODULE_0__[/* VExpandTransition */ "a"], this.showLazyContent(() => [h('div', this.setBackgroundColor(this.color, {
+      staticClass: 'v-expansion-panel-content',
+      directives: [{
+        name: 'show',
+        value: this.isActive
+      }]
+    }), [h('div', {
+      class: 'v-expansion-panel-content__wrap'
+    }, Object(_util_helpers__WEBPACK_IMPORTED_MODULE_4__[/* getSlot */ "n"])(this))])]));
   }
-});
-// CONCATENATED MODULE: ./components/NewsletterForm.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_NewsletterFormvue_type_script_lang_js_ = (NewsletterFormvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(14);
 
-// EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
-var installComponents = __webpack_require__(17);
-var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
-var VBtn = __webpack_require__(63);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
-var VForm = __webpack_require__(166);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
-var VTextField = __webpack_require__(157);
-
-// CONCATENATED MODULE: ./components/NewsletterForm.vue
-
-
-
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  components_NewsletterFormvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "448e3510"
-  
-)
-
-/* harmony default export */ var NewsletterForm = __webpack_exports__["default"] = (component.exports);
-
-/* vuetify-loader */
-
-
-
-
-installComponents_default()(component, {VBtn: VBtn["a" /* default */],VForm: VForm["a" /* default */],VTextField: VTextField["a" /* default */]})
-
+}));
 
 /***/ }),
 
-/***/ 188:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _transitions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
+/* harmony import */ var _VIcon__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
+/* harmony import */ var _mixins_colorable__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6);
+/* harmony import */ var _mixins_registrable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+/* harmony import */ var _directives_ripple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(19);
+/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
+/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2);
+// Components
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/rates.vue?vue&type=template&id=46b9546c&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_vm._ssrNode("<p class=\"display-1 text-center py-4 primary white--text\">Cryptocurrency</p> "),_c('v-simple-table',{scopedSlots:_vm._u([{key:"default",fn:function(){return [_c('thead',[_c('tr',[_c('th',{staticClass:"text-left primary--text"},[_vm._v("Type")]),_vm._v(" "),_c('th',{staticClass:"text-left primary--text"},[_vm._v("value")]),_vm._v(" "),_c('th',{staticClass:"text-left primary--text"},[_vm._v("Rate")])])]),_vm._v(" "),_c('tbody',_vm._l((_vm.rates),function(item){return _c('tr',{key:item.id},[_c('td',[_vm._v(_vm._s(item.name))]),_vm._v(" "),_c('td',[_vm._v(_vm._s(item.minQuantity)+" -"+_vm._s(item.maxQuantity))]),_vm._v(" "),_c('td',[_vm._v(_vm._s(item.value)+"/$")])])}),0)]},proxy:true}])})],2)}
-var staticRenderFns = []
+ // Mixins
 
 
-// CONCATENATED MODULE: ./components/rates.vue?vue&type=template&id=46b9546c&
+ // Directives
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/rates.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ var ratesvue_type_script_lang_js_ = ({
-  data() {
-    return {
-      allrates: []
-    };
+ // Utilities
+
+
+
+const baseMixins = Object(_util_mixins__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(_mixins_colorable__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], Object(_mixins_registrable__WEBPACK_IMPORTED_MODULE_3__[/* inject */ "a"])('expansionPanel', 'v-expansion-panel-header', 'v-expansion-panel'));
+/* harmony default export */ __webpack_exports__["a"] = (baseMixins.extend().extend({
+  name: 'v-expansion-panel-header',
+  directives: {
+    ripple: _directives_ripple__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"]
+  },
+  props: {
+    disableIconRotate: Boolean,
+    expandIcon: {
+      type: String,
+      default: '$expand'
+    },
+    hideActions: Boolean,
+    ripple: {
+      type: [Boolean, Object],
+      default: false
+    }
+  },
+  data: () => ({
+    hasMousedown: false
+  }),
+  computed: {
+    classes() {
+      return {
+        'v-expansion-panel-header--active': this.isActive,
+        'v-expansion-panel-header--mousedown': this.hasMousedown
+      };
+    },
+
+    isActive() {
+      return this.expansionPanel.isActive;
+    },
+
+    isDisabled() {
+      return this.expansionPanel.isDisabled;
+    },
+
+    isReadonly() {
+      return this.expansionPanel.isReadonly;
+    }
+
+  },
+
+  created() {
+    this.expansionPanel.registerHeader(this);
+  },
+
+  beforeDestroy() {
+    this.expansionPanel.unregisterHeader();
   },
 
   methods: {
-    getRates() {
-      this.$fireStore.collection("rates").onSnapshot(data => {
-        data.forEach(e => {
-          this.allrates.push({ ...e.data(),
-            id: e.id
-          });
-        });
-        console.log(this.rates);
-      });
+    onClick(e) {
+      this.$emit('click', e);
     },
 
-    compare(a, b) {
-      let first = parseInt(a.rank);
-      let sec = parseInt(b.rank);
-
-      if (first < sec) {
-        return -1;
-      }
-
-      if (first > sec) {
-        return 1;
-      }
-
-      return 0;
+    genIcon() {
+      const icon = Object(_util_helpers__WEBPACK_IMPORTED_MODULE_5__[/* getSlot */ "n"])(this, 'actions') || [this.$createElement(_VIcon__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], this.expandIcon)];
+      return this.$createElement(_transitions__WEBPACK_IMPORTED_MODULE_0__[/* VFadeTransition */ "c"], [this.$createElement('div', {
+        staticClass: 'v-expansion-panel-header__icon',
+        class: {
+          'v-expansion-panel-header__icon--disable-rotate': this.disableIconRotate
+        },
+        directives: [{
+          name: 'show',
+          value: !this.isDisabled
+        }]
+      }, icon)]);
     }
 
   },
-  computed: {
-    rates: function () {
-      return this.allrates.filter(e => e.type === "cryptocurrency").sort((a, b) => parseInt(a.minQuantity) - parseInt(b.minQuantity));
-    }
-  },
 
-  mounted() {
-    this.getRates();
+  render(h) {
+    return h('button', this.setBackgroundColor(this.color, {
+      staticClass: 'v-expansion-panel-header',
+      class: this.classes,
+      attrs: {
+        tabindex: this.isDisabled ? -1 : null,
+        type: 'button'
+      },
+      directives: [{
+        name: 'ripple',
+        value: this.ripple
+      }],
+      on: { ...this.$listeners,
+        click: this.onClick,
+        mousedown: () => this.hasMousedown = true,
+        mouseup: () => this.hasMousedown = false
+      }
+    }), [Object(_util_helpers__WEBPACK_IMPORTED_MODULE_5__[/* getSlot */ "n"])(this, 'default', {
+      open: this.isActive
+    }, true), this.hideActions || this.genIcon()]);
   }
 
-});
-// CONCATENATED MODULE: ./components/rates.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_ratesvue_type_script_lang_js_ = (ratesvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(14);
+}));
 
-// EXTERNAL MODULE: ./node_modules/vuetify-loader/lib/runtime/installComponents.js
-var installComponents = __webpack_require__(17);
-var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
+/***/ }),
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDataTable/VSimpleTable.js
-var VSimpleTable = __webpack_require__(197);
+/***/ 195:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// CONCATENATED MODULE: ./components/rates.vue
+"use strict";
+/* harmony import */ var _src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(167);
+/* harmony import */ var _src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VExpansionPanel_VExpansionPanel_sass__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39);
+/* harmony import */ var _util_console__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+// Styles
+ // Components
 
-
-
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  components_ratesvue_type_script_lang_js_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "a7151db0"
-  
-)
-
-/* harmony default export */ var rates = __webpack_exports__["default"] = (component.exports);
-
-/* vuetify-loader */
+ // Utilities
 
 
-installComponents_default()(component, {VSimpleTable: VSimpleTable["a" /* default */]})
+/* @vue/component */
 
+/* harmony default export */ __webpack_exports__["a"] = (_VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__[/* BaseItemGroup */ "a"].extend({
+  name: 'v-expansion-panels',
+
+  provide() {
+    return {
+      expansionPanels: this
+    };
+  },
+
+  props: {
+    accordion: Boolean,
+    disabled: Boolean,
+    flat: Boolean,
+    hover: Boolean,
+    focusable: Boolean,
+    inset: Boolean,
+    popout: Boolean,
+    readonly: Boolean,
+    tile: Boolean
+  },
+  computed: {
+    classes() {
+      return { ..._VItemGroup_VItemGroup__WEBPACK_IMPORTED_MODULE_1__[/* BaseItemGroup */ "a"].options.computed.classes.call(this),
+        'v-expansion-panels': true,
+        'v-expansion-panels--accordion': this.accordion,
+        'v-expansion-panels--flat': this.flat,
+        'v-expansion-panels--hover': this.hover,
+        'v-expansion-panels--focusable': this.focusable,
+        'v-expansion-panels--inset': this.inset,
+        'v-expansion-panels--popout': this.popout,
+        'v-expansion-panels--tile': this.tile
+      };
+    }
+
+  },
+
+  created() {
+    /* istanbul ignore next */
+    if (this.$attrs.hasOwnProperty('expand')) {
+      Object(_util_console__WEBPACK_IMPORTED_MODULE_2__[/* breaking */ "a"])('expand', 'multiple', this);
+    }
+    /* istanbul ignore next */
+
+
+    if (Array.isArray(this.value) && this.value.length > 0 && typeof this.value[0] === 'boolean') {
+      Object(_util_console__WEBPACK_IMPORTED_MODULE_2__[/* breaking */ "a"])(':value="[true, false, true]"', ':value="[0, 2]"', this);
+    }
+  },
+
+  methods: {
+    updateItem(item, index) {
+      const value = this.getValue(item, index);
+      const nextValue = this.getValue(item, index + 1);
+      item.isActive = this.toggleMethod(value);
+      item.nextIsActive = this.toggleMethod(nextValue);
+    }
+
+  }
+}));
 
 /***/ }),
 
@@ -2833,33 +2851,6 @@ installComponents_default()(component, {VSimpleTable: VSimpleTable["a" /* defaul
   }
 
 }));
-
-/***/ }),
-
-/***/ 200:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(201);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-__webpack_require__(5).default("2065bca8", content, true)
-
-/***/ }),
-
-/***/ 201:
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(4);
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".v-dialog{border-radius:4px;margin:24px;overflow-y:auto;pointer-events:auto;transition:.3s cubic-bezier(.25,.8,.25,1);width:100%;z-index:inherit;box-shadow:0 11px 15px -7px rgba(0,0,0,.2),0 24px 38px 3px rgba(0,0,0,.14),0 9px 46px 8px rgba(0,0,0,.12)}.v-dialog:not(.v-dialog--fullscreen){max-height:90%}.v-dialog>*{width:100%}.v-dialog>.v-card>.v-card__title{font-size:1.25rem;font-weight:500;letter-spacing:.0125em;padding:16px 24px 10px}.v-dialog>.v-card>.v-card__subtitle,.v-dialog>.v-card>.v-card__text{padding:0 24px 20px}.v-dialog__content{align-items:center;display:flex;height:100%;justify-content:center;left:0;pointer-events:none;position:fixed;top:0;transition:.2s cubic-bezier(.25,.8,.25,1),z-index 1ms;width:100%;z-index:6;outline:none}.v-dialog__container{display:none}.v-dialog__container--attached{display:inline}.v-dialog--animated{-webkit-animation-duration:.15s;animation-duration:.15s;-webkit-animation-name:animate-dialog;animation-name:animate-dialog;-webkit-animation-timing-function:cubic-bezier(.25,.8,.25,1);animation-timing-function:cubic-bezier(.25,.8,.25,1)}.v-dialog--fullscreen{border-radius:0;margin:0;height:100%;position:fixed;overflow-y:auto;top:0;left:0}.v-dialog--fullscreen>.v-card{min-height:100%;min-width:100%;margin:0!important;padding:0!important}.v-dialog--scrollable,.v-dialog--scrollable>form{display:flex}.v-dialog--scrollable>.v-card,.v-dialog--scrollable>form>.v-card{display:flex;flex:1 1 100%;flex-direction:column;max-height:100%;max-width:100%}.v-dialog--scrollable>.v-card>.v-card__actions,.v-dialog--scrollable>.v-card>.v-card__title,.v-dialog--scrollable>form>.v-card>.v-card__actions,.v-dialog--scrollable>form>.v-card>.v-card__title{flex:0 0 auto}.v-dialog--scrollable>.v-card>.v-card__text,.v-dialog--scrollable>form>.v-card>.v-card__text{-webkit-backface-visibility:hidden;backface-visibility:hidden;flex:1 1 auto;overflow-y:auto}@-webkit-keyframes animate-dialog{0%{transform:scale(1)}50%{transform:scale(1.03)}to{transform:scale(1)}}@keyframes animate-dialog{0%{transform:scale(1)}50%{transform:scale(1.03)}to{transform:scale(1)}}", ""]);
-// Exports
-module.exports = exports;
-
 
 /***/ }),
 
@@ -5130,42 +5121,56 @@ const VSelect_baseMixins = Object(mixins["a" /* default */])(VTextField_VTextFie
 
 /***/ }),
 
-/***/ 208:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=template&id=3b5e3a1a&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"force"},[_vm._ssrNode("<section class=\"my-12\">","</section>",[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"mt-md-8 text-center",attrs:{"cols":"12","md":"6"}},[_c('h2',{staticClass:"display-1 mb-6 my-5"},[_vm._v("Welcome to")]),_vm._v(" "),_c('h1',{staticClass:"display-2 primary--text font-weight-bold mb-6 my-5"},[_vm._v("\n          SwegzTradeLink\n        ")]),_vm._v(" "),_c('p',{staticClass:"body-1"},[_vm._v("\n          The fastest and safest exchange platform to trade and convert all\n          your Bitcoins, Digital assets, Giftcards, Smart devices and\n          E-commerce\n        ")]),_vm._v(" "),_c('v-dialog',{attrs:{"width":"500"},scopedSlots:_vm._u([{key:"activator",fn:function(ref){
-var on = ref.on;
-var attrs = ref.attrs;
-return [_c('v-btn',_vm._g(_vm._b({staticClass:"text-uppercase",attrs:{"color":"primary","x-large":"","dark":""}},'v-btn',attrs,false),on),[_vm._v("Trade")])]}}]),model:{value:(_vm.dialog),callback:function ($$v) {_vm.dialog=$$v},expression:"dialog"}},[_vm._v(" "),_c('v-card',[_c('v-card-title',{},[_vm._v("trade with SwegzTradeLink")]),_vm._v(" "),_c('v-card-text',[_vm._v("Fill in your trade details below and submit. Transaction will\n              proceed immediately.")]),_vm._v(" "),_c('v-form',{model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-select',{attrs:{"items":_vm.tradeDetails,"label":"Cryptocurrency /Giftcards /other"},model:{value:(_vm.detailsOfTrade),callback:function ($$v) {_vm.detailsOfTrade=$$v},expression:"detailsOfTrade"}})],1)],1),_vm._v(" "),_c('v-row',[_c('v-col',{attrs:{"cols":"12"}},[_c('v-select',{attrs:{"items":_vm.tradeType,"label":"Buy / Sell"},model:{value:(_vm.typeOfTrade),callback:function ($$v) {_vm.typeOfTrade=$$v},expression:"typeOfTrade"}})],1)],1)],1)],1),_vm._v(" "),_c('v-divider'),_vm._v(" "),_c('v-card-actions',[_c('v-spacer'),_vm._v(" "),_c('v-btn',{attrs:{"color":"primary"},on:{"click":function($event){return _vm.tradeNow()}}},[_vm._v("Submit")])],1)],1)],1),_vm._v(" "),_c('v-btn',{staticClass:"ml-2 text-uppercase",attrs:{"x-large":"","nuxt":"","to":"/about"}},[_c('v-icon',{attrs:{"left":""}},[_vm._v("mdi-magnify")]),_vm._v("About\n        ")],1)],1),_vm._v(" "),_c('v-col',{staticClass:"landing-image pt-12",attrs:{"cols":"12","md":"6"}},[_c('v-img',{attrs:{"contain":"","max-height":"300","src":"/feature1.svg"}})],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center primary pb-16\">","</section>",[_c('v-container',[_c('div',{staticClass:"display-1 white--text font-weight-bold my-14"},[_c('p',[_vm._v("Get the best trading experience")])]),_vm._v(" "),_c('v-row',_vm._l((_vm.features),function(feature,i){return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
-var hover = ref.hover;
-return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 0}},[_c('img',{staticClass:"mb-5",attrs:{"height":"200px","contain":"","src":feature.image}}),_vm._v(" "),_c('v-card-title',{staticClass:"justify-center primary--text"},[_vm._v(_vm._s(feature.title))]),_vm._v(" "),_c('v-card-text',{staticClass:"subtitle-1",domProps:{"textContent":_vm._s(feature.text)}})],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<svg viewBox=\"0 0 1920 135\">","</svg>",[_vm._ssrNode("<defs>","</defs>",[_vm._ssrNode("<filter id=\"Path_1006\" x=\"-152.573\" y=\"-460.806\" width=\"2324.175\" height=\"631.369\" filterUnits=\"userSpaceOnUse\">","</filter>",[_c('feOffset',{attrs:{"input":"SourceAlpha"}}),_vm._ssrNode(" "),_c('feGaussianBlur',{attrs:{"stdDeviation":"25","result":"blur"}}),_vm._ssrNode(" "),_c('feFlood',{attrs:{"flood-opacity":"0.161"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"operator":"in","in2":"blur"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"in":"SourceGraphic"}})],2),_vm._ssrNode(" <clipPath id=\"clip-Home\"><rect width=\"1920\" height=\"135\"></rect></clipPath>")],2),_vm._ssrNode(" <g id=\"Home\" clip-path=\"url(#clip-Home)\"><rect width=\"1920\" height=\"135\" fill=\"#ffffff00\"></rect> <g transform=\"matrix(1, 0, 0, 1, 0, 0)\" filter=\"url(#Path_1006)\"><path id=\"Path_1006-2\" data-name=\"Path 1006\" d=\"M-9948.83,7778.837s223.576,20.394,386.754,27.238,264.528,2.657,433.32-7.967,394.238-56.657,849.857-44.854,433.191,56.657,433.191,56.657l-37.3-459.818H-8937.946s-717.868,3.541-721.409,0S-9970.4,7333.23-9970.4,7333.23l-47.161,238.25,15.345,197.12Z\" transform=\"translate(9941 -7718)\" fill=\"#691616\" stroke=\"#691616\" stroke-width=\"2\"></path></g></g>")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"universal pa-5\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('v-row',[_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Days")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("1790+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Transactions")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("10k+")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Up time")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("24/7")])]),_vm._v(" "),_c('v-col',{attrs:{"cols":"6","md":"3"}},[_c('div',{staticClass:"text-uppercase caption"},[_vm._v("Active Members")]),_vm._v(" "),_c('div',{staticClass:"display-1"},[_vm._v("235+")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"my-12\">","</section>",[_c('v-container',[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{staticClass:"landing-image",attrs:{"cols":"12","md":"6"}},[_c('v-img',{attrs:{"contain":"","max-height":"300","src":"/feature1.svg"}})],1),_vm._v(" "),_c('v-col',{staticClass:"mt-md-8 text-center",attrs:{"cols":"12","md":"6"}},[_c('p',{staticClass:"display-1 font-weight-thin"},[_vm._v("\n            SwegzTradeLink is a simple, safe and secure platform that provides\n            alternative solutions to payments through the use of Bitcoin,\n            Perfect Money and Giftcard Technology.\n          ")])])],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section>","</section>",[_c('v-row',{attrs:{"no-gutters":""}},[_c('v-col',{attrs:{"cols":"12","md":"6"}},[_c('v-card',{staticClass:"mx-6 my-6",attrs:{"elevation":"2"}},[_c('Rates')],1)],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"6"}},[_c('v-card',{staticClass:"mx-6 my-6",attrs:{"elevation":"2"}},[_c('Giftcards')],1)],1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"pa-5 primary\">","</section>",[_c('v-container',{staticClass:"text-center"},[_c('h2',{staticClass:"display-1 ma-4 white--text"},[_vm._v("Our users are Happy!")]),_vm._v(" "),_c('v-row',_vm._l((_vm.testimonies),function(ref,i){
-var image = ref.image;
-var text = ref.text;
-var name = ref.name;
-var company = ref.company;
-return _c('v-col',{key:i,attrs:{"cols":"12","md":"4"}},[_c('v-hover',{scopedSlots:_vm._u([{key:"default",fn:function(ref){
-var hover = ref.hover;
-return [_c('v-card',{staticClass:"py-12 px-4",attrs:{"elevation":hover ? 24 : 1}},[_c('div',[_c('v-avatar',{attrs:{"size":"88"}},[_c('img',{attrs:{"src":image}})])],1),_vm._v(" "),_c('v-card-text',[_c('div',{staticClass:"subtitle-1"},[_vm._v(_vm._s(text))]),_vm._v(" "),_c('div',{staticClass:"subtitle-1 font-weight-bold mt-5 primary--text"},[_vm._v("\n                    "+_vm._s(name)+"\n                  ")]),_vm._v(" "),_c('div',{staticClass:"caption"},[_vm._v(_vm._s(company))])])],1)]}}],null,true)})],1)}),1)],1)],1),_vm._ssrNode(" "),_vm._ssrNode("<svg viewBox=\"0 0 1920 135\">","</svg>",[_vm._ssrNode("<defs>","</defs>",[_vm._ssrNode("<filter id=\"Path_1006\" x=\"-152.573\" y=\"-460.806\" width=\"2324.175\" height=\"631.369\" filterUnits=\"userSpaceOnUse\">","</filter>",[_c('feOffset',{attrs:{"input":"SourceAlpha"}}),_vm._ssrNode(" "),_c('feGaussianBlur',{attrs:{"stdDeviation":"25","result":"blur"}}),_vm._ssrNode(" "),_c('feFlood',{attrs:{"flood-opacity":"0.161"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"operator":"in","in2":"blur"}}),_vm._ssrNode(" "),_c('feComposite',{attrs:{"in":"SourceGraphic"}})],2),_vm._ssrNode(" <clipPath id=\"clip-Home\"><rect width=\"1920\" height=\"135\"></rect></clipPath>")],2),_vm._ssrNode(" <g id=\"Home\" clip-path=\"url(#clip-Home)\"><rect width=\"1920\" height=\"135\" fill=\"#ffffff00\"></rect> <g transform=\"matrix(1, 0, 0, 1, 0, 0)\" filter=\"url(#Path_1006)\"><path id=\"Path_1006-2\" data-name=\"Path 1006\" d=\"M-9948.83,7778.837s223.576,20.394,386.754,27.238,264.528,2.657,433.32-7.967,394.238-56.657,849.857-44.854,433.191,56.657,433.191,56.657l-37.3-459.818H-8937.946s-717.868,3.541-721.409,0S-9970.4,7333.23-9970.4,7333.23l-47.161,238.25,15.345,197.12Z\" transform=\"translate(9941 -7718)\" fill=\"#691616\" stroke=\"#691616\" stroke-width=\"2\"></path></g></g>")],2),_vm._ssrNode(" "),_vm._ssrNode("<section class=\"text-center pt-2\">","</section>",[_c('v-container',[_c('div',{staticClass:"text-h5 primary--text"},[_vm._v("SwegzTradeLink newsletter")]),_vm._v(" "),_c('p',{staticClass:"mt-2"},[_vm._v("Subscribe to SwegzTradeLink newsletter")]),_vm._v(" "),_c('NewsletterForm')],1),_vm._ssrNode(" "),_c('v-divider',{staticClass:"mt-2"})],2)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/swegzadmin.vue?vue&type=template&id=5dfda89c&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-expansion-panels',[_c('v-expansion-panel',[_c('v-expansion-panel-header',[_vm._v("\n        Add Rates and Assets\n      ")]),_vm._v(" "),_c('v-expansion-panel-content',[_c('v-form',{model:{value:(_vm.valid),callback:function ($$v) {_vm.valid=$$v},expression:"valid"}},[_c('v-container',[_c('v-row',[_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-select',{attrs:{"items":_vm.types,"rules":[function (v) { return !!v || 'type is required'; }],"label":"Types","required":""},model:{value:(_vm.type),callback:function ($$v) {_vm.type=$$v},expression:"type"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-select',{attrs:{"items":_vm.assets,"rules":[function (v) { return !!v || 'name is required'; }],"label":"name","required":""},model:{value:(_vm.name),callback:function ($$v) {_vm.name=$$v},expression:"name"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Starting quantity","required":""},model:{value:(_vm.min),callback:function ($$v) {_vm.min=$$v},expression:"min"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"rules":_vm.nameRules,"label":"Final quantity","required":""},model:{value:(_vm.max),callback:function ($$v) {_vm.max=$$v},expression:"max"}})],1),_vm._v(" "),_c('v-col',{attrs:{"cols":"12","md":"3"}},[_c('v-text-field',{attrs:{"label":"rate","required":""},model:{value:(_vm.rate),callback:function ($$v) {_vm.rate=$$v},expression:"rate"}})],1)],1),_vm._v(" "),_c('v-btn',{attrs:{"color":"success"},on:{"click":_vm.addRate}},[_vm._v(" send ")])],1)],1)],1)],1)],1),_vm._ssrNode(" "),_c('v-expansion-panels',[_c('v-expansion-panel',[_c('v-expansion-panel-header',[_vm._v("\n        Delete Rates and Assets\n      ")]),_vm._v(" "),_c('v-expansion-panel-content',[_c('v-simple-table',{scopedSlots:_vm._u([{key:"default",fn:function(){return [_c('thead',[_c('tr',[_c('th',{staticClass:"text-left"},[_vm._v("Type")]),_vm._v(" "),_c('th',{staticClass:"text-left"},[_vm._v("value")]),_vm._v(" "),_c('th',{staticClass:"text-left"},[_vm._v("Rate")]),_vm._v(" "),_c('th',{staticClass:"text-left"},[_vm._v("delete")])])]),_vm._v(" "),_c('tbody',_vm._l((_vm.rates),function(item){return _c('tr',{key:item.id},[_c('td',[_vm._v(_vm._s(item.name))]),_vm._v(" "),_c('td',[_vm._v(_vm._s(item.minQuantity)+" -"+_vm._s(item.maxQuantity))]),_vm._v(" "),_c('td',[_vm._v(_vm._s(item.value)+"/$")]),_vm._v(" "),_c('td',[_c('v-btn',{attrs:{"color":"error"},on:{"click":function($event){return _vm.deleteRate(item)}}},[_vm._v("\n                    delete\n                  ")])],1)])}),0)]},proxy:true}])})],1)],1)],1)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=template&id=3b5e3a1a&
+// CONCATENATED MODULE: ./pages/swegzadmin.vue?vue&type=template&id=5dfda89c&
 
-// EXTERNAL MODULE: ./components/giftcards.vue + 4 modules
-var giftcards = __webpack_require__(186);
+// EXTERNAL MODULE: external "firebase/app"
+var app_ = __webpack_require__(25);
 
-// EXTERNAL MODULE: ./components/NewsletterForm.vue + 4 modules
-var NewsletterForm = __webpack_require__(187);
+// EXTERNAL MODULE: external "firebase/auth"
+var auth_ = __webpack_require__(126);
 
-// EXTERNAL MODULE: ./components/rates.vue + 4 modules
-var rates = __webpack_require__(188);
+// EXTERNAL MODULE: external "js-cookie"
+var external_js_cookie_ = __webpack_require__(125);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/index.vue?vue&type=script&lang=js&
+// EXTERNAL MODULE: external "jwt-decode"
+var external_jwt_decode_ = __webpack_require__(127);
+var external_jwt_decode_default = /*#__PURE__*/__webpack_require__.n(external_jwt_decode_);
+
+// CONCATENATED MODULE: ./helpers/index.js
+
+
+var cookieparser = __webpack_require__(128);
+
+function getUserFromCookie(req) {
+  if (false) {}
+  if (!req.headers.cookie) return;
+
+  if (req.headers.cookie) {
+    const parsed = cookieparser.parse(req.headers.cookie);
+    const accessTokenCookie = parsed.access_token;
+    if (!accessTokenCookie) return;
+    const decodedToken = external_jwt_decode_default()(accessTokenCookie);
+    if (!decodedToken) return;
+    return decodedToken;
+  }
+}
+function getUserFromSession(req) {
+  console.log("[CHECK-AUTH] - checking if user is stored in session");
+  return req.session ? req.session.userId : null;
+}
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/swegzadmin.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -5262,273 +5267,88 @@ var rates = __webpack_require__(188);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
- //contact@swegztradelink.com
-//Forexway007
 
 
 
-/* harmony default export */ var lib_vue_loader_options_pagesvue_type_script_lang_js_ = ({
-  components: {
-    NewsletterForm: NewsletterForm["default"],
-    Rates: rates["default"],
-    Giftcards: giftcards["default"]
-  },
 
-  data() {
-    return {
-      valid: true,
-      tradeType: ["Buying", "Selling"],
-      tradeDetails: ["Cryptocurrency", "Giftcards", "others"],
-      nameRules: [v => !!v || "Name is required", v => v && v.length >= 3 || "Name greater than 5 characters"],
-      emailRules: [v => !!v || "E-mail is required", v => /.+@.+/.test(v) || "E-mail must be valid"],
-      dialog: false,
-      features: [{
-        image: "/feature4.svg",
-        title: "At an incredible speed",
-        text: "Time is of the essence, we buy and sell your cryptocurrency and gift cards at the shortest time possible."
-      }, {
-        image: "/feature2.svg",
-        title: "Secure Platform",
-        text: "The safety of your funds is our utmost priority, our platform is secured for any transaction you perform. Trade with us with both eyes closed."
-      }, {
-        image: "/features.svg",
-        title: "At the best market rate",
-        text: "Being shortchanged isn't an option, get the actual worth of your bitcoins and gift cards on SwegzTradeLink."
-      }],
-      testimonies: [{
-        image: "/users.svg",
-        name: "Papa ",
-        company: "Lagos State, Nigeria",
-        text: ` Started trading with SwegzTradeLink Trade 7months ago,so far, it has 
-been a great experience. I've been able to meet up with some of my 
-financial goals for the year. The management-investor relationship have 
-been professional. I get alerted of my money being available a day before 
-and I get option on how to reinvest. It's been a joy ride.`
-      }, {
-        image: "/users.svg",
-        name: "Kehinde Aguda",
-        company: "Lagos State, Nigeria",
-        text: ` I started cryptoTrade with SwegzTradeLink in February 2020 and I've been 
-trading up until now because my personal expectations were met and 
-Swegzdelivered the services absolutely! I've been meeting my financial 
-expectations since I started in February and the Interest always come on 
-due date. My personal experience has an investor has been smooth, no 
-complaints whatsoever. `
-      }, {
-        image: "/users.svg",
-        name: "Blessing Justin",
-        company: "Kaduna state, Nigeria",
-        text: `This is the first time I am trading my money and for once I feel at peace... 
-I don't even remember or panic about the cash sef cos I just know its super 
-safe and growing. Thanks for not giving up on all my enquiry times.`
-      }],
-      ambassadors: [{
-        image: "src",
-        information: "txt",
-        name: "name"
-      }],
-      typeOfTrade: "",
-      detailsOfTrade: ""
-    };
-  },
+/* harmony default export */ var swegzadminvue_type_script_lang_js_ = ({
+  asyncData({
+    req,
+    redirect
+  }) {
+    if (true) {
+      //console.log("server", req.header);
+      const user = getUserFromCookie(req); //   console.log('b', getUserFromCookie(req))
 
-  methods: {
-    tradeNow() {
-      if (this.detailsOfTrade && this.typeOfTrade != "" || null) {
-        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzTradeLink+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
-        window.location.replace(this.contactUrl);
-        this.dialog = false;
-      } else {
-        alert("please ensure all fields are filled correctly with valid details");
+      if (!user) {
+        console.log("redirecting server");
+        redirect("/login");
       }
+    } else { var user; }
+  },
+
+  data: () => ({
+    rates: [],
+    valid: false,
+    nameRules: [v => !!v || "This feild is required"],
+    assets: ["BTC", "ETH", "BCH", "ITUNES", "SEPHORA", "GOOGLE", "AMAZON", "OTHERS"],
+    rate: "",
+    name: "",
+    min: "",
+    max: "",
+    rates: [],
+    types: ["cryptocurrency", "giftcards", "Efunds"],
+    type: ""
+  }),
+  methods: {
+    getrates() {
+      this.$fireStore.collection("rates").onSnapshot(data => {
+        data.forEach(e => {
+          this.rates.push({ ...e.data(),
+            id: e.id
+          });
+        });
+      });
+    },
+
+    addRate() {
+      if (this.name && this.max && this.min && this.rate && this.type) {
+        let newRate = {
+          name: this.name,
+          value: this.rate,
+          minQuantity: this.min,
+          maxQuantity: this.max,
+          type: this.type
+        };
+        this.$fireStore.collection("rates").add(newRate).then(e => {
+          alert(" rate sent" + e.id);
+          this.refresh();
+        }).catch(e => console.log(e));
+      } else {
+        alert("ensure all fields ar filled");
+      }
+    },
+
+    deleteRate(doc) {
+      this.$fireStore.collection("rates").doc(doc.id).delete().then(() => {
+        this.refresh();
+      }).catch(e => console.log(e));
+    },
+
+    refresh() {
+      this.rates = [];
+      this.getrates();
     }
 
+  },
+
+  mounted() {
+    this.getrates();
   }
+
 });
-// CONCATENATED MODULE: ./pages/index.vue?vue&type=script&lang=js&
- /* harmony default export */ var pagesvue_type_script_lang_js_ = (lib_vue_loader_options_pagesvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./pages/swegzadmin.vue?vue&type=script&lang=js&
+ /* harmony default export */ var pages_swegzadminvue_type_script_lang_js_ = (swegzadminvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(14);
 
@@ -5536,17 +5356,8 @@ var componentNormalizer = __webpack_require__(14);
 var installComponents = __webpack_require__(17);
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VAvatar/VAvatar.js
-var VAvatar = __webpack_require__(47);
-
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VBtn/VBtn.js + 2 modules
 var VBtn = __webpack_require__(63);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/VCard.js
-var VCard = __webpack_require__(46);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VCard/index.js
-var components_VCard = __webpack_require__(55);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VCol.js
 var VCol = __webpack_require__(135);
@@ -5554,431 +5365,20 @@ var VCol = __webpack_require__(135);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VContainer.js
 var VContainer = __webpack_require__(137);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/src/components/VDialog/VDialog.sass
-var VDialog = __webpack_require__(200);
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanel.js
+var VExpansionPanel = __webpack_require__(192);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VThemeProvider/VThemeProvider.js
-var VThemeProvider = __webpack_require__(196);
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelContent.js
+var VExpansionPanelContent = __webpack_require__(193);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/activatable/index.js
-var activatable = __webpack_require__(156);
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanelHeader.js
+var VExpansionPanelHeader = __webpack_require__(194);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/dependent/index.js
-var dependent = __webpack_require__(57);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/detachable/index.js
-var detachable = __webpack_require__(162);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/overlayable/index.js + 2 modules
-var overlayable = __webpack_require__(59);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/returnable/index.js
-var returnable = __webpack_require__(164);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/stackable/index.js
-var stackable = __webpack_require__(163);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/toggleable/index.js
-var toggleable = __webpack_require__(11);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/directives/click-outside/index.js
-var click_outside = __webpack_require__(53);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/mixins.js
-var mixins = __webpack_require__(2);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/console.js
-var console = __webpack_require__(3);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/util/helpers.js
-var helpers = __webpack_require__(0);
-
-// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VDialog/VDialog.js
-// Styles
- // Components
-
- // Mixins
-
-
-
-
-
-
-
- // Directives
-
- // Helpers
-
-
-
-
-const baseMixins = Object(mixins["a" /* default */])(activatable["a" /* default */], dependent["a" /* default */], detachable["a" /* default */], overlayable["a" /* default */], returnable["a" /* default */], stackable["a" /* default */], toggleable["a" /* default */]);
-/* @vue/component */
-
-/* harmony default export */ var VDialog_VDialog = (baseMixins.extend({
-  name: 'v-dialog',
-  directives: {
-    ClickOutside: click_outside["a" /* default */]
-  },
-  props: {
-    dark: Boolean,
-    disabled: Boolean,
-    fullscreen: Boolean,
-    light: Boolean,
-    maxWidth: {
-      type: [String, Number],
-      default: 'none'
-    },
-    noClickAnimation: Boolean,
-    origin: {
-      type: String,
-      default: 'center center'
-    },
-    persistent: Boolean,
-    retainFocus: {
-      type: Boolean,
-      default: true
-    },
-    scrollable: Boolean,
-    transition: {
-      type: [String, Boolean],
-      default: 'dialog-transition'
-    },
-    width: {
-      type: [String, Number],
-      default: 'auto'
-    }
-  },
-
-  data() {
-    return {
-      activatedBy: null,
-      animate: false,
-      animateTimeout: -1,
-      isActive: !!this.value,
-      stackMinZIndex: 200
-    };
-  },
-
-  computed: {
-    classes() {
-      return {
-        [`v-dialog ${this.contentClass}`.trim()]: true,
-        'v-dialog--active': this.isActive,
-        'v-dialog--persistent': this.persistent,
-        'v-dialog--fullscreen': this.fullscreen,
-        'v-dialog--scrollable': this.scrollable,
-        'v-dialog--animated': this.animate
-      };
-    },
-
-    contentClasses() {
-      return {
-        'v-dialog__content': true,
-        'v-dialog__content--active': this.isActive
-      };
-    },
-
-    hasActivator() {
-      return Boolean(!!this.$slots.activator || !!this.$scopedSlots.activator);
-    }
-
-  },
-  watch: {
-    isActive(val) {
-      if (val) {
-        this.show();
-        this.hideScroll();
-      } else {
-        this.removeOverlay();
-        this.unbind();
-      }
-    },
-
-    fullscreen(val) {
-      if (!this.isActive) return;
-
-      if (val) {
-        this.hideScroll();
-        this.removeOverlay(false);
-      } else {
-        this.showScroll();
-        this.genOverlay();
-      }
-    }
-
-  },
-
-  created() {
-    /* istanbul ignore next */
-    if (this.$attrs.hasOwnProperty('full-width')) {
-      Object(console["e" /* removed */])('full-width', this);
-    }
-  },
-
-  beforeMount() {
-    this.$nextTick(() => {
-      this.isBooted = this.isActive;
-      this.isActive && this.show();
-    });
-  },
-
-  beforeDestroy() {
-    if (typeof window !== 'undefined') this.unbind();
-  },
-
-  methods: {
-    animateClick() {
-      this.animate = false; // Needed for when clicking very fast
-      // outside of the dialog
-
-      this.$nextTick(() => {
-        this.animate = true;
-        window.clearTimeout(this.animateTimeout);
-        this.animateTimeout = window.setTimeout(() => this.animate = false, 150);
-      });
-    },
-
-    closeConditional(e) {
-      const target = e.target; // Ignore the click if the dialog is closed or destroyed,
-      // if it was on an element inside the content,
-      // if it was dragged onto the overlay (#6969),
-      // or if this isn't the topmost dialog (#9907)
-
-      return !(this._isDestroyed || !this.isActive || this.$refs.content.contains(target) || this.overlay && target && !this.overlay.$el.contains(target)) && this.activeZIndex >= this.getMaxZIndex();
-    },
-
-    hideScroll() {
-      if (this.fullscreen) {
-        document.documentElement.classList.add('overflow-y-hidden');
-      } else {
-        overlayable["a" /* default */].options.methods.hideScroll.call(this);
-      }
-    },
-
-    show() {
-      !this.fullscreen && !this.hideOverlay && this.genOverlay();
-      this.$nextTick(() => {
-        this.$refs.content.focus();
-        this.bind();
-      });
-    },
-
-    bind() {
-      window.addEventListener('focusin', this.onFocusin);
-    },
-
-    unbind() {
-      window.removeEventListener('focusin', this.onFocusin);
-    },
-
-    onClickOutside(e) {
-      this.$emit('click:outside', e);
-
-      if (this.persistent) {
-        this.noClickAnimation || this.animateClick();
-      } else {
-        this.isActive = false;
-      }
-    },
-
-    onKeydown(e) {
-      if (e.keyCode === helpers["r" /* keyCodes */].esc && !this.getOpenDependents().length) {
-        if (!this.persistent) {
-          this.isActive = false;
-          const activator = this.getActivator();
-          this.$nextTick(() => activator && activator.focus());
-        } else if (!this.noClickAnimation) {
-          this.animateClick();
-        }
-      }
-
-      this.$emit('keydown', e);
-    },
-
-    // On focus change, wrap focus to stay inside the dialog
-    // https://github.com/vuetifyjs/vuetify/issues/6892
-    onFocusin(e) {
-      if (!e || !this.retainFocus) return;
-      const target = e.target;
-
-      if (!!target && // It isn't the document or the dialog body
-      ![document, this.$refs.content].includes(target) && // It isn't inside the dialog body
-      !this.$refs.content.contains(target) && // We're the topmost dialog
-      this.activeZIndex >= this.getMaxZIndex() && // It isn't inside a dependent element (like a menu)
-      !this.getOpenDependentElements().some(el => el.contains(target)) // So we must have focused something outside the dialog and its children
-      ) {
-          // Find and focus the first available element inside the dialog
-          const focusable = this.$refs.content.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
-          const el = [...focusable].find(el => !el.hasAttribute('disabled'));
-          el && el.focus();
-        }
-    },
-
-    genContent() {
-      return this.showLazyContent(() => [this.$createElement(VThemeProvider["a" /* default */], {
-        props: {
-          root: true,
-          light: this.light,
-          dark: this.dark
-        }
-      }, [this.$createElement('div', {
-        class: this.contentClasses,
-        attrs: {
-          role: 'document',
-          tabindex: this.isActive ? 0 : undefined,
-          ...this.getScopeIdAttrs()
-        },
-        on: {
-          keydown: this.onKeydown
-        },
-        style: {
-          zIndex: this.activeZIndex
-        },
-        ref: 'content'
-      }, [this.genTransition()])])]);
-    },
-
-    genTransition() {
-      const content = this.genInnerContent();
-      if (!this.transition) return content;
-      return this.$createElement('transition', {
-        props: {
-          name: this.transition,
-          origin: this.origin,
-          appear: true
-        }
-      }, [content]);
-    },
-
-    genInnerContent() {
-      const data = {
-        class: this.classes,
-        ref: 'dialog',
-        directives: [{
-          name: 'click-outside',
-          value: {
-            handler: this.onClickOutside,
-            closeConditional: this.closeConditional,
-            include: this.getOpenDependentElements
-          }
-        }, {
-          name: 'show',
-          value: this.isActive
-        }],
-        style: {
-          transformOrigin: this.origin
-        }
-      };
-
-      if (!this.fullscreen) {
-        data.style = { ...data.style,
-          maxWidth: this.maxWidth === 'none' ? undefined : Object(helpers["f" /* convertToUnit */])(this.maxWidth),
-          width: this.width === 'auto' ? undefined : Object(helpers["f" /* convertToUnit */])(this.width)
-        };
-      }
-
-      return this.$createElement('div', data, this.getContentSlot());
-    }
-
-  },
-
-  render(h) {
-    return h('div', {
-      staticClass: 'v-dialog__container',
-      class: {
-        'v-dialog__container--attached': this.attach === '' || this.attach === true || this.attach === 'attach'
-      },
-      attrs: {
-        role: 'dialog'
-      }
-    }, [this.genActivator(), this.genContent()]);
-  }
-
-}));
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDivider/VDivider.js
-var VDivider = __webpack_require__(154);
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VExpansionPanel/VExpansionPanels.js
+var VExpansionPanels = __webpack_require__(195);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VForm/VForm.js
 var VForm = __webpack_require__(166);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/mixins/delayable/index.js
-var delayable = __webpack_require__(155);
-
-// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VHover/VHover.js
-// Mixins
-
- // Utilities
-
-
-
-/* harmony default export */ var VHover = (Object(mixins["a" /* default */])(delayable["a" /* default */], toggleable["a" /* default */]
-/* @vue/component */
-).extend({
-  name: 'v-hover',
-  props: {
-    disabled: {
-      type: Boolean,
-      default: false
-    },
-    value: {
-      type: Boolean,
-      default: undefined
-    }
-  },
-  methods: {
-    onMouseEnter() {
-      this.runDelay('open');
-    },
-
-    onMouseLeave() {
-      this.runDelay('close');
-    }
-
-  },
-
-  render() {
-    if (!this.$scopedSlots.default && this.value === undefined) {
-      Object(console["c" /* consoleWarn */])('v-hover is missing a default scopedSlot or bound value', this);
-      return null;
-    }
-
-    let element;
-    /* istanbul ignore else */
-
-    if (this.$scopedSlots.default) {
-      element = this.$scopedSlots.default({
-        hover: this.isActive
-      });
-    }
-
-    if (Array.isArray(element) && element.length === 1) {
-      element = element[0];
-    }
-
-    if (!element || Array.isArray(element) || !element.tag) {
-      Object(console["c" /* consoleWarn */])('v-hover should only contain a single element', this);
-      return element;
-    }
-
-    if (!this.disabled) {
-      element.data = element.data || {};
-
-      this._g(element.data, {
-        mouseenter: this.onMouseEnter,
-        mouseleave: this.onMouseLeave
-      });
-    }
-
-    return element;
-  }
-
-}));
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VIcon/VIcon.js
-var VIcon = __webpack_require__(45);
-
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VImg/VImg.js + 2 modules
-var VImg = __webpack_require__(41);
 
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VRow.js
 var VRow = __webpack_require__(136);
@@ -5986,10 +5386,13 @@ var VRow = __webpack_require__(136);
 // EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VSelect/VSelect.js + 11 modules
 var VSelect = __webpack_require__(202);
 
-// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VGrid/VSpacer.js
-var VSpacer = __webpack_require__(138);
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VDataTable/VSimpleTable.js
+var VSimpleTable = __webpack_require__(197);
 
-// CONCATENATED MODULE: ./pages/index.vue
+// EXTERNAL MODULE: ./node_modules/vuetify/lib/components/VTextField/VTextField.js + 3 modules
+var VTextField = __webpack_require__(157);
+
+// CONCATENATED MODULE: ./pages/swegzadmin.vue
 
 
 
@@ -5998,21 +5401,17 @@ var VSpacer = __webpack_require__(138);
 /* normalize component */
 
 var component = Object(componentNormalizer["a" /* default */])(
-  pagesvue_type_script_lang_js_,
+  pages_swegzadminvue_type_script_lang_js_,
   render,
   staticRenderFns,
   false,
   null,
   null,
-  "1d7c46a2"
+  "350e0a8e"
   
 )
 
-/* harmony default export */ var pages = __webpack_exports__["default"] = (component.exports);
-
-/* nuxt-component-imports */
-installComponents_default()(component, {Rates: __webpack_require__(188).default,Giftcards: __webpack_require__(186).default,NewsletterForm: __webpack_require__(187).default})
-
+/* harmony default export */ var swegzadmin = __webpack_exports__["default"] = (component.exports);
 
 /* vuetify-loader */
 
@@ -6028,15 +5427,10 @@ installComponents_default()(component, {Rates: __webpack_require__(188).default,
 
 
 
-
-
-
-
-
-installComponents_default()(component, {VAvatar: VAvatar["a" /* default */],VBtn: VBtn["a" /* default */],VCard: VCard["a" /* default */],VCardActions: components_VCard["a" /* VCardActions */],VCardText: components_VCard["b" /* VCardText */],VCardTitle: components_VCard["c" /* VCardTitle */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VDialog: VDialog_VDialog,VDivider: VDivider["a" /* default */],VForm: VForm["a" /* default */],VHover: VHover,VIcon: VIcon["a" /* default */],VImg: VImg["a" /* default */],VRow: VRow["a" /* default */],VSelect: VSelect["a" /* default */],VSpacer: VSpacer["a" /* default */]})
+installComponents_default()(component, {VBtn: VBtn["a" /* default */],VCol: VCol["a" /* default */],VContainer: VContainer["a" /* default */],VExpansionPanel: VExpansionPanel["a" /* default */],VExpansionPanelContent: VExpansionPanelContent["a" /* default */],VExpansionPanelHeader: VExpansionPanelHeader["a" /* default */],VExpansionPanels: VExpansionPanels["a" /* default */],VForm: VForm["a" /* default */],VRow: VRow["a" /* default */],VSelect: VSelect["a" /* default */],VSimpleTable: VSimpleTable["a" /* default */],VTextField: VTextField["a" /* default */]})
 
 
 /***/ })
 
 };;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=swegzadmin.js.map

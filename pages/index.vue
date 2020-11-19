@@ -76,8 +76,7 @@
         </v-col>
       </v-row>
     </section>
-    <Rates />
-    <Giftcards />
+
     <!-- features -->
 
     <section class="text-center primary pb-16">
@@ -186,6 +185,16 @@
           </v-col>
         </v-row>
       </v-container>
+    </section>
+    <section>
+      <v-row no-gutters>
+        <v-col cols="12" md="6">
+          <v-card elevation="2" class="mx-6 my-6"><Rates /> </v-card
+        ></v-col>
+        <v-col cols="12" md="6"
+          ><v-card elevation="2" class="mx-6 my-6"
+            ><Giftcards /> </v-card></v-col
+      ></v-row>
     </section>
     <section class="pa-5 primary">
       <v-container class="text-center">

@@ -1,22 +1,26 @@
 <template>
-  <v-simple-table>
-    <template v-slot:default>
-      <thead>
-        <tr>
-          <th class="text-left">Type</th>
-          <th class="text-left">value</th>
-          <th class="text-left">Rate</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="item in rates" :key="item.id">
-          <td>{{ item.name }}</td>
-          <td>{{ item.minQuantity }} -{{ item.maxQuantity }}</td>
-          <td>{{ item.value }}/$</td>
-        </tr>
-      </tbody>
-    </template>
-  </v-simple-table>
+  <div>
+    <p class="display-1 text-center py-4 primary white--text">Cryptocurrency</p>
+
+    <v-simple-table>
+      <template v-slot:default>
+        <thead>
+          <tr>
+            <th class="text-left primary--text">Type</th>
+            <th class="text-left primary--text">value</th>
+            <th class="text-left primary--text">Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in rates" :key="item.id">
+            <td>{{ item.name }}</td>
+            <td>{{ item.minQuantity }} -{{ item.maxQuantity }}</td>
+            <td>{{ item.value }}/$</td>
+          </tr>
+        </tbody>
+      </template>
+    </v-simple-table>
+  </div>
 </template>
 <script>
 export default {
@@ -49,7 +53,7 @@ export default {
   computed: {
     rates: function () {
       return this.allrates
-        .filter((e) => e.name === "BTC" || "BCH" || "ETH")
+        .filter((e) => e.type === "cryptocurrency")
         .sort((a, b) => parseInt(a.minQuantity) - parseInt(b.minQuantity));
     },
   },
