@@ -8,10 +8,10 @@
         v-model="email"
         outlined
         class="mr-md-2"
-        placeholder="Email"
+        placeholder="A sweet spot is waiting for your email"
         :rules="emailRules"
       ></v-text-field>
-      <v-btn x-large color="primary" @click="mailernwletter">Subscribe</v-btn>
+      <v-btn x-large color="warning" @click="mailernwletter">Subscribe</v-btn>
     </div>
   </v-form>
 </template>

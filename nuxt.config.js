@@ -82,6 +82,7 @@ export default {
       themes: {
         dark: {
           primary: "#690018",
+          accenttext:colors.amber.base,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
@@ -91,7 +92,8 @@ export default {
         },
         light: {
           primary: "#690018",
-          secondary: "#00bcd4"
+          accenttext:"#690018",
+          secondary: colors.amber.darken3
         }
       }
     }
@@ -103,6 +105,7 @@ export default {
    */
   build: {
     public: "/",
-    extracrCSS: true
+    extracrCSS: true,
+    transpile:["vue-vanta","vue-lottie","lottie-web"]
   }
 };

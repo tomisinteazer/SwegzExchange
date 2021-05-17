@@ -9,11 +9,11 @@
       flat
     >
       <v-layout column align-center>
-        <v-flex class="mt-5">
+        <v-flex class="mt-5 px-2">
           <v-avatar size="150">
             <v-img contain src="/swg.png"></v-img>
           </v-avatar>
-          <p class="font-weight-black text-lg-center mt-3 text-center">
+          <p class="font-weight-black text-lg-center mt-3 text-center px-2">
             SwegzTradeLink
           </p>
         </v-flex>
@@ -27,7 +27,7 @@
           exact
         >
           <v-list-item-action>
-            <v-icon color="primary">{{ item.icon }}</v-icon>
+            <v-icon color="accenttext">{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />
@@ -35,21 +35,31 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app flat height="80">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="primary" />
+    <v-app-bar
+      :clipped-left="clipped"
+      fixed
+      app
+      flat
+      height="70"
+      class="px-md-16"
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" color="accenttext" />
       <img src="/swg.png" height="40" alt />
       <nuxt-link to="/" flat transparent>
-        <v-toolbar-title v-text="title" />
+        <v-toolbar-title v-text="title" class="accenttext--text" />
       </nuxt-link>
       <v-spacer />
-      <v-btn icon @click.stop="colors">
-        <v-icon color="warning">mdi-invert-colors</v-icon>
+      <v-btn v-if="$vuetify.theme.dark" icon @click.stop="colors">
+        <v-icon color="accenttext">mdi-weather-night</v-icon>
+      </v-btn>
+      <v-btn v-if="!$vuetify.theme.dark" icon @click.stop="colors">
+        <v-icon color="accenttext">mdi-weather-sunny</v-icon>
       </v-btn>
     </v-app-bar>
     <v-main>
       <nuxt />
 
-      <v-footer color="transparent" class="pt-5 pb-5">
+      <v-footer color="transparent" class="py-10">
         <v-container>
           <v-row>
             <v-col cols="12" md="6">
@@ -108,17 +118,14 @@
                 <nuxt-link to="/policy">Privacy policy</nuxt-link>
               </div>
             </v-col>
-              <v-col cols="12" md="2">
+            <v-col cols="12" md="2">
               <div class="font-weight-black mb-2">Visit us At :</div>
               <div class="d-flex flex-column subtitle-2">
                 <Address>
-                  4th Floor
-                  Presidential Boulevard,<br/>
-                   1 Golf Resort Drive, <br/>
-                   Oke Mosan, Abeokuta.
-
+                  4th Floor Presidential Boulevard,<br />
+                  1 Golf Resort Drive, <br />
+                  Oke Mosan, Abeokuta.
                 </Address>
-                
               </div>
             </v-col>
           </v-row>
