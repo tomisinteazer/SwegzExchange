@@ -11,7 +11,14 @@
         placeholder="A sweet spot is waiting for your email"
         :rules="emailRules"
       ></v-text-field>
-      <v-btn x-large color="warning" @click="mailernwletter">Subscribe</v-btn>
+      <v-btn
+        x-large
+        color="accenttext"
+        @click="mailernwletter"
+        class="mt-n8 mt-md-0"
+        :class="$vuetify.theme.dark ? 'black--text' : 'white--text'"
+        >Subscribe</v-btn
+      >
     </div>
   </v-form>
 </template>
@@ -23,9 +30,9 @@ export default {
     return {
       email: "",
       emailRules: [
-        (v) => !!v || "E-mail is required",
-        (v) => /.+@.+/.test(v) || "E-mail must be valid",
-      ],
+        v => !!v || "E-mail is required",
+        v => /.+@.+/.test(v) || "E-mail must be valid"
+      ]
     };
   },
   methods: {
@@ -33,7 +40,7 @@ export default {
       if (this.email != "" || null) {
         let subject = "I want to subscribe to you news letter : " + this.email;
         let mailRef =
-          "mailto:contact@swegztradelink.com?subject=" +
+          "mailto:contact@Swegz Tradelink.com?subject=" +
           encodeURIComponent(subject) +
           "&body=" +
           encodeURIComponent(this.email);
@@ -43,7 +50,7 @@ export default {
           "please ensure all fields are filled correctly with valid details"
         );
       }
-    },
-  },
+    }
+  }
 };
 </script>

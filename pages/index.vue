@@ -1,92 +1,158 @@
-
 <template>
   <div class="herosection">
-    <no-ssr><v-vanta effect="waves" :options="options" class="mt-n14"></v-vanta></no-ssr>
+    <no-ssr
+      ><v-vanta effect="waves" :options="options" class="mt-n16"></v-vanta
+    ></no-ssr>
     <!-- landing section -->
     <section
-      class="mx-md-16 mx-6 mt-md-16 pt-md-16"
+      class=" mx-6 mt-md-16 pt-md-16"
       style="height: 75vh; background-color: #690018"
     >
-      <div class="mx-md-16 my-lg-16 pt-md-10">
-        <div class="mx-md-16">
+      <div class="mx-md-16 my-lg-16 pt-md-10 ">
+        <div class="">
           <div class="mx-md-16">
             <v-row no-gutters>
               <v-col
                 cols="12"
                 md="6"
-                class="text-center mt-md-8"
+                class="text-md-left text-center text-sm-center mt-md-0 mt-14 px-md-16"
                 text-md-center
+                style="z-index: 99;"
               >
-                <v-card elevation="0" class="nostyle white--text" style="height:300px">
+                <v-card
+                  elevation="0"
+                  class="nostyle white--text"
+                  style="height:300px"
+                >
                   <h2 class="display-1 mb-6 my-5">Welcome to</h2>
                   <h1 class="display-1 font-weight-bold mb-6 my-5">
-                    SwegzTradeLink
+                    Swegz Tradelink
                   </h1>
                   <p class="body-1">
-                    The fastest and safest exchange platform to trade and
+                    The fastest and safest exchange platform to Trade and
                     convert all your Bitcoins, Digital assets, Giftcards, Smart
                     devices and E-commerce
                   </p>
-                  <v-dialog v-model="dialog" width="500">
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-btn
-                      class="text-uppercase"
-                      color="warning"
-                      x-large
-                      dark
-                      v-bind="attrs"
-                      v-on="on"
-                      >Trade</v-btn
-                    >
-                  </template>
+                  <div>
+                    <v-dialog v-model="dialog" width="500">
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn
+                          class="text-uppercase black--text "
+                          color="#ffeebb"
+                          x-large
+                          dark
+                          block
+                          v-bind="attrs"
+                          v-on="on"
+                          >Trade</v-btn
+                        >
+                      </template>
 
-                  <v-card>
-                    <v-card-title class>trade with SwegzTradeLink</v-card-title>
+                      <v-card>
+                        <v-card-title class
+                          >Trade with Swegz Tradelink</v-card-title
+                        >
 
-                    <v-card-text
-                      >Fill in your trade details below and submit. Transaction
-                      will proceed immediately.</v-card-text
-                    >
-                    <v-form v-model="valid">
-                      <v-container>
-                        <v-row>
-                          <v-col cols="12">
-                            <v-select
-                              v-model="detailsOfTrade"
-                              :items="tradeDetails"
-                              label="Cryptocurrency /Giftcards /other"
-                            ></v-select>
-                          </v-col>
-                        </v-row>
-                        <v-row>
-                          <v-col cols="12">
-                            <v-select
-                              v-model="typeOfTrade"
-                              :items="tradeType"
-                              label="Buy / Sell"
-                            ></v-select>
-                          </v-col>
-                        </v-row>
-                      </v-container>
-                    </v-form>
+                        <v-card-text
+                          >Fill in your Trade details below and submit.
+                          Transaction will proceed immediately.</v-card-text
+                        >
+                        <v-form v-model="valid">
+                          <v-container>
+                            <v-row>
+                              <v-col cols="12">
+                                <v-select
+                                  v-model="detailsOfTrade"
+                                  :items="tradeDetails"
+                                  label="Cryptocurrency /Giftcards /other"
+                                ></v-select>
+                              </v-col>
+                            </v-row>
+                            <v-row>
+                              <v-col cols="12">
+                                <v-select
+                                  v-model="typeOfTrade"
+                                  :items="tradeType"
+                                  label="Buy / Sell"
+                                ></v-select>
+                              </v-col>
+                            </v-row>
+                          </v-container>
+                        </v-form>
 
-                    <v-divider></v-divider>
+                        <v-divider></v-divider>
 
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn color="primary" @click="tradeNow()">Submit</v-btn>
-                    </v-card-actions>
-                  </v-card>
-                </v-dialog>
-                <v-btn class="ml-2 text-uppercase" x-large nuxt to="/about">
-                  <v-icon left>mdi-magnify</v-icon>About
-                </v-btn>
+                        <v-card-actions>
+                          <v-spacer></v-spacer>
+                          <v-btn color="primary" @click="tradeNow()"
+                            >Trade</v-btn
+                          >
+                        </v-card-actions>
+                      </v-card>
+                    </v-dialog>
+                  </div>
+
+                  <v-dialog v-model="rateview" width="1000">
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn
+                        v-bind="attrs"
+                        v-on="on"
+                        class=" text-uppercase mt-4"
+                        block
+                        x-large
+                      >
+                        <v-icon left>mdi-magnify</v-icon>Our Rates for Today
+                      </v-btn>
+                    </template>
+
+                    <v-card>
+                      <v-img
+                        src="https://therecipearchive.herokuapp.com/newpin.jpg"
+                      ></v-img>
+
+                      <v-card-title class
+                        >Trade with Swegz Tradelink</v-card-title
+                      >
+
+                      <v-card-text
+                        >Fill in your Trade details below and submit.
+                        Transaction will proceed immediately.</v-card-text
+                      >
+                      <v-form v-model="valid">
+                        <v-container>
+                          <v-row>
+                            <v-col cols="12">
+                              <v-select
+                                v-model="detailsOfTrade"
+                                :items="tradeDetails"
+                                label="Cryptocurrency /Giftcards /other"
+                              ></v-select>
+                            </v-col>
+                          </v-row>
+                          <v-row>
+                            <v-col cols="12">
+                              <v-select
+                                v-model="typeOfTrade"
+                                :items="tradeType"
+                                label="Buy / Sell"
+                              ></v-select>
+                            </v-col>
+                          </v-row>
+                        </v-container>
+                      </v-form>
+
+                      <v-divider></v-divider>
+
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn color="primary" @click="tradeNow()">Trade</v-btn>
+                      </v-card-actions>
+                    </v-card>
+                  </v-dialog>
                 </v-card>
-
-                
               </v-col>
 
-              <v-col cols="12" md="6" class="py-6">
+              <v-col cols="12" md="6" class="py-6 mb-md-0 mb-16">
                 <Pcanime />
                 <!-- <v-img contain max-height="300" src="/feature1.svg"></v-img> -->
               </v-col>
@@ -103,24 +169,25 @@
 
     <!-- features -->
 
-    <section class="text-center primary pb-16">
-      <section class="mx-md-16 mx-6 mt-md-16 pt-md-16">
-        <div class="mx-md-16 my-lg-16">
-          <div class="mx-md-16">
-            <div class="mx-md-16">
-              <v-container>
+    <section class="text-center primary pb-16 pt-10">
+      <section class=" pt-md-16">
+        <div class=" my-lg-16">
+          <div class="">
+            <div class="mx-md-16 mx-2">
+              <v-div class="mt-16  mt-md-0">
                 <v-card
                   elevation="0"
-                  class="display-1 white--text font-weight-bold my-1 nostyle"
+                  class="display-1 white--text font-weight-bold my-10 nostyle mt-16 mt-md-0"
                 >
                   <p>Get the best trading experience</p>
                 </v-card>
-                <v-row class="mx-lg-6">
+                <v-row class="mx-lg-2 mt-5">
                   <v-col
                     v-for="(feature, i) in features"
                     :key="i"
                     cols="12"
                     md="4"
+                    class="px-6"
                   >
                     <v-hover>
                       <template v-slot="{ hover }">
@@ -147,7 +214,7 @@
                     </v-hover>
                   </v-col>
                 </v-row>
-              </v-container>
+              </v-div>
             </div>
           </div>
         </div>
@@ -222,7 +289,7 @@
                   </v-col>
                   <v-col cols="12" md="6" class="text-center my-md-16">
                     <p class="display-1 font-weight-thin">
-                      SwegzTradeLink is a simple, safe and secure platform that
+                      Swegz Tradelink is a simple, safe and secure platform that
                       provides alternative solutions to payments through the use
                       of Bitcoin, Perfect Money and Giftcard Technology.
                     </p>
@@ -230,7 +297,7 @@
                 </v-row>
               </v-container>
             </section>
-            <section>
+            <!-- <section>
               <v-row no-gutters>
                 <v-col cols="12" md="6">
                   <v-card elevation="2" class="mx-6 my-6"><Rates /> </v-card
@@ -239,7 +306,7 @@
                   ><v-card elevation="2" class="mx-6 my-6"
                     ><Giftcards /> </v-card></v-col
               ></v-row>
-            </section>
+            </section> -->
           </div>
         </div>
       </div>
@@ -363,12 +430,12 @@
             :elevation="hover ? 24 : 1"
           >
             <v-container class="py-md-16 px-12">
-              <div class="text-h4 accenttext--text font-weight-bold">
+              <div class="text-h5 accenttext--text font-weight-bold my-4">
                 Want updates straight to your inbox?
               </div>
               <p class="my-md-6">
-                Enter your email to get the latest news from SwegzTradeLink, and
-                knowledge you need to Trade like an expert.
+                Enter your email to get the latest news from Swegz Tradelink,
+                and knowledge you need to Trade like an expert.
               </p>
               <NewsletterForm />
             </v-container>
@@ -381,7 +448,7 @@
 </template>
 <script>
 import Giftcards from "../components/giftcards.vue";
-//contact@swegztradelink.com
+//contact@Swegz Tradelink.com
 //Forexway007
 import Anime from "../components/animation.vue";
 import Pcanime from "../components/animationtwo.vue";
@@ -396,13 +463,14 @@ export default {
     VVanta,
 
     Rates,
-    Giftcards,
+    Giftcards
   },
   data() {
     return {
       valid: true,
       options: {
         mouseControls: true,
+        rateview: false,
         touchControls: true,
         gyroControls: false,
         minHeight: 800.0,
@@ -413,18 +481,18 @@ export default {
         shininess: 0.0,
         waveHeight: 40.0,
         waveSpeed: 1.3,
-        zoom: 0.97,
+        zoom: 0.97
       },
 
       tradeType: ["Buying", "Selling"],
       tradeDetails: ["Cryptocurrency", "Giftcards", "others"],
       nameRules: [
-        (v) => !!v || "Name is required",
-        (v) => (v && v.length >= 3) || "Name greater than 5 characters",
+        v => !!v || "Name is required",
+        v => (v && v.length >= 3) || "Name greater than 5 characters"
       ],
       emailRules: [
-        (v) => !!v || "E-mail is required",
-        (v) => /.+@.+/.test(v) || "E-mail must be valid",
+        v => !!v || "E-mail is required",
+        v => /.+@.+/.test(v) || "E-mail must be valid"
       ],
       dialog: false,
       features: [
@@ -432,42 +500,42 @@ export default {
           image: "/feature4.svg",
           title: "At an incredible speed",
           text:
-            "Time is of the essence, we buy and sell your cryptocurrency and gift cards at the shortest time possible.",
+            "Time is of the essence, we buy and sell your cryptocurrency and gift cards at the shortest time possible."
         },
         {
           image: "/feature2.svg",
           title: "Secure Platform",
           text:
-            "The safety of your funds is our utmost priority, our platform is secured for any transaction you perform. Trade with us with both eyes closed.",
+            "The safety of your funds is our utmost priority, our platform is secured for any transaction you perform. Trade with us with both eyes closed."
         },
         {
           image: "/features.svg",
           title: "At the best market rate",
           text:
-            "Being shortchanged isn't an option, get the actual worth of your bitcoins and gift cards on SwegzTradeLink.",
-        },
+            "Being shortchanged isn't an option, get the actual worth of your bitcoins and gift cards on Swegz Tradelink."
+        }
       ],
       testimonies: [
         {
           image: "/users.svg",
           name: "Papa ",
           company: "Lagos State, Nigeria",
-          text: ` Started trading with SwegzTradeLink Trade 7months ago,so far, it has 
+          text: ` Started trading with Swegz Tradelink Trade 7months ago,so far, it has 
 been a great experience. I've been able to meet up with some of my 
 financial goals for the year. The management-investor relationship have 
 been professional. I get alerted of my money being available a day before 
-and I get option on how to reinvest. It's been a joy ride.`,
+and I get option on how to reinvest. It's been a joy ride.`
         },
         {
           image: "/users.svg",
           name: "Kehinde Aguda",
           company: "Lagos State, Nigeria",
-          text: ` I started cryptoTrade with SwegzTradeLink in February 2020 and I've been 
+          text: ` I started cryptoTrade with Swegz Tradelink in February 2020 and I've been 
 trading up until now because my personal expectations were met and 
 Swegzdelivered the services absolutely! I've been meeting my financial 
 expectations since I started in February and the Interest always come on 
 due date. My personal experience has an investor has been smooth, no 
-complaints whatsoever. `,
+complaints whatsoever. `
         },
         {
           image: "/users.svg",
@@ -475,18 +543,18 @@ complaints whatsoever. `,
           company: "Kaduna state, Nigeria",
           text: `This is the first time I am trading my money and for once I feel at peace... 
 I don't even remember or panic about the cash sef cos I just know its super 
-safe and growing. Thanks for not giving up on all my enquiry times.`,
-        },
+safe and growing. Thanks for not giving up on all my enquiry times.`
+        }
       ],
       ambassadors: [{ image: "src", information: "txt", name: "name" }],
       typeOfTrade: "",
-      detailsOfTrade: "",
+      detailsOfTrade: ""
     };
   },
   methods: {
     tradeNow() {
       if ((this.detailsOfTrade && this.typeOfTrade != "") || null) {
-        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+trade+with+SwegzTradeLink+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
+        this.contactUrl = `https://api.whatsapp.com/send?phone=2348102192374&text=Hello+I+want+to+Trade+with+Swegz Tradelink+I+will+be+${this.typeOfTrade}%0Aand+the+Type+is+${this.detailsOfTrade}`;
         window.location.replace(this.contactUrl);
         this.dialog = false;
       } else {
@@ -494,11 +562,11 @@ safe and growing. Thanks for not giving up on all my enquiry times.`,
           "please ensure all fields are filled correctly with valid details"
         );
       }
-    },
-  },
+    }
+  }
 };
 </script>
-<style >
+<style>
 .herosection {
   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23690018' fill-opacity='0.12' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
   /* Full height */
@@ -512,4 +580,3 @@ safe and growing. Thanks for not giving up on all my enquiry times.`,
   background-color: #ffffff00 !important;
 }
 </style>
-

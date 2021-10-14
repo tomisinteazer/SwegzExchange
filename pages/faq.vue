@@ -23,60 +23,50 @@ export default {
     return {
       Questions: [
         {
-          Q: ` Can I buy bitcoins on Swegztradelink?`,
-          Answer: " Yes, you can.",
+          Q: ` Can I buy bitcoins on Swegz Tradelink?`,
+          Answer: " Yes, you can."
         },
         {
-          Q: ` Can I buy gift cards on Swegztradelink?`,
-          Answer: `Yes, gift cards and others are available. You can check the site for more.`,
+          Q: ` Can I buy gift cards on Swegz Tradelink?`,
+          Answer: `Yes, gift cards and others are available. You can check the site for more.`
         },
         {
           Q: `I know nothing about cryptocurrency, can I still buy or sell cryptocurrency?`,
-          Answer: `Yes, our trading system is very easy and less technical. All you need is your money.`,
+          Answer: `Yes, our trading system is very easy and less technical. All you need is your money.`
         },
         {
-          Q: ` Is it possible to sell my bitcoins or gift cards on Swegztradelink?`,
-          Answer: `Yes, that's part of our major business at Swegztradelink.`,
+          Q: ` Is it possible to sell my bitcoins or gift cards on Swegz Tradelink?`,
+          Answer: `Yes, that's part of our major business at Swegz Tradelink.`
         },
         {
           Q: `Is bitcoins the only cryptocurrency I can buy or sell?`,
-          Answer: ` No we deal in all cryptocurrency buying and selling.`,
+          Answer: ` No we deal in all cryptocurrency buying and selling.`
         },
         {
           Q: `How do I buy or sell?`,
-          Answer: ` Go to the homepage and kindly click on the trade icon.
-Fill in what you will like to trade and the kind of trade(buying or selling).
-You will be automatically redirected to one of our members, where you chat to begin your transactions.or contact us directly on whatsapp or call us on our lines `,
+          Answer: ` Go to the homepage and kindly click on the Trade icon.
+Fill in what you will like to Trade and the kind of Trade(buying or selling).
+You will be automatically redirected to one of our members, where you chat to begin your transactions.or contact us directly on whatsapp or call us on our lines `
         },
         {
           Q: `Is your platform safe?`,
-          Answer: `Swegztradelink is completely safe.`,
+          Answer: `Swegz Tradelink is completely safe.`
         },
         {
-          Q: `How do I contact Swegztradelink?`,
-          Answer: `You can reach us via any of this; Email: infoSwegztradelink@gmail.com 
-Call: +2348102192374.`,
+          Q: `How do I contact Swegz Tradelink?`,
+          Answer: `You can reach us via any of this; Email: infoSwegz Tradelink@gmail.com 
+Call: +2348102192374.`
         },
         {
-          Q: `How fast is Swegztradelink?`,
-          Answer: `We reply in a couple of seconds and attend to your demands as fast as possible.`,
+          Q: `How fast is Swegz Tradelink?`,
+          Answer: `We reply in a couple of seconds and attend to your demands as fast as possible.`
         },
         {
           Q: `How good are the rates?`,
-          Answer: `we offer the best rate you can ever imagine.`,
-        },
-      ],
+          Answer: `we offer the best rate you can ever imagine.`
+        }
+      ]
     };
-  },
+  }
 };
 </script>
-
-
-
-
-
-
-
-
-
-

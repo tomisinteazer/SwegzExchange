@@ -46,7 +46,7 @@
       aria-hidden="false"
       tabindex="0"
     ></iframe>
-    <p class="primary--text">Email: contact@swegztradelink.com</p>
+    <p class="primary--text">Email: contact@Swegz Tradelink.com</p>
     <p class="primary--text">Call: +2348102192374 (24/7) Monday - Sunday.</p>
   </div>
 </template>
@@ -58,13 +58,13 @@ export default {
       email: "",
       message: "",
       emailRules: [
-        (v) => !!v || "E-mail is required",
-        (v) => /.+@.+/.test(v) || "E-mail must be valid",
+        v => !!v || "E-mail is required",
+        v => /.+@.+/.test(v) || "E-mail must be valid"
       ],
       nameRules: [
-        (v) => !!v || "Name is required",
-        (v) => (v && v.length >= 3) || "Name greater than 5 characters",
-      ],
+        v => !!v || "Name is required",
+        v => (v && v.length >= 3) || "Name greater than 5 characters"
+      ]
     };
   },
   methods: {
@@ -72,7 +72,7 @@ export default {
       if ((this.name && this.email && this.message != "") || null) {
         let subject = "from " + this.name + ":@ " + this.email;
         let mailRef =
-          "mailto:contact@swegztradelink.com?subject=" +
+          "mailto:contact@Swegz Tradelink.com?subject=" +
           encodeURIComponent(subject) +
           "&body=" +
           encodeURIComponent(this.message);
@@ -82,8 +82,7 @@ export default {
           "please ensure all fields are filled correctly with valid details"
         );
       }
-    },
-  },
+    }
+  }
 };
 </script>
-

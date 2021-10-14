@@ -1,12 +1,12 @@
 <template>
   <v-container>
-    <h1 class="primary--text">Privacy Policy for SwegzTradeLink</h1>
+    <h1 class="primary--text">Privacy Policy for Swegz Tradelink</h1>
 
     <p>
-      At SwegzTradeLink.com, accessible from SwegzTradeLink.com, one of our main
-      priorities is the privacy of our visitors. This Privacy Policy document
-      contains types of information that is collected and recorded by
-      SwegzTradeLink.com and how we use it.
+      At Swegz Tradelink.com, accessible from Swegz Tradelink.com, one of our
+      main priorities is the privacy of our visitors. This Privacy Policy
+      document contains types of information that is collected and recorded by
+      Swegz Tradelink.com and how we use it.
     </p>
 
     <p>
@@ -17,8 +17,8 @@
     <p>
       This Privacy Policy applies only to our online activities and is valid for
       visitors to our website with regards to the information that they shared
-      and/or collect in SwegzTradeLink.com. This policy is not applicable to any
-      information collected offline or via channels other than this website.
+      and/or collect in Swegz Tradelink.com. This policy is not applicable to
+      any information collected offline or via channels other than this website.
     </p>
 
     <h2 class="primary--text">Consent</h2>
@@ -69,7 +69,7 @@
     <h2 class="primary--text">Log Files</h2>
 
     <p>
-      SwegzTradeLink.com follows a standard procedure of using log files. These
+      Swegz Tradelink.com follows a standard procedure of using log files. These
       files log visitors when they visit websites. All hosting companies do this
       and a part of hosting services' analytics. The information collected by
       log files include internet protocol (IP) addresses, browser type, Internet
@@ -84,29 +84,29 @@
 
     <p>
       You may consult this list to find the Privacy Policy for each of the
-      advertising partners of SwegzTradeLink.com.
+      advertising partners of Swegz Tradelink.com.
     </p>
 
     <p>
       Third-party ad servers or ad networks uses technologies like cookies,
       JavaScript, or Web Beacons that are used in their respective
-      advertisements and links that appear on SwegzTradeLink.com, which are sent
-      directly to users' browser. They automatically receive your IP address
-      when this occurs. These technologies are used to measure the effectiveness
-      of their advertising campaigns and/or to personalize the advertising
-      content that you see on websites that you visit.
+      advertisements and links that appear on Swegz Tradelink.com, which are
+      sent directly to users' browser. They automatically receive your IP
+      address when this occurs. These technologies are used to measure the
+      effectiveness of their advertising campaigns and/or to personalize the
+      advertising content that you see on websites that you visit.
     </p>
 
     <p>
-      Note that SwegzTradeLink.com has no access to or control over these
+      Note that Swegz Tradelink.com has no access to or control over these
       cookies that are used by third-party advertisers.
     </p>
 
     <h2 class="primary--text">Third Party Privacy Policies</h2>
 
     <p>
-      SwegzTradeLink.com's Privacy Policy does not apply to other advertisers or
-      websites. Thus, we are advising you to consult the respective Privacy
+      Swegz Tradelink.com's Privacy Policy does not apply to other advertisers
+      or websites. Thus, we are advising you to consult the respective Privacy
       Policies of these third-party ad servers for more detailed information. It
       may include their practices and instructions about how to opt-out of
       certain options.
@@ -190,7 +190,7 @@
     </p>
 
     <p>
-      SwegzTradeLink.com does not knowingly collect any Personal Identifiable
+      Swegz Tradelink.com does not knowingly collect any Personal Identifiable
       Information from children under the age of 13. If you think that your
       child provided this kind of information on our website, we strongly
       encourage you to contact us immediately and we will do our best efforts to
